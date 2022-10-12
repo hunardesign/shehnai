@@ -1,0 +1,223 @@
+/* The container must be positioned relative: */
+.custom-select {
+    position: relative;
+    font-family: Arial;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element: */
+  }
+  
+  .select-selected {
+    background-color: white;
+  }
+  
+  /* Style the arrow inside the select element: */
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #000 transparent transparent transparent;
+  }
+  
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-items div,.select-selected {
+    color: #000000;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+  
+  /* Style items (options): */
+  .select-items {
+    position: absolute;
+    background-color: white;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .searchButtonContainer{
+    padding:2%;
+  }
+  .searchButton{
+    cursor: pointer;
+    font-family: inherit;
+    position: relative;
+    background-color: var(--primary);
+    color: white;
+    border-radius: var(--radius);   
+    border: none;
+    width: 7vw;
+    height: 5vh;
+    font-weight: 500;
+    font-size: 0.8vw;   
+  }
+  .selectCaste{
+    width: 13vw;
+  }
+   /* The container must be positioned relative: */
+   .custom-select {
+    position: relative;
+    font-family: Arial;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element: */
+  }
+  
+  .select-selected {
+    background-color: white;
+  }
+  
+  /* Style the arrow inside the select element: */
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #000 transparent transparent transparent;
+  }
+  
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-items div,.select-selected {
+    color: #000000;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+  
+  /* Style items (options): */
+  .select-items {
+    position: absolute;
+    background-color: white;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+ 
+  #male,#female {
+    accent-color: var(--primary);
+}
+
+.search {
+    display: flex;
+    background: white;
+    position: absolute; 
+    align-items: center;
+    justify-content: space-between;
+    left: 0; 
+    right: 0;
+    top: 79vh; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 48vw;
+    padding: 0.5%;
+    box-shadow: 4px 4px 24px rgba(0,0,0,0.1);
+    border-radius: var(--radius);
+}
+
+
+.searchItem{
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+
+}
+.genderRadio,.age{
+    display: flex;
+    align-items: center;
+}
+.genderRadio{
+    padding-top: 4%;
+}
+
+.genderRadio div{
+    padding-right: 5%;
+    font-weight:600;
+    font-size: 1vw;
+
+
+}
+
+.searchTitle {
+    font-size: 0.9vw;
+    padding-bottom: 10%;
+    font-weight: bolder;
+}
+
+input[type=radio] {
+    border: none;
+    width: 0.9vw;
+    height: 0.9vw;
+}
+input{
+    text-align: center; 
+
+}
+.male,.female {
+    padding-right:2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+label {
+    padding-left:1%;
+}
+input[type="number" i] {
+    border-color: rgba(0,0,0,0.1) !important; 
+    border-radius: var(--radius) !important;
+    width: 3vw;
+    height: 2vw;
+    text-align: center;
+    
+}
+.minAge{
+    padding-right: 10%;
+}
+.maxAge{
+    padding-left: 10%;
+}

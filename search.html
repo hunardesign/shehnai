@@ -1,0 +1,65 @@
+<form class="search">
+
+    <div class="searchItem">
+        <div class="searchTitle">I'm looking for a</div>
+        
+        <div class="genderRadio">
+            <div class="male">
+                <input type="radio" id="male" name="selectGender" value="male">
+                <label for="male">Male</label><br>
+            </div>
+            
+            <div class="female">
+                <input type="radio" id="female" checked="checked" name="selectGender" value="female"  >
+                <label for="female">Female</label><br>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div class="searchItem">
+        
+        <div class="searchTitle">Age</div>
+    
+        <div class="age">
+
+            <div class="minAge">
+                
+                <input type="number" id="minAge" name="selectAge" value="18" min="18" max="70" class="ageField">
+                
+            </div>
+            to
+            <div class="maxAge">
+                
+                <input type="number" id="maxAge" name="selectAge" value="21" min="19" max="70" class="ageField">
+                
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div class="searchItem selectCaste">
+        <div class="searchTitle">of Caste</div>
+    
+        <div class="custom-select" style="width:200px;">
+            <select name="caste" id="caste" class="hideSelect">
+                <option value="BRAHMIN">Brahmin</option>
+                <option value="JAIN">Jain</option>
+                <option value="PATEL">Patel</option>
+                <option value="VAISHNAV">Vaishnav</option>
+                <option value="VANIA">Vania</option>
+                <option value="OTHER">Other</option>
+            </select>
+        </div>
+
+    </div>
+
+    <div class="searchButtonContainer">
+        <input type="submit" value="Search" class="searchButton">
+    </div>
+
+</form>
+<script src="select.js"></script>
+<link href="stylesheet" href="search.css">
