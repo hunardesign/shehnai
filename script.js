@@ -1,11 +1,11 @@
-$.get("../navbar.html", function(data){
+$.get("navbar.html", function(data){
     $(".navbar").replaceWith(data);
 });
-$.get("../search.html", function(data){
+$.get("search.html", function(data){
     $(".search").replaceWith(data);
 });
 
- $.get("../footer.html", function(data){
+ $.get("footer.html", function(data){
    $(".footer").replaceWith(data);
  });
 

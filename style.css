@@ -36,11 +36,11 @@ body {
 
 @font-face {
     font-family: Prata;
-    src: url(/assets/font/Prata-Regular.ttf);
+    src: url(assets/font/Prata-Regular.ttf);
 }
 
 .heroSection {
-    background-image: url("/assets/hero.jpg");
+    background-image: url("assets/hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
