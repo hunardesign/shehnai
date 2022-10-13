@@ -169,13 +169,14 @@ a {
     align-items: center;
     background: white;
     box-shadow: 4px 4px 24px rgba(0,0,0,0.1);
-    padding: 2%;
+    padding: 0%;
     border-radius: var(--radius);
-    
+    overflow: clip;
 }
 .couplePhoto {
-    border-radius: 100vw;
-    width: 15vw;
+    width: 20vw;
+    height: 15vw;
+    object-fit: cover;
 }
 .sliderStory{
     font-size: 0.8vw;
