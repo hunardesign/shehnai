@@ -5,6 +5,15 @@
     --glass:rgba(255,255,255,0.6);
     --glass10:rgba(255,255,255,0.1)
   }
+  ::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: var(--primary);
+  }
+  
+  ::selection {
+    color: white;
+    background: var(--primary);
+  }
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
