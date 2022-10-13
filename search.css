@@ -133,10 +133,10 @@ input[type="number" i] {
 
 }
 @media screen and (max-width: 991px) {
-    .search{
-      top: 38vh; 
-      width: 80vw;
-    }
+  .search{
+    top: 38vh; 
+    width: 80vw;
+  }
   
   .searchButton{
       width: 7vw;
@@ -165,6 +165,40 @@ input[type="number" i] {
 }
 @media screen and (max-width: 550px) {
   .search{
-   display: none;     
+    top: 54vh; 
+    width: 100vw;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 2%;
+  }
+  
+  .searchButton{
+      width: 7vw;
+      height: 3.5vh;
+      font-size: 1.25vw;
+  }
+  .searchTitle{
+    font-size: 5.25vw;
+    padding-bottom: 3%;
+  }
+  label{
+    font-size: 4.5vw;
+  }
+  input[type="number" i] {
+    width: 34vw;
+    height: 8vw;
+    }
+  input[type=radio] {
+      border: none;
+      width: 5.5vw;
+      height: 5.5vw;
+  }
+  .searchButton{
+    width: 90vw;
+    height: 4.5vh;
+    font-size: 4.5vw;
+  }
+  .caste{
+    width: 90vw;
   }
 }

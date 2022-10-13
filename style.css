@@ -256,7 +256,9 @@ a {
         width: 85%;
     }
    
-    
+    .shehnaiFeatures{
+        padding-top: 100% !important;
+    }
     .featureCards {
         grid-template-columns: auto;
     }
