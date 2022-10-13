@@ -1,69 +1,28 @@
-/* The container must be positioned relative: */
-.custom-select {
-    position: relative;
-    font-family: Arial;
-  }
-  
-  .custom-select select {
-    display: none; /*hide original SELECT element: */
-  }
-  
-  .select-selected {
-    background-color: white;
-  }
-  
-  /* Style the arrow inside the select element: */
-  .select-selected:after {
-    position: absolute;
-    content: "";
-    top: 14px;
-    right: 10px;
-    width: 0;
-    height: 0;
-    border: 6px solid transparent;
-    border-color: #000 transparent transparent transparent;
-  }
-  
-  /* Point the arrow upwards when the select box is open (active): */
-  .select-selected.select-arrow-active:after {
-    border-color: transparent transparent #fff transparent;
-    top: 7px;
-  }
-  
-  /* style the items (options), including the selected item: */
-  .select-items div,.select-selected {
-    color: #000000;
-    padding: 8px 16px;
-    border: 1px solid transparent;
-    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-    cursor: pointer;
-  }
-  
-  /* Style items (options): */
-  .select-items {
-    position: absolute;
-    background-color: white;
-    top: 100%;
-    left: 0;
-    right: 0;
-    z-index: 99;
-  }
-  
-  /* Hide the items when the select box is closed: */
-  .select-hide {
-    display: none;
-  }
-  
-  .select-items div:hover, .same-as-selected {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
+select {
+
+  /* styling */
+  background-color: white;
+  border: thin solid rgba(0,0,0,0.1);
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+
+  /* reset */
+
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
   .searchButtonContainer{
     padding:2%;
   }
   .searchButton{
     cursor: pointer;
-    font-family: inherit;
-    position: relative;
+    font-family: inherit;    
     background-color: var(--primary);
     color: white;
     border-radius: var(--radius);   
@@ -76,65 +35,7 @@
   .selectCaste{
     width: 13vw;
   }
-   /* The container must be positioned relative: */
-   .custom-select {
-    position: relative;
-    font-family: Arial;
-  }
   
-  .custom-select select {
-    display: none; /*hide original SELECT element: */
-  }
-  
-  .select-selected {
-    background-color: white;
-  }
-  
-  /* Style the arrow inside the select element: */
-  .select-selected:after {
-    position: absolute;
-    content: "";
-    top: 14px;
-    right: 10px;
-    width: 0;
-    height: 0;
-    border: 6px solid transparent;
-    border-color: #000 transparent transparent transparent;
-  }
-  
-  /* Point the arrow upwards when the select box is open (active): */
-  .select-selected.select-arrow-active:after {
-    border-color: transparent transparent #fff transparent;
-    top: 7px;
-  }
-  
-  /* style the items (options), including the selected item: */
-  .select-items div,.select-selected {
-    color: #000000;
-    padding: 8px 16px;
-    border: 1px solid transparent;
-    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-    cursor: pointer;
-  }
-  
-  /* Style items (options): */
-  .select-items {
-    position: absolute;
-    background-color: white;
-    top: 100%;
-    left: 0;
-    right: 0;
-    z-index: 99;
-  }
-  
-  /* Hide the items when the select box is closed: */
-  .select-hide {
-    display: none;
-  }
-  
-  .select-items div:hover, .same-as-selected {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
  
   #male,#female {
     accent-color: var(--primary);
@@ -208,7 +109,7 @@ label {
     padding-left:1%;
 }
 input[type="number" i] {
-    border-color: rgba(0,0,0,0.1) !important; 
+    border: thin solid rgba(0,0,0,0.1);
     border-radius: var(--radius) !important;
     width: 3vw;
     height: 2vw;
@@ -220,4 +121,50 @@ input[type="number" i] {
 }
 .maxAge{
     padding-left: 10%;
+}
+.searchItem,.caste{
+  width:max-content ;
+}
+@media screen and (max-width: 1600px) {
+  .search{
+    top: 65vh; 
+    width: 55vw;
+  }
+
+}
+@media screen and (max-width: 991px) {
+    .search{
+      top: 38vh; 
+      width: 80vw;
+    }
+  
+  .searchButton{
+      width: 7vw;
+      height: 3.5vh;
+      font-size: 1.25vw;
+  }
+  .searchTitle{
+    font-size: 1.25vw;
+  }
+  label{
+    font-size: 1.5vw;
+  }
+  input[type="number" i] {
+    width: 5vw;
+    height: 3.5vw;
+    }
+    input[type=radio] {
+      border: none;
+      width: 1.5vw;
+      height: 1.5vw;
+  }
+  .searchButton{
+    width: 12vw;
+    height: 4.5vh;
+  }
+}
+@media screen and (max-width: 550px) {
+  .search{
+   display: none;     
+  }
 }

@@ -1,3 +1,4 @@
+/*General CSS Starts*/
 :root {
     --primary: #DB1226;
     --background: #f7f7f7;
@@ -200,4 +201,98 @@ a {
     align-items: center;
     flex-direction: column;
     padding: 2%;
+}
+.menu{
+    display: none;
+}
+/*General CSS Ends*/
+
+@media screen and (max-width: 1600px) {
+    .heroSection {
+        background-size: cover;
+        height: 75vh;    
+    }
+    .years{
+        margin: 12% 0% 0% 14%;
+    }
+}
+@media screen and (max-width: 991px) {
+    .heroSection{
+        height: 45vh;
+    }
+    .years{
+        margin: 16% 0% 0% 16%;
+    }
+
+}
+@media screen and (max-width: 550px) {
+    
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+    body{
+        margin: 0;
+        overflow: scroll;
+    }
+
+    .heroSection{
+        background-image: url("assets/heroMobile.png");
+        background-repeat: no-repeat;
+        object-fit:fill;
+        width: 100vw;
+        height: 50vh;
+    }
+    .years{
+        background: rgba(0,0,0,0.1);
+        margin: 80% 0% 0% 0%;
+        width: 97vw;
+        backdrop-filter: blur(4vw);
+    }
+    .yearsTitle {
+        font-size: 8vw;  
+    }
+    .yearsSub{
+        font-size: 5vw;
+        width: 85%;
+    }
+   
+    
+    .featureCards {
+        grid-template-columns: auto;
+    }
+    .feature{
+        margin-bottom:5% ;
+        border-radius: 2vw;
+    }
+    .featureTitle{
+        font-size: 6vw;
+    }
+    .featureDescr ,.featureSub {
+        font-size: 3.5vw;
+    }
+    .featureSub{
+        text-align: center;
+    }
+    .featureName ,.sliderNames{
+        font-size: 4vw;
+    }
+    .featureVector {
+        width: 16vw;
+    }
+    .sliderContainer {
+        grid-template-columns: auto;
+        width: 100%;
+        justify-content: center;
+    }
+    .slider{
+        border-radius: 2vw;
+        margin-bottom: 5%;
+    }
+    .couplePhoto{
+        width: 85vw;
+        height: 40vh;
+    }
+    .sliderStory{
+        font-size: 3.5vw;
+    }
 }
