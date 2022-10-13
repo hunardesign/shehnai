@@ -243,19 +243,20 @@ a {
         height: 50vh;
     }
     .years{
-        background: rgba(0,0,0,0.1);
-        margin: 80% 0% 0% 0%;
+        display: none;
+        /* background: rgba(0,0,0,0.1);
+        margin: 28% 0% 0% 0%;
         width: 97vw;
-        backdrop-filter: blur(4vw);
+        backdrop-filter: blur(4vw); */
     }
-    .yearsTitle {
+    /* .yearsTitle {
         font-size: 8vw;  
     }
     .yearsSub{
         font-size: 5vw;
         width: 85%;
     }
-   
+    */
     .shehnaiFeatures{
         padding-top: 100% !important;
     }

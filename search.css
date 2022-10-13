@@ -164,8 +164,12 @@ input[type="number" i] {
   }
 }
 @media screen and (max-width: 550px) {
+  .searchContainer{
+    overflow: clip;
+  }
   .search{
-    top: 54vh; 
+    border-radius: 2vw;
+    top: 50vh; 
     width: 100vw;
     flex-direction: column;
     align-items: stretch;
@@ -174,8 +178,9 @@ input[type="number" i] {
   
   .searchButton{
       width: 7vw;
-      height: 3.5vh;
+      height: 6vh !important;
       font-size: 1.25vw;
+      border-radius: 2vw;
   }
   .searchTitle{
     font-size: 5.25vw;

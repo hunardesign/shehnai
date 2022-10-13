@@ -5,3 +5,5 @@ $.get("navbar.html", function(data){
  $.get("footer.html", function(data){
    $(".footer").replaceWith(data);
  });
+
+ 
