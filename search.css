@@ -85,7 +85,7 @@ select {
 .searchTitle {
     font-size: 0.9vw;
     padding-bottom: 10%;
-    font-weight: bolder;
+
 }
 
 input[type=radio] {
@@ -107,6 +107,7 @@ input{
 
 label {
     padding-left:1%;
+    font-size: 0.8vw;
 }
 input[type="number" i] {
     border: thin solid rgba(0,0,0,0.1);
@@ -114,6 +115,7 @@ input[type="number" i] {
     width: 3vw;
     height: 2vw;
     text-align: center;
+    font-weight: bolder;
     
 }
 .minAge{
@@ -124,6 +126,9 @@ input[type="number" i] {
 }
 .searchItem,.caste{
   width:max-content ;
+}
+option{
+  font-weight: bold;
 }
 @media screen and (max-width: 1600px) {
   .search{

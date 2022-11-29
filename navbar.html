@@ -11,6 +11,7 @@
             <div class="about links"><a href="about">About</a></div>
             <div class="contact links"><a href="contact">Contact</a></div>
             <div class="login links"><a href="login">Login</a></div>
+            <div class="register links"><a href="register">Register</a></div>
     </div>               
         <div class="menu"><a href="javascript:void(0);" class="icon" onclick="hideMenu()"><img src="assets/menu.svg" class="menuIcon"></a></div>
 </div>
@@ -19,13 +20,13 @@
         margin: 1.5% 7%;
         z-index: 2;
         animation: slideDown 600ms ease-in-out;
-        padding: 0.5% 2%;
+        padding: 0.5% 0%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 82vw;
+        width: 85vw;
         position: fixed;
-        height: 8vh;
+        height: max-content;
         left: 0px;
         top: 0px;
         background: var(--glass);
@@ -34,39 +35,47 @@
    }
 
     .navbuttons{
-        
+        display: flex;
+        gap: 1vw;
         font-size: 0.8vw;
         font-weight: 600;
         color: black;
-        width: max-content;
         display: flex;
         color: rgba(0, 0, 0, 0.4);
-        margin-right: 21%;
+        padding: 0% 1%;
    }
-   .navbuttons div{
-    padding-top: 6%;
-    padding-right: 12%;
-    padding-bottom: 6%;
-    padding-left: 12%;
-    /* padding:6%,12%; */
+   .links{
+    display: flex;
+    padding: 1.5% 0%;
+    width: 5vw;
+    align-items: center;
+    justify-content: center;
    }
    .navBarLogo{
         height: auto;
    }
    .logo{
         width: 10vw;
+        padding: 0% 10%;
    }
    .login{
-        background-color: var(--primary);
+        width: 7vw;
         color: white;
-        border-radius: var(--radius);   
-        padding-left: 16% !important;
-        padding-right: 16% !important;
+        background-color: var(--primary);
+        border-radius: var(--radius); 
    }
+   .register{
+         width: 7vw;
+        color: var(--primary);
+        border: 2px solid var(--primary);
+        border-radius: var(--radius); 
+   }
+
+
    @media screen and (max-width: 1600px) {
         .navbuttons{
             font-size: 1vw;    
-            margin-right: 25%;
+            /* margin-right: 25%; */
         }
         .logo{
             width: 10vw;
