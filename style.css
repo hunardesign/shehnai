@@ -558,7 +558,7 @@ textarea {
     padding: 2% 7%;
     gap: 2vw;
 }
-.specialMember{
+.feedMember,.specialMember{
     height: 19vw;
     width: 19vw;
     overflow: clip;
@@ -568,6 +568,7 @@ textarea {
     
     
 }
+
 .specialImage{
     height: 19vw;
     width: 19vw;
@@ -596,7 +597,7 @@ textarea {
     height: 1vw;
     width: 1vw;
 }
-.specialData{
+.feedData,.specialData{
     opacity: 0;
     position: absolute;
     background: rgba(255,255,255,0.6);
@@ -610,6 +611,10 @@ textarea {
     align-items: center;
     gap: 1vw;
     transition: ease-in 300ms;
+}
+.feedData{
+    opacity: 1;
+    position: relative;
 }
 .specialButtons{
     /* border: 1px solid black; */
@@ -625,7 +630,7 @@ textarea {
     /* border: 1px solid black; */
     width: 8vw;
 }
-.specialDetails{
+.feedDetails,.specialDetails{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -654,6 +659,69 @@ textarea {
 .specialMember:hover .specialData{
     opacity: 1;
 }
+
+.dashboard{
+    margin-top: 8%;
+}
+.profile{
+    background: white;
+    /* padding:0% 0% 0% 2%; */
+    width: 22vw;
+    margin-left: 70%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    /* overflow: clip; */
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+.detailData.about{
+    width: 20vw;
+    text-align: justify;
+}
+.profiletabs{
+    display: flex;
+}
+.profiletabs *{
+    display: flex;
+    justify-content: center;
+    padding: 4% 2% ;
+    width: 100%;
+    
+}
+.activity{
+    background: #f0f0f0;
+    opacity: 0.6;
+}
+.profileSub{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    width: 100%;
+    padding-bottom: 2% ;
+    /* border: 1px solid; */
+}
+.profilePhotoContainer{
+    /* outline: 12px solid red; */
+    height: 22vw;
+    width: 20vw;
+    background-position: top;
+    background-size: cover;
+    background-image:
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 67.42%, #000000 96.59%),
+    url('assets/goldMember2.webp');
+    border-radius: var(--radius);
+}
+.profileDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1vw;
+}
+
 /*General CSS Ends*/
 
 @media screen and (max-width: 1600px) {
