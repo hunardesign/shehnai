@@ -688,11 +688,18 @@ textarea {
     justify-content: center;
     padding: 4% 2% ;
     width: 100%;
-    
-}
-.activity{
     background: #f0f0f0;
     opacity: 0.6;
+    
+}
+
+.activeTab{
+    font-weight: bold;
+    background: #ffffff;
+    opacity: 1;
+}
+.disableTab{
+    cursor: pointer;
 }
 .profileSub{
     display: flex;
