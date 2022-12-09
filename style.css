@@ -65,20 +65,46 @@ a {
     color:inherit;
     text-decoration: inherit;
 }
-
-.years {
-    color: white;
-    font-family: Prata;
-    position: absolute;
-    /* background: var(--glass10); */
-    width: 20vw;
+.flexR{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flexC{
     display: flex;
     flex-direction: column;
-    padding-top: 2%;
-    padding-right: 1.4%;
-    padding-bottom: 2%;
-    padding-left: 1.4%;
     align-items: center;
+    justify-content: center;   
+}
+.fontLargest {
+    font-size: 4vw;
+
+}
+.fontLarge {
+    font-size: 2vw;
+}
+.fontMedium {
+    font-size: 1.3vw;
+}
+.fontAverage{
+    font-size: 0.9vw;
+}
+.fontSmall {
+    font-size: 0.8vw;
+}
+.white{
+    color: white;
+}
+.centerAlign{
+   
+    align-items: center;
+    gap: 1vw;
+}
+.years {
+    font-family: Prata;
+    position: absolute;   
+    width: 20vw;
+    padding-top: 2%;
     margin: 10% 0% 0% 10%;
     border-radius:1vw;
 }
@@ -87,22 +113,18 @@ a {
     width: 18vw;
 }
 .yearsTitle {
-    font-size: 4vw;
+    
     padding-bottom: 2%;
 }
 
 .yearsSub {
-    font-size: 1.2vw;
     text-align: center;
 }
 
 /* Features */
 
 .shehnaiFeatures {
-    display: flex;
-    flex-direction: column;
     background: url("assets/chooseBg.webp");
-    color: white;
     padding: 5% 7%;
     margin-left: auto;
     margin-right: auto;
@@ -111,7 +133,7 @@ a {
 }
 
 .featureCards {
-    display: flex;
+    align-items: stretch;
     justify-content: center;
     width: 100%;
     gap:3vw;
@@ -119,22 +141,18 @@ a {
 }
 
 .feature {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     background:rgba(0,0,0,0.8);
     justify-content: space-evenly;
     padding: 2% 3%;
     box-shadow:var(--shadow);
     border-radius: var(--radius);
-    width: 15vw;
+    width: 17.8vw;
     gap:0.5vw;
 }
 
 .featureHeader {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    
     padding-bottom: 2%;
     font-weight: 600;
     gap: 1vw;
@@ -145,16 +163,14 @@ a {
 
 .featureSub {
     color: rgba(255,255,255,0.6);
-    font-size: 0.8vw;
 }
 
 .featureTitle {
-    font-size: 2vw;
     color: white;
 }
 
-.featureName {
-    font-size:1vw;
+.featureName{
+    width: max-content;
 }
 .dark{
     color: rgba(0,0,0,0.6);
@@ -165,13 +181,11 @@ a {
 .featureDescr {
     text-align: justify;
     color: rgba(255,255,255,0.8);
-    font-size: 0.8vw;
+    
 }
 
 .testimonials {
     padding: 5% 0%;
-    display: flex;
-    flex-direction: column; 
     width: 85vw;
     align-items: center;
     margin-left: auto;
@@ -184,7 +198,7 @@ a {
 }
 
 .testimonialContainer{
-    display: flex;
+    
     padding: 2%;
     background: var(--glass);
     box-shadow:var(--shadowDark);
@@ -198,9 +212,7 @@ a {
     width: 15vw;
     overflow: clip;
     border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
 }
 .couplePhoto{
     height: 20vw;
@@ -210,16 +222,13 @@ a {
     width: 30vw;
 }
 .weddingTestimonial,.testimonialContentContainer{
-    display: flex;
-    flex-direction: column;
+    
     gap: 1vw;
 }
 .testimonialText{
-    font-size: 0.85vw;
     font-weight: 400;
 }
 .quoteOpen,.quoteClose,.CoupleNames{
-    font-size: 1.2vw;
     color: var(--primary);
     font-weight:600;
 }
@@ -229,11 +238,11 @@ a {
     margin-left: 95%;
 }
 .weddingDate{
-    font-size: 0.8vw;
+    
     color: rgba(0,0,0,0.6);
 }
 .testimonialSelector{
-    display: flex; 
+    
     padding: 2%;
     gap: 1vw;  
     align-items: center;
@@ -243,9 +252,6 @@ a {
     width: 6vw;
     overflow: clip;
     border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: white;
     box-shadow: var(--shadow);
 }
@@ -284,9 +290,6 @@ a {
     background-size: cover;
 }
 .goldList{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 5vw;
 }
 .goldMemberImgContainer{
@@ -294,15 +297,11 @@ a {
     width: 15vw;
     border-radius: 100%;
     overflow: clip;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .goldMemberContainer{
-    display: flex;
+    
     position: relative;
-    justify-content: center;
-    align-items: center;
+    
 }
 .goldFrame{
     height: 16vw;
@@ -315,14 +314,11 @@ a {
     padding: 2% 0%;
 }
 .plansContainer{
-    display: flex;
-    justify-content: center;
+    align-items: stretch;
     gap: 2vw;
 }
 .planCard {
     padding: 2% 2%;
-    display: flex;
-    flex-direction: column;
     /* justify-content: space-between; */
     align-items: center;
     background: white;
@@ -330,9 +326,11 @@ a {
     width: 15%;
     gap: 2vw;
 }
-.featureItem{
-    display: flex;
+.featureItem {
+
     gap: 1vw;
+    align-items: stretch;
+
 }
 .planfeature{
     height: 1vw;
@@ -342,23 +340,21 @@ a {
     opacity: 0.6;
 }
 .priceTitle{
-    font-size: 1.5vw;
+    
     font-weight: bold;
 }
 .priceDetail{
-    font-size: 1.6vw;
+    
     font-weight: bolder;
 }
 .featureList{
+    justify-content: start;
+    align-items: start;
     width: 100%;
-    display: flex;
-    flex-direction: column;
     gap: 2vw;
     height: 100%;
 }
-.featureText{
-    font-size: 0.9vw;
-}
+
 .selectPlan{
     border: 1px solid gray;
     width: 90%;
@@ -367,7 +363,7 @@ a {
     border-radius: var(--radius);
 }
 .learnMore{
-    font-size: 0.8vw;
+    
     opacity: 0.8;
 }
 .goldPlan{
@@ -398,8 +394,7 @@ a {
     color: var(--primary);
 }
 .generalForm{
-    display: flex;
-    flex-direction: column;
+    align-items: stretch;
     gap: 1vw;
     padding: 1% 1.5% ; 
     background: white;
@@ -409,12 +404,10 @@ a {
     width: 20vw;
    }
 .formTitle{
-    font-size: 1.5vw;
     font-weight: 800;
     color: var(--primary);
 }
 .formLabel{
-    font-size: 0.85vw;
     font-weight: 400;
 
 }
@@ -451,17 +444,14 @@ textarea {
     padding: 2%;
 }
 .contacNo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  align-items: flex-end;
     gap: 1vw;
 }
 .countryCode,.number{
     gap: 1vw;
     /* border: 1px solid black; */
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    align-items: flex-start;
     justify-content: stretch;
 }
 .countryCode{
@@ -471,7 +461,6 @@ textarea {
     border-radius: var(--radius);
 }
 .textLink{
-    font-size: 0.8vw;
     color:var(--primary);
     font-weight:600;
     opacity: 0.8;
@@ -479,11 +468,7 @@ textarea {
 .textLink:hover{
     opacity: 1;
 }
-.flexRow{
-    display: flex;
-    align-items: center;
-    gap: 1vw;
-}
+
 .textLink.Dark{
     color: black;
 }
@@ -501,18 +486,16 @@ textarea {
     border-radius: var(--radius);
     margin: 1% 7%;
     background: white;
-    display: flex;
+    
     align-items: stretch;
     gap: 2vw;
     box-shadow: var(--shadow);
 }
 
 .aboutImage{
-    display: flex;
-    justify-content: center;
     align-items: flex-end;
     height: 28vw;
-    width: 20vw;
+    width: 24vw;
     background-position: top;
     background-size: cover;
     background-image:
@@ -520,23 +503,18 @@ textarea {
     url('assets/ShrutiModi.webp');
 }
 .aboutText{
-    font-size: 0.8vw;
     color: rgba(0,0,0,0.7);
-    display: flex;
-    flex-direction: column;
     text-align: justify;
 }
 .aboutText{
     width: 28vw;
 }
 .shrutiModiText{
-    font-size: 1vw;
     color: white;
     font-weight: 600;  
     padding: 1vw;  
 }
 .map{
-    display: flex;
     width: 100%;
     justify-content: center;
     padding: 1% 0% ;
@@ -554,18 +532,20 @@ textarea {
 }
 .specialContainer{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto ;
     padding: 2% 7%;
     gap: 2vw;
+    place-content: center;
 }
 .feedMember,.specialMember{
     height: 19vw;
-    width: 19vw;
+    width: max-content;
     overflow: clip;
-    display: flex;
-    justify-content: flex-end;
+    align-items: stretch;
+    justify-content: flex-start;
     border-radius: var(--radius);
-    
+    background: white;
+    gap: 1vw;
     
 }
 
@@ -578,7 +558,6 @@ textarea {
     background: rgba(0,0,0,0.6);
     backdrop-filter: blur(2vw);
     position: absolute;
-    display: flex;
     color: white;
     gap: 1.5vw;
     padding: 1%;
@@ -586,10 +565,7 @@ textarea {
     border-radius: var(--radius);
 }
 .actionContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 0.5vw;
+   
     color: rgba(255,255,255,0.6);
     gap: 0.25vw;
 }
@@ -597,18 +573,14 @@ textarea {
     height: 1vw;
     width: 1vw;
 }
-.feedData,.specialData{
+.feedData,.specialData flexC{
     opacity: 0;
     position: absolute;
     background: rgba(255,255,255,0.6);
     backdrop-filter: blur(1vw);
     padding: 1%;
     text-align: center;
-    display: flex;
-    flex-direction: column;
     width: 17vw;
-    justify-content: center;
-    align-items: center;
     gap: 1vw;
     transition: ease-in 300ms;
 }
@@ -619,9 +591,7 @@ textarea {
 .specialButtons{
     /* border: 1px solid black; */
     width: 100%;
-    display: flex;
     gap: 1vw;
-    justify-content: center;
 }
 .specialButtons *{
     display: flex;
@@ -631,28 +601,24 @@ textarea {
     width: 8vw;
 }
 .feedDetails,.specialDetails{
-    display: flex;
-    flex-direction: column;
+    
     align-items: flex-start;
     gap: 0.85vw;
     width: 16vw;
     height: 14vw;
 }
 .detailLabel{
-    font-size: 0.8vw;
     opacity: 0.8;
 }
 .detailData{
-    font-size: 1vw;
+    
     text-align: left;
 }
 .subDetails{
-    display: flex;
     gap:1vw
 }
 .detailContainer{
-    display: flex;
-    flex-direction: column;
+   
     align-items: flex-start;
 }
 
@@ -669,8 +635,6 @@ textarea {
     width: 22vw;
     margin-left: 70%;
     position: fixed;
-    display: flex;
-    flex-direction: column;
     gap: 1vw;
     /* overflow: clip; */
     border-radius: var(--radius);
@@ -728,10 +692,12 @@ textarea {
     align-items: flex-start;
     gap: 1vw;
 }
-
+.activitySub{
+    display: none;
+}
 /*General CSS Ends*/
 
-@media screen and (max-width: 1600px) {
+/* @media screen and (max-width: 1600px) {
     .heroSection {
         background-size: cover;
         height: 75vh;    
@@ -772,7 +738,7 @@ textarea {
         margin: 28% 0% 0% 0%;
         width: 97vw;
         backdrop-filter: blur(4vw); */
-    }
+    /*}
     /* .yearsTitle {
         font-size: 8vw;  
     }
@@ -781,7 +747,7 @@ textarea {
         width: 85%;
     }
     */
-    .shehnaiFeatures{
+    /* .shehnaiFeatures{
         padding-top: 100% !important;
     }
     .featureCards {
@@ -791,7 +757,7 @@ textarea {
         margin-bottom:5% ;
         border-radius: 2vw;
     }
-    .featureTitle{
+    .featureTitle fontLarge{
         font-size: 6vw;
     }
     .featureDescr ,.featureSub {
@@ -805,6 +771,6 @@ textarea {
     }
     .featureVector {
         width: 16vw;
-    }
+    } */
    
 }
