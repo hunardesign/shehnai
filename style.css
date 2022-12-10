@@ -107,6 +107,14 @@ a {
 .gap2{
     gap: 2vw;
 }
+.fullWidth{
+    width: 100%;
+    max-width: 100% !;
+}
+.start{
+   align-items: flex-start;
+   gap: 1vw;
+}
 .centerAlign{
    
     align-items: center;
@@ -620,7 +628,8 @@ textarea {
     height: 14vw;
 }
 .detailLabel{
-    opacity: 0.8;
+    opacity: 0.6;
+    
 }
 .detailData{
     
@@ -726,7 +735,7 @@ textarea {
     align-items: flex-start;
 }
 .viewProfile{
-
+overflow: clip;
     background: white;
     width: 85vw;
     margin: 8% 7%;
@@ -739,6 +748,7 @@ textarea {
     height: 38vw;
     width: 28vw;
     object-fit: cover;
+    
 }
 .profileLargeImage{
     align-items: flex-start;
@@ -754,6 +764,7 @@ textarea {
     width: 93%;
 }
 .profileNavItem{
+    cursor: pointer;
     width: 10vw;
 }
 #activeProfileNav{
@@ -787,10 +798,10 @@ textarea {
 .aboutGridSub {
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 1vw;
+    gap: 1.5vw;
     background: white;
-    border:0.1vw solid rgba(0,0,0,0.1);
-    box-shadow: var(--shadow);
+    /* border:0.1vw solid rgba(0,0,0,0.1); */
+    box-shadow: 3px 3px 12px rgba(0,0,0,0.1) ;
     border-radius: var(--radius);
     padding: 2%;
     width: 98%;
@@ -804,6 +815,52 @@ textarea {
     justify-content: flex-start;
     align-items: flex-start;
     max-width: 25vw;
+}
+.familyDetails,.partnerPreferences,.otherDetails,.contactDetails{
+    display: none;
+    gap: 1vw;
+    width: 100%;
+}
+.profileID{
+    gap: 1vw;
+    width: 16vw;
+}
+.profileIDShare{
+    padding: 0% 2% 2% 0%;
+    width: 98%;
+}
+.uidStyle{
+    color: var(--primary);
+    background: #FCECEE;
+    border-radius: var(--radius);
+    padding: 4% ;
+}
+.otherDetails,.familyFlex{
+    gap: 1vw;
+    width: 95%;
+}
+.familySub{
+    align-items: flex-start;
+    gap: 1vw;
+}
+.contactNumberContainer{
+    height: 5.6vw;
+    /* border: 1px solid; */
+}
+.parent {
+    gap: 2vw;
+    justify-content: flex-start;
+}
+.siblingSub *{
+    width: 10vw;
+}
+.otherDetailsSub{
+    width: 98%;
+    margin-left:4% ;
+}
+.contactDetails{
+    width: 96%;
+    margin-left:2% ;
 }
 /*General CSS Ends*/
 
@@ -883,4 +940,3 @@ textarea {
         width: 16vw;
     } */
    
-}

@@ -37,114 +37,122 @@
                 <div class="flexC start">
                     <div class="profileAboutDetails leftBorder">
                         <div class="profileDetailsNav flexR">
-                            <div class="profileNavItem flexR fontSmall" id="activeProfileNav">About</div>
-                            <div class="profileNavItem flexR fontSmall">Family Details</div>
-                            <div class="profileNavItem flexR fontSmall">Partner Preferences</div>
-                            <div class="profileNavItem flexR fontSmall">Other Details</div>
-                            <div class="profileNavItem flexR fontSmall">Contact Details</div>
+                            <div class="profileNavItem flexR fontSmall viewAbout" id="activeProfileNav" onclick="viewAbout()">About</div>
+                            <div class="profileNavItem flexR fontSmall viewFamilyDetails" onclick="viewFamilyDetails()">Family Details</div>
+                            <div class="profileNavItem flexR fontSmall viewPartnerPreferences" onclick="viewPartnerPreferences()">Partner Preferences</div>
+                            <div class="profileNavItem flexR fontSmall viewOtherDetails" onclick="viewOtherDetails()">Other Details</div>
+                            <div class="profileNavItem flexR fontSmall viewContactDetails" onclick="viewContactDetails()">Contact Details</div>
                         </div>
+                            
                         <div class="profileDetailsSub flexC">
-                            <div class="profileIDShare"></div>
+                            <div class="profileIDShare flexR space-between">
+                                <div class="profileID flexR">
+                                    <div class="detailLabel">Profile ID</div>
+                                    <div class="uidStyle uid">UIDF10215N0125</div>
 
-                                <div class="aboutGrid grid">
+                                </div>
+                                <div class="editButton flexR" onclick="share()">Share Profile</div>
+                            </div>
+
+                            <div class="aboutsection aboutGrid grid">
                                     
-                                    <div class="aboutGridSub aboutme flexC">
+                                <div class="aboutGridSub aboutme flexC">
                                         
-                                        <div class="gridSubTitle">About Me</div>
+                                    <div class="gridSubTitle bold  fontAverage">About Me</div>
                                         
                                         <div class="subDetails flexR">
                                         
                                             <div class="detailContainer flexC">
-                                                <div class="gridSubDetails detailLabel">User Name</div>
-                                                <div class="gridSubDetails detailData name">Mr Pardeep Narwal</div>
+                                                <div class="gridSubDetails  detailLabel fontSmall">User Name</div>
+                                                <div class="gridSubDetails  detailData fontAverage  name">Mr Pardeep Narwal</div>
                                             </div>
 
                                             <div class="detailContainer flexC">
-                                                <div class="gridSubDetails detailLabel">Age</div>
-                                                <div class="gridSubDetails detailData age">29</div>
+                                                <div class="gridSubDetails  detailLabel fontSmall">Age</div>
+                                                <div class="gridSubDetails  detailData fontAverage  age">29</div>
                                             </div>
                                         
                                             <div class="detailContainer flexC">
-                                                <div class="gridSubDetails detailLabel">Gender</div>
-                                                <div class="gridSubDetails detailData gender">Male</div>
+                                                <div class="gridSubDetails  detailLabel fontSmall">Gender</div>
+                                                <div class="gridSubDetails  detailData fontAverage  gender">Male</div>
                                             </div>
                                             
                                         </div>
 
                                         <div class="detailContainer flexC">
-                                            <div class="gridSubDetails detailLabel">About me</div>
-                                            <div class="gridSubDetails detailData aboutText">I really think this could go viral we are a non-profit organization, and why is a 15mb gif on the startpage a bad idea?! thanks for taking the time to make the website, but i already made it in wix this red is too red can you please change the color theme.</div>
+                                            <div class="gridSubDetails  detailLabel fontSmall">About me</div>
+                                            <div class="gridSubDetails  detailData fontAverage  ">I really think this could go viral we are a non-profit organization, and why is a 15mb gif on the startpage a bad idea?! thanks for taking the time to make the website, but i already made it in wix this red is too red can you please change the color theme.</div>
                                         </div>
                             
                                     </div>
 
                                     <div class="aboutGridSub basic flexC">
                                         
-                                        <div class="gridSubTitle">Basic Details</div>
+                                        <div class="gridSubTitle bold  fontAverage">Basic Details</div>
                                         
                                         <div class="subDetails flexR">
                                         
                                             <div class="detailContainer flexC">
-                                                <div class="gridSubDetails detailLabel">Birthdate</div>
-                                                <div class="gridSubDetails detailData birthdate">12/03/1995</div>
+                                                <div class="gridSubDetails  detailLabel fontSmall">Birthdate</div>
+                                                <div class="gridSubDetails  detailData fontAverage  birthdate ">12/03/1995</div>
                                             </div>
 
                                             <div class="detailContainer flexC">
-                                                <div class="gridSubDetails detailLabel">Marital Status</div>
-                                                <div class="gridSubDetails detailData status">Never Married</div>
+                                                <div class="gridSubDetails  detailLabel fontSmall">Marital Status</div>
+                                                <div class="gridSubDetails  detailData fontAverage  status">Never Married</div>
                                             </div>
                                         
                                             <div class="detailContainer flexC">
-                                                <div class="gridSubDetails detailLabel">Disability</div>
-                                                <div class="gridSubDetails detailData disability">None</div>
+                                                <div class="gridSubDetails  detailLabel fontSmall">Disability</div>
+                                                <div class="gridSubDetails  detailData fontAverage  disability">None</div>
                                             </div>
                                             
                                         </div>
                                         <div class="subDetails flexR">
                                         
                                             <div class="detailContainer flexC">
-                                                <div class="gridSubDetails detailLabel">Currently Living in</div>
-                                                <div class="gridSubDetails detailData livingIn">Rajkot Gujarat India</div>
+                                                <div class="gridSubDetails  detailLabel fontSmall">Currently Living in</div>
+                                                <div class="gridSubDetails  detailData fontAverage  livingIn">Rajkot Gujarat India</div>
                                             </div>
 
                                             <div class="detailContainer flexC">
-                                                <div class="gridSubDetails detailLabel">Looking for Candidate in</div>
-                                                <div class="gridSubDetails detailData lookingIn">Rajkot Gujarat India</div>
+                                                <div class="gridSubDetails  detailLabel fontSmall">Looking for Candidate in</div>
+                                                <div class="gridSubDetails  detailData fontAverage  lookingIn">Rajkot Gujarat India</div>
                                             </div>
 
                                         </div>
                                     
                                         <div class="detailContainer flexC">
-                                            <div class="gridSubDetails detailLabel">Languages</div>
-                                            <div class="gridSubDetails detailData languages">English Hindi Gujarati Marathi</div>
+                                            <div class="gridSubDetails  detailLabel fontSmall">Languages</div>
+                                            <div class="gridSubDetails  detailData fontAverage  languages">English Hindi Gujarati Marathi</div>
                                         </div>
                             
                                     </div>
 
                                     <div class="aboutGridSub body flexC">
                                         
-                                        <div class="gridSubTitle">Body Composition</div>
+                                        <div class="gridSubTitle bold  fontAverage">Body Composition</div>
                                         
                                         <div class="subDetails flexR">
                                         
                                             <div class="detailContainer flexC">
-                                                <div class="gridSubDetails detailLabel">Birthdate</div>
-                                                <div class="gridSubDetails detailData height">5'7 </div>
+                                                <div class="gridSubDetails  detailLabel fontSmall">Birthdate</div>
+                                                <div class="gridSubDetails  detailData fontAverage  height">5'7 </div>
                                             </div>
 
                                             <div class="detailContainer flexC">
-                                                <div class="gridSubDetails detailLabel">Weight</div>
-                                                <div class="gridSubDetails detailData weight">55</div>
+                                                <div class="gridSubDetails  detailLabel fontSmall">Weight</div>
+                                                <div class="gridSubDetails  detailData fontAverage  weight">55</div>
                                             </div>
                                         
                                             <div class="detailContainer flexC">
-                                                <div class="gridSubDetails detailLabel">Blood Group</div>
-                                                <div class="gridSubDetails detailData bloodGroup">B+</div>
+                                                <div class="gridSubDetails  detailLabel fontSmall">Blood Group</div>
+                                                <div class="gridSubDetails  detailData fontAverage  bloodGroup">B+</div>
                                             </div>
 
                                             <div class="detailContainer flexC">
-                                                <div class="gridSubDetails detailLabel">Body Type</div>
-                                                <div class="gridSubDetails detailData bodyType">Average</div>
+                                                <div class="gridSubDetails  detailLabel fontSmall">Body Type</div>
+                                                <div class="gridSubDetails  detailData fontAverage  bodyType">Average</div>
                                             </div>
                                             
                                             
@@ -155,23 +163,23 @@
 
                                     <div class="aboutGridSub food flexC">
                                         
-                                        <div class="gridSubTitle">Food & Drink Habits</div>
+                                        <div class="gridSubTitle bold  fontAverage">Food & Drink Habits</div>
                                         
                                         <div class="subDetails flexR">
                                         
                                             <div class="detailContainer flexC">
-                                                <div class="gridSubDetails detailLabel">Drinks</div>
-                                                <div class="gridSubDetails detailData drinks">Sometimes</div>
+                                                <div class="gridSubDetails  detailLabel fontSmall">Drinks</div>
+                                                <div class="gridSubDetails  detailData fontAverage  drinks">Sometimes</div>
                                             </div>
 
                                             <div class="detailContainer flexC">
-                                                <div class="gridSubDetails detailLabel">Smokes</div>
-                                                <div class="gridSubDetails detailData smokes">No Smoking</div>
+                                                <div class="gridSubDetails  detailLabel fontSmall">Smokes</div>
+                                                <div class="gridSubDetails  detailData fontAverage  smokes">No Smoking</div>
                                             </div>
                                         
                                             <div class="detailContainer flexC">
-                                                <div class="gridSubDetails detailLabel">Diet Type</div>
-                                                <div class="gridSubDetails detailData dietType">Pure Veg</div>
+                                                <div class="gridSubDetails  detailLabel fontSmall">Diet Type</div>
+                                                <div class="gridSubDetails  detailData fontAverage  dietType">Pure Veg</div>
                                             </div>                                       
                                             
                                         </div>
@@ -180,18 +188,18 @@
                                     </div>
                                     <div class="aboutGridSub education flexC">
                                         
-                                        <div class="gridSubTitle">Education & Profession</div>
+                                        <div class="gridSubTitle bold  fontAverage">Education & Profession</div>
                                         
                                             <div class="flexR gap2">
                                                 <div class="subDetails flexC">
                                             
                                                     <div class="detailContainer flexC">
-                                                        <div class="gridSubDetails detailLabel">Education</div>
-                                                        <div class="gridSubDetails detailData education">MBBS</div>
+                                                        <div class="gridSubDetails  detailLabel fontSmall">Education</div>
+                                                        <div class="gridSubDetails  detailData fontAverage  education">MBBS</div>
                                                     </div>
                                                     <div class="detailContainer flexC">
-                                                        <div class="gridSubDetails detailLabel">Income Range</div>
-                                                        <div class="gridSubDetails detailData incomeRange">Above 15,00,000 </div>
+                                                        <div class="gridSubDetails  detailLabel fontSmall">Income Range</div>
+                                                        <div class="gridSubDetails  detailData fontAverage  incomeRange">Above 15,00,000 </div>
                                                     </div>
             
                                                 
@@ -199,13 +207,13 @@
                                                 <div class="subDetails flexC">
                                                 
                                                     <div class="detailContainer flexC">
-                                                        <div class="gridSubDetails detailLabel">Specialization</div>
-                                                        <div class="gridSubDetails detailData specialization">JobTitle</div>
+                                                        <div class="gridSubDetails  detailLabel fontSmall">Specialization</div>
+                                                        <div class="gridSubDetails  detailData fontAverage  specialization">JobTitle</div>
                                                     </div>
                                                 
                                                     <div class="detailContainer flexC">
-                                                        <div class="gridSubDetails detailLabel">OrganizationName</div>
-                                                        <div class="gridSubDetails detailData organizationName">OrganizationName</div>
+                                                        <div class="gridSubDetails  detailLabel fontSmall">OrganizationName</div>
+                                                        <div class="gridSubDetails  detailData fontAverage  organizationName">OrganizationName</div>
                                                     </div>
 
                                                 
@@ -214,12 +222,12 @@
                                                 </div>
                                                 <div class="subDetails flexC">
                                                     <div class="detailContainer flexC">
-                                                        <div class="gridSubDetails detailLabel">Job Title</div>
-                                                        <div class="gridSubDetails detailData jobTitle">Job Title</div>
+                                                        <div class="gridSubDetails  detailLabel fontSmall">Job Title</div>
+                                                        <div class="gridSubDetails  detailData fontAverage  jobTitle">Job Title</div>
                                                     </div>
                                                     <div class="detailContainer flexC">
-                                                        <div class="gridSubDetails detailLabel">Job Post Name</div>
-                                                        <div class="gridSubDetails detailData jobPost">Above 15,00,000 </div>
+                                                        <div class="gridSubDetails  detailLabel fontSmall">Job Post Name</div>
+                                                        <div class="gridSubDetails  detailData fontAverage  jobPost">Above 15,00,000 </div>
                                                     </div>
             
                                                 
@@ -229,23 +237,403 @@
                                                 
                                                 
                                                     <div class="detailContainer flexC">
-                                                        <div class="gridSubDetails detailLabel">Job in City of</div>
-                                                        <div class="gridSubDetails detailData jobCity">Rajkot Gujarat India</div>
+                                                        <div class="gridSubDetails  detailLabel fontSmall">Job in City of</div>
+                                                        <div class="gridSubDetails  detailData fontAverage  jobCity">Rajkot Gujarat India</div>
                                                     </div>
 
                                                     <div class="detailContainer flexC">
-                                                        <div class="gridSubDetails detailLabel">Special Awards or Achievements</div>
-                                                        <div class="gridSubDetails detailData awardsAchievements">Awards</div>
+                                                        <div class="gridSubDetails  detailLabel fontSmall">Special Awards or Achievements</div>
+                                                        <div class="gridSubDetails  detailData fontAverage  awardsAchievements">Awards</div>
                                                     </div>
                                                 
                                                 </div>
-                                            </div>
+                                        </div>
                                         
                                                                 
                                     </div>
 
                                 </div>
+                                
 
+                            </div>
+                            <div class="familyDetails flexC">
+                                <div class="familyFlex flexC">
+                                    <div class="aboutGridSub  flexR">
+                                        <div class="flexC start">
+                                            <div class="gridSubTitle bold  fontAverage fullWidth">Family Details</div>
+                                            
+                                            <div class="subDetails flexR">
+                                            
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">About My Family</div>
+                                                    <div class="gridSubDetails  detailData fontAverage  aboutFamily">I really think this could go viral we are a non-profit organization, and why is a 15mb gif on the startpage a bad idea?! thanks for taking the time to make the website, but i already made it in wix this red is too red can you please change the color theme of the website to pink and purple</div>
+                                                </div>
+        
+                                            </div>
+                                        </div>
+    
+                                        <div class="flexC familySub">
+                                            <div class="subDetails flexR">
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">Mother tongue</div>
+                                                    <div class="gridSubDetails  detailData fontAverage  motherTongue">Gujarati</div>
+                                                </div>
+                                            
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">Religion</div>
+                                                    <div class="gridSubDetails  detailData fontAverage  religion">Hindu</div>
+                                                </div>       
+                                                
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">Caste</div>
+                                                    <div class="gridSubDetails  detailData fontAverage  caste">Brahmin</div>
+                                                </div>           
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">Category</div>
+                                                    <div class="gridSubDetails  detailData fontAverage  category">Open</div>
+                                                </div>
+                                            
+                                            </div>
+        
+                                            <div class="subDetails flexR">
+                                               
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">Sub Caste</div>
+                                                    <div class="gridSubDetails  detailData fontAverage  subCaste">Hindu Brahmin</div>
+                                                </div>       
+                                                    
+                                                
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                    <div class="parentsDetailsSub aboutGridSub flexC">
+                                        
+                                            <div class="gridSubTitle  bold  fontAverage">Parents details</div>
+                                            
+                                                <div class="flexR gap2 parent">
+                                                    <div class="subDetails flexC">
+                                                
+                                                        <div class="detailContainer flexC">
+                                                            <div class="gridSubDetails  detailLabel fontSmall">Father’s Name</div>
+                                                            <div class="gridSubDetails  detailData fontAverage  fatherName">Amandeep Narwal</div>
+                                                        </div>
+                                                        <div class="detailContainer flexC">
+                                                            <div class="gridSubDetails  detailLabel fontSmall">Mother’s Name</div>
+                                                            <div class="gridSubDetails  detailData fontAverage  MotherName">Asha Narwal </div>
+                                                        </div>
+                
+                                                    
+                                                    </div>
+                                                    <div class="subDetails flexC">
+                                                    
+                                                        <div class="detailContainer flexC">
+                                                            <div class="gridSubDetails  detailLabel fontSmall">Father’s Occupation</div>
+                                                            <div class="gridSubDetails  detailData fontAverage  fatherOccupation">Family Business</div>
+                                                        </div>
+                                                    
+                                                        <div class="detailContainer flexC">
+                                                            <div class="gridSubDetails  detailLabel fontSmall">Mother’s Occupation</div>
+                                                            <div class="gridSubDetails  detailData fontAverage  motherOccupation">Family Business</div>
+                                                        </div>
+    
+                                                    
+                
+                                                    
+                                                    </div>
+                                                    <div class="subDetails flexC">
+                                                        <div class="detailContainer flexC">
+                                                            <div class="gridSubDetails  detailLabel fontSmall">Father’s Number</div>
+                                                            <div class="gridSubDetails  detailData fontAverage  fatherNumber">+91 9876543210</div>
+                                                        </div>
+                                                        <div class="detailContainer flexC">
+                                                            <div class="gridSubDetails  detailLabel fontSmall">Mother’s Number</div>
+                                                            <div class="gridSubDetails  detailData fontAverage  motherNumber">+91 9876543210</div>
+                                                        </div>
+                
+                                                    
+                                                    
+                                                    </div>
+                                                    <div class="subDetails flexC contactNumberContainer">
+                                                    
+                                                    
+                                                        <div class="detailContainer flexC">
+                                                            <div class="gridSubDetails  detailLabel fontSmall">Contact me on this number </div>
+                                                            <div class="gridSubDetails  detailData fontAverage  contactNumber">+91 9876543210</div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            
+                                                                    
+                                    </div>
+                               
+                                    <div class="siblingsDetailsSub aboutGridSub">
+                                            <div class="subDetails flexR siblingSub">
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">Total Brothers</div>
+                                                    <div class="gridSubDetails  detailData totalBrothers  motherTongue">01</div>
+                                                </div>
+                                            
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">Total Sisters</div>
+                                                    <div class="gridSubDetails  detailData totalSisters  religion">00</div>
+                                                </div>       
+                                                
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">Married Brothers</div>
+                                                    <div class="gridSubDetails  detailData marriedBrothers">01</div>
+                                                </div>           
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">Married Sisters</div>
+                                                    <div class="gridSubDetails  detailData marriedSisters  category">00</div>
+                                                </div>
+                                            
+                                            </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="partnerPreferences">
+                                <div class="aboutsection aboutGrid grid">
+                                    
+                                    <div class="aboutGridSub aboutme flexC">
+                                            
+                                        <div class="gridSubTitle bold  fontAverage">Partner Preferences</div>
+
+                                                <div class="flexR gap2">
+                                                    <div class="subDetails flexC">
+                                                
+                                                        <div class="detailContainer flexC">
+                                                            <div class="gridSubDetails  detailLabel fontSmall">Age Range</div>
+                                                            <div class="gridSubDetails  detailData fontAverage  ageRange">24-26</div>
+                                                        </div>
+                                                        <div class="detailContainer flexC">
+                                                            <div class="gridSubDetails  detailLabel fontSmall">Location</div>
+                                                            <div class="gridSubDetails  detailData fontAverage  location">Rajkot Gujarat India</div>
+                                                        </div>
+                
+                                                    
+                                                    </div>
+                                                    <div class="subDetails flexC">
+                                                    
+                                                        <div class="detailContainer flexC">
+                                                            <div class="gridSubDetails  detailLabel fontSmall">Height Range</div>
+                                                            <div class="gridSubDetails  detailData fontAverage  heightRange">5'1-5'8</div>
+                                                        </div>
+                                                    
+                                                        <div class="detailContainer flexC">
+                                                            <div class="gridSubDetails  detailLabel fontSmall">Diet</div>
+                                                            <div class="gridSubDetails  detailData fontAverage  diet">Veg</div>
+                                                        </div>
+    
+                                                    
+                
+                                                    
+                                                    </div>
+                                                    <div class="subDetails flexC">
+                                                        <div class="detailContainer flexC">
+                                                            <div class="gridSubDetails  detailLabel fontSmall">Marital Status</div>
+                                                            <div class="gridSubDetails  detailData fontAverage  maritalStatus">Never Married</div>
+                                                        </div>
+                                                        <div class="detailContainer flexC">
+                                                            <div class="gridSubDetails  detailLabel fontSmall">Religion</div>
+                                                            <div class="gridSubDetails  detailData fontAverage  religion">Hindu </div>
+                                                        </div>
+                
+                                                    
+                                                    
+                                                    </div>
+                                                    <div class="subDetails flexC">
+                                                    
+                                                    
+                                                        <div class="detailContainer flexC">
+                                                            <div class="gridSubDetails  detailLabel fontSmall">Kids</div>
+                                                            <div class="gridSubDetails  detailData fontAverage  kids">Rajkot Gujarat India</div>
+                                                        </div>
+    
+                                                        <div class="detailContainer flexC">
+                                                            <div class="gridSubDetails  detailLabel fontSmall">Occupation</div>
+                                                            <div class="gridSubDetails  detailData fontAverage  occupation">Job</div>
+                                                        </div>
+                                                    
+                                                    </div>
+
+                                                    <div class="subDetails flexC">
+                                                    
+                                                    
+                                                        <div class="detailContainer flexC">
+                                                            <div class="gridSubDetails  detailLabel fontSmall">Education</div>
+                                                            <div class="gridSubDetails  detailData fontAverage  education">MBBS</div>
+                                                        </div>
+    
+                                                        <div class="detailContainer flexC">
+                                                            <div class="gridSubDetails  detailLabel fontSmall">Mother Tongue</div>
+                                                            <div class="gridSubDetails  detailData fontAverage  motherTongue">Gujarat</div>
+                                                        </div>
+                                                    
+                                                    </div>
+                                                </div>
+                                                <div class="subDetails flexC fullWidth">
+                                                    
+                                                    
+                                                    <div class="detailContainer flexC fullWidth">
+                                                        <div class="gridSubDetails  detailLabel fontSmall">Expectations from partner</div>
+                                                        <div class="gridSubDetails  detailData fontAverage  fullWidth">I really think this could go viral we are a non-profit organization, and why is a 15mb gif on the startpage a bad idea?! thanks for taking the time to make the website, but i already made it in wix this red is too red can you please change the color theme of the website to pink and purple</div>
+                                                    </div>
+                                                
+                                                </div>
+                                            
+                                        
+                                      
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="otherDetails flexC start">
+                               
+                                    <div class="aboutGridSub aboutme flexC">
+                                        <div class="gridSubTitle bold  fontAverage flexC">Other</div>
+                                            
+                                        <div class="flexR gap2">
+                                            
+                                            <div class="subDetails flexC">
+                                        
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">Believe in Horoscope match</div>
+                                                    <div class="gridSubDetails  detailData fontAverage  horoscopeBelief">Yes</div>
+                                                </div>
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">Birth time</div>
+                                                    <div class="gridSubDetails  detailData fontAverage  birthTime">11:25 am</div>
+                                                </div>
+        
+                                            
+                                            </div>
+                                            <div class="subDetails flexC">
+                                            
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">Rashi</div>
+                                                    <div class="gridSubDetails  detailData fontAverage  rashi">Kanya</div>
+                                                </div>
+                                            
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">Birth place</div>
+                                                    <div class="gridSubDetails  detailData fontAverage  birthPlace">Rajkot gujarat India</div>
+                                                </div>
+
+                                            
+        
+                                            
+                                            </div>
+                                            <div class="subDetails flexC">
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">Are you Manglik</div>
+                                                    <div class="gridSubDetails  detailData fontAverage  manglik">No</div>
+                                                </div>
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">Native Place</div>
+                                                    <div class="gridSubDetails  detailData fontAverage  nativePlace">- </div>
+                                                </div>
+        
+                                            
+                                            
+                                            </div>
+                                            <div class="subDetails flexC">
+                                            
+                                            
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">Do you have Shani Dosh</div>
+                                                    <div class="gridSubDetails  detailData fontAverage  shani">No</div>
+                                                </div>
+
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">Looking to go abroad</div>
+                                                    <div class="gridSubDetails  detailData fontAverage  abroad">Maybe</div>
+                                                </div>
+                                            
+                                            </div>
+                                    </div>
+                                </div>  
+                                <div class="aboutGridSub aboutme flexC">
+                                    <div class="gridSubTitle bold  fontAverage flexC">Interests</div>
+                                        
+                                    <div class="flexR gap2">
+                                        
+                                        <div class="detailContainer flexC">
+                                            <div class="gridSubDetails  detailLabel fontSmall">Hobbies</div>
+                                            <div class="gridSubDetails  detailData fontAverage  hobbies">Cricket, Truck driving</div>
+                                        </div>
+                                        <div class="detailContainer flexC">
+                                            <div class="gridSubDetails  detailLabel fontSmall">Movies</div>
+                                            <div class="gridSubDetails  detailData fontAverage  movies">Comedy , Drama</div>
+                                        </div>
+                                        <div class="detailContainer flexC">
+                                            <div class="gridSubDetails  detailLabel fontSmall">Songs</div>
+                                            <div class="gridSubDetails  detailData fontAverage  songs">Old , Mashup</div>
+                                        </div>
+                                        <div class="detailContainer flexC">
+                                            <div class="gridSubDetails  detailLabel fontSmall">Other Interests</div>
+                                            <div class="gridSubDetails  detailData fontAverage  OtherInterests">-</div>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="aboutGridSub aboutme flexC">
+                                <div class="gridSubTitle bold  fontAverage flexC">Favorite Places</div>
+                                    
+                                <div class="flexR gap2">
+                                    
+                                    <div class="detailContainer flexC">
+                                        <div class="gridSubDetails  detailLabel fontSmall">Favorite Holiday places</div>
+                                        <div class="gridSubDetails  detailData fontAverage  favoriteHoliday">Kedarnath , Rishikesh, Goa, Gujarat, Keral.</div>
+                                    </div>
+                            </div>
+                        </div>  
+                            </div>
+                            <div class="contactDetails flexR start">
+                                <div class="aboutGridSub aboutme flexC">
+                                    <div class="gridSubTitle bold  fontAverage flexC">Contact</div>
+                                        
+                                    <div class="flexR gap2">
+                                        
+                                        <div class="subDetails flexC">
+                                    
+                                            <div class="detailContainer flexC">
+                                                <div class="gridSubDetails  detailLabel fontSmall">Phone Number</div>
+                                                <div class="gridSubDetails  detailData fontAverage  contactNumber">+91 9876543210</div>
+                                            </div>
+
+                                            <div class="detailContainer flexC">
+                                                <div class="gridSubDetails  detailLabel fontSmall">Pin Code</div>
+                                                <div class="gridSubDetails  detailData fontAverage  pinCode">380013</div>
+                                            </div>
+                                            
+                                            <div class="detailContainer flexC">
+                                                <div class="gridSubDetails  detailLabel fontSmall">Address</div>
+                                                <div class="gridSubDetails  detailData fontAverage  pinCode">I really think this could go viral we are a non-profit organization, and why is a 15mb gif on the startpage a bad idea</div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    
+                                </div>
+                                <div class="aboutGridSub aboutme flexC">
+                                    <div class="subDetails flexC">
+                                        <div class="gridSubTitle bold  fontAverage flexC">For Office Use Only</div>
+    
+                                        <div class="detailContainer flexC">
+                                            <div class="gridSubDetails  detailLabel fontSmall">Whatsapp Number</div>
+                                            <div class="gridSubDetails  detailData fontAverage  whatsappNumber">+91 9876543210</div>
+                                        </div>
+    
+                                        <div class="detailContainer flexC">
+                                            <div class="gridSubDetails  detailLabel fontSmall">Email to get updates on</div>
+                                            <div class="gridSubDetails  detailData fontAverage  email">user@email.com</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
