@@ -76,6 +76,9 @@ a {
     align-items: center;
     justify-content: center;   
 }
+.grid{
+    display: grid;
+}
 .fontLargest {
     font-size: 4vw;
 
@@ -94,6 +97,15 @@ a {
 }
 .white{
     color: white;
+}
+.red{
+    color: var(--primary);
+}
+.bold{
+    font-weight: bold;
+}
+.gap2{
+    gap: 2vw;
 }
 .centerAlign{
    
@@ -662,17 +674,15 @@ textarea {
     background: #ffffff;
     opacity: 1;
 }
-.disableTab{
+.closeIcon,.disableTab{
     cursor: pointer;
 }
-.profileSub{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.activitySub,.profileSub{
+    margin-top: 1vw;
     gap: 1vw;
     width: 100%;
     padding-bottom: 2% ;
+    transition: ease-in 100ms;
     /* border: 1px solid; */
 }
 .profilePhotoContainer{
@@ -687,13 +697,113 @@ textarea {
     border-radius: var(--radius);
 }
 .profileDetails{
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
     gap: 1vw;
 }
+.editButton{
+    padding: 1% 2%;
+}
 .activitySub{
     display: none;
+}
+.space-between{
+    justify-content: space-between;
+    width: 100%;
+}
+.notfication{
+    padding: 0.5vw;
+    width: 90%;
+}
+.notificationImage{
+    height: 3vw;
+    width: 3vw;
+    border-radius: 100%;
+}
+.notificationSub{
+    gap: 1vw;
+}
+.notificationText{
+    align-items: flex-start;
+}
+.viewProfile{
+
+    background: white;
+    width: 85vw;
+    margin: 8% 7%;
+    border-radius: var(--radius);
+    /* padding: 1%; */
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.viewProfileImage{
+    height: 38vw;
+    width: 28vw;
+    object-fit: cover;
+}
+.profileLargeImage{
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.profileDetailsNav{
+    gap: 1vw;
+    background: #f7f7f7;
+    padding: 1% 2%; 
+    border-radius: var(--radius);
+    justify-content: space-between;
+    margin: 1% 2% ;
+    width: 93%;
+}
+.profileNavItem{
+    width: 10vw;
+}
+#activeProfileNav{
+    background: white;
+    padding: 2%;
+    border-radius: var(--radius);
+    font-weight: bold;
+}
+.profileDetailsSub{
+    padding: 2%;
+    align-items: flex-start;
+}
+.aboutGrid{
+    
+    justify-items: start;
+    width: 100%;
+    grid-template-areas:
+    " item1 item2  "
+    " item3 item4  "
+    " item5 item5  "
+    ;
+    gap: 1vw;
+    
+}
+.aboutme{grid-area: item1;}
+.basic{grid-area: item2;}
+.body{grid-area: item3;}
+.food{ grid-area: item4; }
+.education { grid-area: item5; }
+
+.aboutGridSub {
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1vw;
+    background: white;
+    border:0.1vw solid rgba(0,0,0,0.1);
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    padding: 2%;
+    width: 98%;
+}
+
+.gridSubDetails{
+    max-width: 25vw;
+    text-align: justify;
+}
+.subDetails {
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 25vw;
 }
 /*General CSS Ends*/
 
