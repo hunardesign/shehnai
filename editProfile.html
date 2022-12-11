@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" type="image/png" sizes="32*32" href="assets/favicon-32x32.png">
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="title" content="Shehnai Matrimonials - Home | High Profile Candidate">
+        <meta name="description" content="Shehnai initially was a small-scale home-based social activity service, to help the prospective candidates of friends and family find a suitable match.">
+        <meta name="Keywords" content="Shehnai Matrimonials,Shehnai,Matrimonials,matrimonial,matrimony,matrimonials,indian matrimonials,marriage,marriage sites,matchmaking,shaadi,shehnai,couple goals,boys,Doctors,High Profile,Doctors Marraige,high profile candidate,engineers,architrct matrimony,doctors matrimony,marraige bureau,Shehnai Matrimonials india,Shehnai Matrimonials gujarat ahmedabad,Shehnai Matrimonials in ahmedabad,indian bride,NRI matrimonials,nri,nri marraige bureau,highly qualified, highly qulified candidate ">
+        <meta name="robots" content="index, follow">
+        <meta name="language" content="English">
+        
+        <title>Shehnai Matrimonials - Home | Shehnai Matrimonials | High Profile Candidate | 20+ years of Exclusive Experience In Matchmaking For Highly Qualified Candidates !</title>
+
+    </head>
+
+    <body>
+
+
+            
+        <div class="navbar"></div>
+
+            <div class="viewProfile flexR gap2">
+               
+                <div class="profileLargeImage flexR">
+                    <img src="assets/special2.webp" class="specialImage viewProfileImage"> 
+                            <div class="actions flexR">
+                                <div class="actionContainer flexC fontSmall"><img src="assets/like.svg" class="likeIcon actionIcon">Like</div>
+                                <div class="actionContainer flexC fontSmall"><img src="assets/save.svg" class="saveIcon actionIcon">Save</div>
+                    </div>
+                </div>
+                <div class="flexC start">
+                    <div class="profileAboutDetails leftBorder">
+                        <div class="profileDetailsNav flexR">
+                            <div class="profileNavItem flexR fontSmall viewAbout" id="activeProfileNav" onclick="viewAbout()">About</div>
+                            <div class="profileNavItem flexR fontSmall viewFamilyDetails" onclick="viewFamilyDetails()">Family Details</div>
+                            <div class="profileNavItem flexR fontSmall viewPartnerPreferences" onclick="viewPartnerPreferences()">Partner Preferences</div>
+                            <div class="profileNavItem flexR fontSmall viewOtherDetails" onclick="viewOtherDetails()">Other Details</div>
+                            <div class="profileNavItem flexR fontSmall viewContactDetails" onclick="viewContactDetails()">Contact Details</div>
+                        </div>
+                        <form class="editProfile">
+                            <div class="profileDetailsSub flexC">
+                                <div class="profileIDShare flexR space-between">
+                                    <div class="profileID flexR">
+                                        <div class="detailLabel">Profile ID</div>
+                                        <div class="uidStyle uid">UIDF10215N0125</div>
+
+                                    </div>
+                                    <input type="submit" value="Save Profile" class="editButton flexR" onclick="save()">
+                                </div>
+
+                                <div class="aboutsection aboutGrid grid">
+                                        
+                                    <div class="aboutGridSub aboutme flexC">
+                                            
+                                        <div class="gridSubTitle bold  fontAverage">About Me</div>
+                                            
+                                            <div class="subDetails flexR">
+                                            
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">User Name</div>
+                                                    <input type="text" id="userName" name="userName" placeholder="enter user name" value="Mr Pardeep Narwal" required>
+                                                    <!-- <div class="gridSubDetails  detailData fontAverage  name">Mr Pardeep Narwal</div> -->
+                                                </div>
+
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">Age</div>
+                                                    <input type="number" id="shortInput" name="age" placeholder="Age" value="29" required>
+                                                    
+                                                    <!-- <div class="gridSubDetails  detailData fontAverage  age">29</div> -->
+                                                </div>
+                                            
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">Gender</div>
+                                                    <div class="genderRadio">
+                                                        <div class="male">
+                                                            <input type="radio" id="male" name="selectGender" value="male"  checked="checked">
+                                                            <label for="male">Male</label><br>
+                                                        </div>
+                                                        
+                                                        <div class="female">
+                                                            <input type="radio" id="female" name="selectGender" value="female"  >
+                                                            <label for="female">Female</label><br>
+                                                        </div>
+                                                        
+                                                    </div>                                                
+                                                </div>
+                                                
+                                            </div>
+
+                                            <div class="detailContainer flexC">
+                                                <div class="gridSubDetails  detailLabel fontSmall">About me</div>
+                                                <textarea class="aboutMeArea">I really think this could go viral we are a non-profit organization, and why is a 15mb gif on the startpage a bad idea?! thanks for taking the time to make the website, but i already made it in wix this red is too red can you please change the color theme.
+                                                </textarea>
+                                                <!-- <div class="gridSubDetails  detailData fontAverage  "></div> -->
+                                            </div>
+                                
+                                        </div>
+
+                                        <div class="aboutGridSub basic flexC">
+                                            
+                                            <div class="gridSubTitle bold  fontAverage">Basic Details</div>
+                                            
+                                            <div class="subDetails flexR">
+                                            
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">Birthdate</div>
+                                                    <input type="date" id="birthdate" name="birthdate" placeholder="birthdate" class="mediumWidth" value="1995-03-12" required>
+                                                </div>
+
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">Marital Status</div>
+                                                    <select name="maritalStatus" id="maritalStatus" class="maritalStatus longWidth dropDown">
+                                                        <option value="Never Married" selected>Never Married</option>
+                                                        <option value="Divorced">Divorced</option>
+                                                        <option value="Widowed">Widowed</option>
+                                                        <option value="Engagment Broken">Engagment Broken</option>
+                                                        <option value="Awaiting Divorce">Awaiting Divorce</option>
+                                                        
+                                                    </select>                                                    
+                                                </div>
+                                            
+                                                
+                                                
+                                            </div>
+                                            <div class="detailContainer flexC">
+                                                <div class="gridSubDetails  detailLabel fontSmall">Disability</div>
+                                                <div class="disabilityRadio">
+                                                    <div class="male">
+                                                        <input type="radio" id="male" name="disability" value="yes">
+                                                        <label for="yes">Yes</label><br>
+                                                    </div>
+                                                    
+                                                    <div class="female">
+                                                        <input type="radio" id="female" name="disability" value="no" >
+                                                        <label for="no">No</label><br>
+                                                    </div>
+                                                    
+                                                </div> 
+                                            </div>
+                                            <div class="subDetails flexR">
+                                            
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">Currently Living in</div>
+                                                    <input type="text" id="livingIn" name="livingIn" placeholder="Currently Living in" value="Rajkot Gujarat India" required>
+                                                    
+                                                </div>
+
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">Looking for Candidate in</div>
+                                                    <input type="text" id="lookingIn" name="lookingIn" placeholder="Looking for Candidate in" value="Rajkot Gujarat India" required>
+                                                </div>
+
+                                            </div>
+                                        
+                                            <div class="detailContainer flexC fullWidth">
+                                                <div class="gridSubDetails  detailLabel fontSmall">Languages</div>
+                                                <input type="text" id="languages" name="languages" placeholder="Languages you speak" class="fullWidth" value="English Hindi Gujarati Marathi" required >
+                                            </div>
+                                
+                                        </div>
+
+                                        <div class="aboutGridSub body flexC">
+                                            
+                                            <div class="gridSubTitle bold  fontAverage">Body Composition</div>
+                                            
+                                            <div class="subDetails flexR">
+                                            
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">Height</div>
+                                                    <div class="heightDropdown flexR">
+                                                        
+                                                
+                                                            <select name="foot" id="foot" class="foot shortWidth dropDown">
+                                                                <option value="3ft">3 ft</option>
+                                                                <option value="4ft">4 ft</option>
+                                                                <option value="5ft" selected>5 ft</option>
+                                                                <option value="6ft">6 ft</option>
+                                                                <option value="7ft">7 ft</option>
+                                                                
+                                                            </select>
+                                                
+                                                        
+                                                
+                                                        
+                                                
+                                                            <select name="inches" id="inches" class="inches shortWidth dropDown">
+                                                                <option value="0in">0 in</option>
+                                                                <option value="1in">1 in</option>
+                                                                <option value="2in">2 in</option>
+                                                                <option value="3in">3 in</option>
+                                                                <option value="4in">4 in</option>
+                                                                <option value="5in">5 in</option>
+                                                                <option value="6in">6 in</option>
+                                                                <option value="7in" selected>7 in</option>
+                                                                <option value="8in">8 in</option>
+                                                                <option value="9in">9 in</option>
+                                                                <option value="10in">10 in</option>
+                                                                <option value="11in">11 in</option>
+                                                            </select>
+                                                
+                                                        
+                                                    </div>
+                                                    
+                                                </div>
+
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">Weight</div>
+                                                    <input type="number" id="shortInput" name="weight" placeholder="weight" value="55" required>
+                                                </div>
+                                            
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">Blood Group</div>
+                                                    <select name="bloodgroup" id="bloodgroup" class="bloodgroup shortWidth dropDown">
+                                                        <option value="A+">A+</option>
+                                                        <option value="A-">A-</option>
+                                                        <option value="B+">B+</option>
+                                                        <option value="B-">B-</option>
+                                                        <option value="O+" selected>O+</option>
+                                                        <option value="O-">O-</option>
+                                                        <option value="Ab+">Ab+</option>
+                                                        <option value="Ab-">Ab-</option>
+                                                        <option value="unknown">-</option>
+                                                        
+                                                    </select>                                                </div>
+
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">Body Type</div>
+                                                    <select name="bodyType" id="bodyType" class="bodyType mediumWidth dropDown">
+                                                        <option value="slim">Slim</option>
+                                                        <option value="average">Average</option>
+                                                        <option value="athletic">Athletic</option>
+                                                        <option value="heavy">Heavy</option>
+                                                        <option value="veryHeavy" selected>Very Heavy</option>
+                                                        <option value="unknown">-</option>
+                                                        
+                                                    </select>                                                     </div>
+                                                
+                                                
+                                            </div>
+                                            
+                                
+                                        </div>
+
+                                        <div class="aboutGridSub food flexC">
+                                            
+                                            <div class="gridSubTitle bold  fontAverage">Food & Drink Habits</div>
+                                            
+                                            <div class="subDetails flexR">
+                                            
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">Drinks</div>
+                                                    <select name="drinks" id="drinks" class="drinks mediumWidth dropDown">
+                                                        <option value="Never" selected>Never</option>
+                                                        <option value="Sometimes">Sometimes</option>
+                                                        <option value="Regularly">Regularly</option>
+                                                        
+                                                    </select>                                                     
+                                                </div>
+
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">Smokes</div>
+                                                    <select name="smokes" id="smokes" class="smokes mediumWidth dropDown">
+                                                        <option value="Never" selected>Never</option>
+                                                        <option value="Sometimes">Sometimes</option>
+                                                        <option value="Regularly">Regularly</option>
+                                                        
+                                                    </select>                                                 </div>
+                                            
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">Diet Type</div>
+                                                    <select name="diet" id="diet" class="diet mediumWidth dropDown">
+                                                        <option value="jain" selected>Jain</option>
+                                                        <option value="Vegetarian" selected>Vegetarian</option>
+                                                        <option value="Eggs">Sometimes Non Veg</option>
+                                                        <option value="Non Veg">Non Veg</option>
+                                                        
+                                                    </select>                                                 
+                                                 </div>                                       
+                                                
+                                            </div>
+                                            
+                                
+                                        </div>
+                                        <div class="aboutGridSub education flexC">
+                                            
+                                            <div class="gridSubTitle bold  fontAverage">Education & Profession</div>
+                                            
+                                                <div class="flexR gap2">
+                                                    <div class="subDetails flexC">
+                                                
+                                                        <div class="detailContainer flexC">
+                                                            <div class="gridSubDetails  detailLabel fontSmall">Education</div>
+                                                            <input type="text" id="education" name="education" placeholder="Education" class="fullWidth" value="MBBS" required >
+                                                        </div>
+                                                        <div class="detailContainer flexC">
+                                                            <div class="gridSubDetails  detailLabel fontSmall">Annual Income</div>
+                                                            <select name="incomeRange" id="incomeRange" class="incomeRange fullWidth dropDown">
+                                                                <option value="noIncome" selected>No Income</option>
+                                                                <option value="2-5" selected>2 lakhs-5 lakhs</option>
+                                                                <option value="5-10" selected>5 lakhs-10 lakhs</option>
+                                                                <option value="10-15" selected>10 lakhs-15 lakhs</option>
+                                                                <option value="15" selected>More than 15 lakhs</option>
+                                                                <option value="noDisclose" selected>Don't want to disclose</option>
+                                                                
+                                                                
+                                                            </select>                                                             
+                                                        </div>
+                
+                                                    
+                                                    </div>
+                                                    <div class="subDetails flexC">
+                                                    
+                                                        <div class="detailContainer flexC">
+                                                            <div class="gridSubDetails  detailLabel fontSmall">Specialization</div>
+                                                            <input type="text" id="Specialization" name="Specialization" placeholder="Specialization" class="fullWidth" value="Specialization" required >                                                        </div>
+                                                    
+                                                        <div class="detailContainer flexC">
+                                                            <div class="gridSubDetails  detailLabel fontSmall">OrganizationName</div>
+                                                             <input type="text" id="OrganizationName" name="OrganizationName" placeholder="OrganizationName" class="fullWidth" value="OrganizationName" required >                                                        
+                                                            
+                                                        </div>
+
+                                                    
+                
+                                                    
+                                                    </div>
+                                                    <div class="subDetails flexC">
+                                                        <div class="detailContainer flexC">
+                                                            <div class="gridSubDetails  detailLabel fontSmall">Job Title</div>
+                                                            <input type="text" id="JobTitle" name="JobTitle" placeholder="JobTitle" class="fullWidth" value="JobTitle" required >                                                        
+                                                        </div>
+                                                        <div class="detailContainer flexC">
+                                                            <div class="gridSubDetails  detailLabel fontSmall">Job Post Name</div>
+                                                            <input type="text" id="jobPost" name="jobPost" placeholder="jobPost" class="fullWidth" value="jobPost" required >                                                        
+                                                        </div>
+                
+                                                    
+                                                    
+                                                    </div>
+                                                    <div class="subDetails flexC">
+                                                    
+                                                    
+                                                        <div class="detailContainer flexC">
+                                                            <div class="gridSubDetails  detailLabel fontSmall">Job in City of</div>
+                                                            <input type="text" id="jobCity" name="jobCity" placeholder="Job in City of" value="Rajkot Gujarat India" required>
+                                                        </div>
+
+                                                        <div class="detailContainer flexC">
+                                                            <div class="gridSubDetails  detailLabel fontSmall">Special Awards or Achievements</div>
+                                                            <input type="text" id="awardsAchievements" name="awardsAchievements" placeholder="awardsAchievements" class="fullWidth" value="Awards" required >                                                        
+
+                                                        </div>
+                                                    
+                                                    </div>
+                                            </div>
+                                            
+                                                                    
+                                        </div>
+
+                                    </div>
+                                    
+
+                                </div>
+                                <div class="familyDetails flexC">
+                                    <div class="familyFlex flexC">
+                                        <div class="aboutGridSub  flexR">
+                                            <div class="flexC start">
+                                                <div class="gridSubTitle bold  fontAverage fullWidth">Family Details</div>
+                                                
+                                                <div class="subDetails flexR">
+                                                
+                                                    <div class="detailContainer flexC">
+                                                        <div class="gridSubDetails  detailLabel fontSmall">About My Family</div>
+                                                        <textarea class="aboutFamily">I really think this could go viral we are a non-profit organization, and why is a 15mb gif on the startpage a bad idea?! thanks for taking the time to make the website, but i already made it in wix this red is too red can you please change the color theme of the website to pink and purple
+                                                        </textarea>
+                                                        
+                                                    </div>
+            
+                                                </div>
+                                            </div>
+        
+                                            <div class="flexC familySub">
+                                                <div class="subDetails flexR">
+                                                    <div class="detailContainer flexC">
+                                                        <div class="gridSubDetails  detailLabel fontSmall">Mother tongue</div>
+                                                        <select name="motherTongue" id="motherTongue" class="motherTongue mediumWidth dropDown">
+                                                            <option value="Gujarati" selected>Gujarati</option>
+                                                            <option value="Hindi">Hindi</option>
+                                                            <option value="Sindhi">Sindhi</option>
+                                                            <option value="Parsi">Parsi</option>
+                                                            <option value="Tamil">Tamil</option>
+                                                            <option value="Bengali">Bengali</option>
+                                                            <option value="Kannada">Kannada</option>
+                                                            <option value="Telugu">Telugu</option>
+                                                            <option value="Urdu">Urdu</option>
+                                                            <option value="English">English</option>
+                                                            <option value="Other">Other</option>
+                                                        </select>                                                        
+                                                    </div>
+                                                
+                                                    <div class="detailContainer flexC">
+                                                        <div class="gridSubDetails  detailLabel fontSmall">Religion</div>
+                                                        <select name="religion" id="religion" class="religion mediumWidth dropDown">
+                                                            <option value="Hindu" selected>Hindu</option>
+                                                            <option value="Jain">Jain</option>
+                                                            <option value="Sindhi">Sindhi</option>
+                                                            <option value="Parsi">Parsi</option>
+                                                            <option value="Sindhi">Sindhi</option>
+                                                            <option value="Sikh">Sikh</option>
+                                                            <option value="Sikh">Muslim</option>
+                                                            <option value="Other">Other</option>
+                                                            
+                                                        </select>                                                       
+                                                     </div>       
+                                                    
+                                                    <div class="detailContainer flexC">
+                                                        <div class="gridSubDetails  detailLabel fontSmall">Caste</div>
+                                                        <select name="caste" id="caste" class="caste mediumWidth dropDown">
+                                                            <option value="Brahmin" selected>Brahmin</option>
+                                                            <option value="Patel">Patel</option>
+                                                            <option value="Vanya">Vanya</option>
+                                                            <option value="Vaishnav">Vaishnav</option>
+                                                            <option value="Other">Other</option>
+                                                            
+                                                            
+                                                        </select>                                                     
+                                                    </div>           
+                                                   
+                                                
+                                                </div>
+                                                
+            
+                                                <div class="subDetails flexR">
+                                                    <div class="detailContainer flexC">
+                                                        <div class="gridSubDetails  detailLabel fontSmall">Category</div>
+                                                        <select name="Category" id="Category" class="Category mediumWidth dropDown">
+                                                            <option value="General" selected>General</option>
+                                                            <option value="OBC">OBC</option>
+                                                            <option value="SC">SC</option>
+                                                            <option value="ST">ST</option>
+                                                            <option value="Other">Other</option>
+                                                            
+                                                            
+                                                        </select>                                                         </div>
+                                                    <div class="detailContainer flexC">
+                                                        <div class="gridSubDetails  detailLabel fontSmall">Sub Caste</div>
+                                                        <input type="text" id="subCaste" name="subCaste" placeholder="subCaste" class="longWidth" value="Hindu Brahmin" required >                                                        
+                                                    </div>       
+                                                        
+                                                    
+                                                </div>
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                        <div class="parentsDetailsSub aboutGridSub flexC">
+                                            
+                                                <div class="gridSubTitle  bold  fontAverage">Parents details</div>
+                                                
+                                                    <div class="flexR gap2 parent">
+                                                        <div class="subDetails flexC">
+                                                    
+                                                            <div class="detailContainer flexC">
+                                                                <div class="gridSubDetails  detailLabel fontSmall">Father’s Name</div>
+                                                                <input type="text" id="fatherName" name="fatherName" placeholder="fatherName" class="fullWidth" value="Amandeep Narwal" required >                                                        
+                                                            </div>
+                                                            <div class="detailContainer flexC">
+                                                                <div class="gridSubDetails  detailLabel fontSmall">Mother’s Name</div>
+                                                                <input type="text" id="motherName" name="motherName" placeholder="motherName" class="fullWidth" value="Asha Narwal" required >                                                        
+
+                                                                
+                                                            </div>
+                    
+                                                        
+                                                        </div>
+                                                        <div class="subDetails flexC">
+                                                        
+                                                            <div class="detailContainer flexC">
+                                                                <div class="gridSubDetails  detailLabel fontSmall">Father’s Occupation</div>
+                                                                <input type="text" id="fatherName" name="fatherName" placeholder="fatherName" class="fullWidth" value="Family Business" required >                                                        
+                                                                
+                                                            </div>
+                                                        
+                                                            <div class="detailContainer flexC">
+                                                                <div class="gridSubDetails  detailLabel fontSmall">Mother’s Occupation</div>
+                                                                <input type="text" id="motherOccupation" name="motherOccupation" placeholder="motherOccupation" class="fullWidth" value="Family Business" required >                                                        
+                                                                
+                                                            </div>
+        
+                                                        
+                    
+                                                        
+                                                        </div>
+                                                        <div class="subDetails flexC">
+                                                            <div class="detailContainer flexC">
+                                                                <div class="gridSubDetails  detailLabel fontSmall">Father’s Number</div>
+                                                                                                                                
+                                                                <input type="number" id="fatherNumber" name="fatherNumber" placeholder="fatherNumber" class="fullWidth" value="+91 9876543210" required >                                                        
+
+                                                            </div>
+                                                            <div class="detailContainer flexC">
+                                                                <div class="gridSubDetails  detailLabel fontSmall">Mother’s Number</div>
+
+                                                                <input type="number" id="motherNumber" name="motherNumber" placeholder="motherNumber" class="fullWidth" value="+91 9876543210" required >                                                        
+                                                            </div>
+                    
+                                                        
+                                                        
+                                                        </div>
+                                                        <div class="subDetails flexC contactNumberContainer">
+                                                        
+                                                        
+                                                            <div class="detailContainer flexC">
+                                                                <div class="gridSubDetails  detailLabel fontSmall">Contact me on this number </div>
+                                                                <input type="number" id="contactNumber" name="contactNumber" placeholder="contactNumber" class="fullWidth" value="+91 9876543210" required >                                                        
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                
+                                                                        
+                                        </div>
+                                
+                                        <div class="siblingsDetailsSub aboutGridSub">
+                                                <div class="subDetails flexR siblingSub">
+                                                    <div class="detailContainer flexC">
+                                                        <div class="gridSubDetails  detailLabel fontSmall">Total Brothers</div>
+                                                        <input type="text" id="totalBrothers" name="totalBrothers" class="mediumWidth" placeholder="totalBrothers" value="01" required>
+
+                                                        
+                                                    </div>
+                                                
+                                                    <div class="detailContainer flexC">
+                                                        <div class="gridSubDetails  detailLabel fontSmall">Total Sisters</div>
+                                                        <input type="text" id="totalSisters" name="totalSisters" class="mediumWidth" placeholder="totalSisters" value="01" required>
+                                                    </div>       
+                                                    
+                                                    <div class="detailContainer flexC">
+                                                        <div class="gridSubDetails  detailLabel fontSmall">Married Brothers</div>
+                                                        <input type="text" id="marriedBrothers" name="marriedBrothers" class="mediumWidth" placeholder="marriedBrothers" value="01" required>
+                                                    </div>           
+                                                    <div class="detailContainer flexC">
+                                                        <div class="gridSubDetails  detailLabel fontSmall">Married Sisters</div>
+                                                        <input type="text" id="marriedSisters" name="marriedSisters"  class="mediumWidth" placeholder="marriedSisters" value="01" required>
+                                                    </div>
+                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="partnerPreferences">
+                                        <div class="aboutsection aboutGrid grid">
+                                            
+                                            <div class="aboutGridSub aboutme flexC partnerPreferenceContainer ">
+                                                    
+                                                <div class="gridSubTitle bold  fontAverage">Partner Preferences</div>
+
+                                                        <div class="flexR gap2">
+                                                            <div class="subDetails flexC">
+                                                        
+                                                                <div class="detailContainer flexC">
+                                                                    <div class="gridSubDetails  detailLabel fontSmall">Age Range</div>
+                                                                    <div class="age">
+
+                                                                        <div class="minAge">
+                                                                            
+                                                                            <input type="number" id="minAge" name="minAge" value="18" min="18" max="70" class="ageField">
+                                                                            
+                                                                        </div>
+                                                                        to
+                                                                        <div class="maxAge">
+                                                                            
+                                                                            <input type="number" id="maxAge" name="maxAge" value="21" min="19" max="70" class="ageField">
+                                                                            
+                                                                        </div>
+                                                                        
+                                                                    </div>                                                                </div>
+                                                                <div class="detailContainer flexC">
+                                                                    <div class="gridSubDetails  detailLabel fontSmall">Location</div>
+                                                                    <input type="text" id="jobCity" name="jobCity" placeholder="Job in City of" value="Rajkot Gujarat India" required>
+                                                                </div>
+                        
+                                                            
+                                                            </div>
+                                                            <div class="subDetails flexC">
+                                                            
+                                                                <div class="detailContainer flexC">
+                                                                    <div class="gridSubDetails  detailLabel fontSmall">Height Range</div>
+                                                                    <div class="flexR gap">
+                                                                                <div class="heightDropdown flexR">
+                                                                    
+                                                            
+                                                                                    <select name="foot" id="foot" class="foot shortWidth dropDown">
+                                                                                        <option value="3ft">3 ft</option>
+                                                                                        <option value="4ft">4 ft</option>
+                                                                                        <option value="5ft" selected>5 ft</option>
+                                                                                        <option value="6ft">6 ft</option>
+                                                                                        <option value="7ft">7 ft</option>
+                                                                                        
+                                                                                    </select>
+                                                                        
+                                                                                
+                                                                        
+                                                                                
+                                                                        
+                                                                                    <select name="inches" id="inches" class="inches shortWidth dropDown">
+                                                                                        <option value="0in">0 in</option>
+                                                                                        <option value="1in">1 in</option>
+                                                                                        <option value="2in">2 in</option>
+                                                                                        <option value="3in">3 in</option>
+                                                                                        <option value="4in">4 in</option>
+                                                                                        <option value="5in">5 in</option>
+                                                                                        <option value="6in">6 in</option>
+                                                                                        <option value="7in" selected>7 in</option>
+                                                                                        <option value="8in">8 in</option>
+                                                                                        <option value="9in">9 in</option>
+                                                                                        <option value="10in">10 in</option>
+                                                                                        <option value="11in">11 in</option>
+                                                                                    </select>
+                                                                        
+                                                                                
+                                                                            </div>
+                                                                            to     
+                                                                            <div class="heightDropdown flexR">
+                                                                    
+                                                            
+                                                                                <select name="foot" id="foot" class="foot shortWidth dropDown">
+                                                                                    <option value="3ft">3 ft</option>
+                                                                                    <option value="4ft">4 ft</option>
+                                                                                    <option value="5ft" selected>5 ft</option>
+                                                                                    <option value="6ft">6 ft</option>
+                                                                                    <option value="7ft">7 ft</option>
+                                                                                    
+                                                                                </select>
+                                                                    
+                                                                            
+                                                                    
+                                                                            
+                                                                    
+                                                                                <select name="inches" id="inches" class="inches shortWidth dropDown">
+                                                                                    <option value="0in">0 in</option>
+                                                                                    <option value="1in">1 in</option>
+                                                                                    <option value="2in">2 in</option>
+                                                                                    <option value="3in">3 in</option>
+                                                                                    <option value="4in">4 in</option>
+                                                                                    <option value="5in">5 in</option>
+                                                                                    <option value="6in">6 in</option>
+                                                                                    <option value="7in" selected>7 in</option>
+                                                                                    <option value="8in">8 in</option>
+                                                                                    <option value="9in">9 in</option>
+                                                                                    <option value="10in">10 in</option>
+                                                                                    <option value="11in">11 in</option>
+                                                                                </select>
+                                                                    
+                                                                            
+                                                                        </div>
+                                                                </div>
+                                                            
+                                                                <div class="detailContainer flexC">
+                                                                    <div class="gridSubDetails  detailLabel fontSmall">Diet</div>
+                                                                    <select name="diet" id="diet" class="diet mediumWidth dropDown">
+                                                                        <option value="jain" selected>Jain</option>
+                                                                        <option value="Vegetarian" selected>Vegetarian</option>
+                                                                        <option value="Eggs">Sometimes Non Veg</option>
+                                                                        <option value="Non Veg">Non Veg</option>
+                                                                        
+                                                                    </select>                                                                    </div>
+            
+                                                            </div>
+                        
+                                                            
+                                                            </div>
+                                                            
+                                                        </div>
+                                                        <div class="flexR gap">
+                                                            <div class="subDetails flexC">
+                                                                <div class="detailContainer flexC">
+                                                                    <div class="gridSubDetails  detailLabel fontSmall">Marital Status</div>
+                                                                    <select name="maritalStatus" id="maritalStatus" class="maritalStatus mediumWidth dropDown">
+                                                                        <option value="Never Married" selected>Never Married</option>
+                                                                        <option value="Divorced">Divorced</option>
+                                                                        <option value="Widowed">Widowed</option>
+                                                                        <option value="Engagment Broken">Engagment Broken</option>
+                                                                        <option value="Awaiting Divorce">Awaiting Divorce</option>
+                                                                        
+                                                                    </select>                                                                </div>
+                                                                <div class="detailContainer flexC">
+                                                                    <div class="gridSubDetails  detailLabel fontSmall">Religion</div>
+                                                                    <select name="religion" id="religion" class="religion mediumWidth dropDown">
+                                                                        <option value="Hindu" selected>Hindu</option>
+                                                                        <option value="Jain">Jain</option>
+                                                                        <option value="Sindhi">Sindhi</option>
+                                                                        <option value="Parsi">Parsi</option>
+                                                                        <option value="Sindhi">Sindhi</option>
+                                                                        <option value="Sikh">Sikh</option>
+                                                                        <option value="Sikh">Muslim</option>
+                                                                        <option value="Other">Other</option>
+                                                                        
+                                                                    </select>                                                                   
+                                                                 </div>
+                        
+                                                            
+                                                            
+                                                            </div>
+                                                            <div class="subDetails flexC">
+                                                            
+                                                            
+                                                                <div class="detailContainer flexC">
+                                                                    <div class="gridSubDetails  detailLabel fontSmall">Kids</div>
+                                                                    <input type="number" id="kids" name="kids" placeholder="0" value="0" class="shortWidth" required>
+                                                                </div>
+            
+                                                                <div class="detailContainer flexC">
+                                                                    <div class="gridSubDetails  detailLabel fontSmall">Occupation</div>
+                                                                    <input type="text" id="motherOccupation" name="motherOccupation" placeholder="motherOccupation" class="fullWidth" value="Family Business" required >                                                        
+                                                                </div>
+                                                            
+                                                            </div>
+
+                                                            <div class="subDetails flexC">
+                                                            
+                                                            
+                                                                <div class="detailContainer flexC">
+                                                                    <div class="gridSubDetails  detailLabel fontSmall">Education</div>
+                                                                    <input type="text" id="education" name="education" placeholder="Education" class="fullWidth" value="MBBS" required >
+                                                                </div>
+            
+                                                                <div class="detailContainer flexC">
+                                                                    <div class="gridSubDetails  detailLabel fontSmall">Mother Tongue</div>
+                                                                    <select name="motherTongue" id="motherTongue" class="motherTongue mediumWidth dropDown">
+                                                                        <option value="Gujarati" selected>Gujarati</option>
+                                                                        <option value="Hindi">Hindi</option>
+                                                                        <option value="Sindhi">Sindhi</option>
+                                                                        <option value="Parsi">Parsi</option>
+                                                                        <option value="Tamil">Tamil</option>
+                                                                        <option value="Bengali">Bengali</option>
+                                                                        <option value="Kannada">Kannada</option>
+                                                                        <option value="Telugu">Telugu</option>
+                                                                        <option value="Urdu">Urdu</option>
+                                                                        <option value="English">English</option>
+                                                                        <option value="Other">Other</option>
+                                                                        
+                                                                        
+                                                                    </select>                                                                  </div>
+                                                            
+                                                            </div>
+                                                        </div>
+                                                        <div class="subDetails flexC fullWidth">
+                                                            
+                                                            
+                                                            <div class="detailContainer flexC fullWidth">
+                                                                <div class="gridSubDetails  detailLabel fontSmall">Expectations from partner</div>
+                                                                <textarea class="expectations">I really think this could go viral we are a non-profit organization, and why is a 15mb gif on the startpage a bad idea?! thanks for taking the time to make the website, but i already made it in wix this red is too red can you please change the color theme of the website to pink and purple</textarea>
+                                                            </div>
+                                                        
+                                                        </div>
+                                                        
+                                                    
+                                                
+                                            
+                                                </div>
+                                        </div>  
+                                    </div>
+                                         <div class="otherDetails flexC start">
+                                
+                                            <div class="aboutGridSub aboutme flexC">
+                                                <div class="gridSubTitle bold  fontAverage flexC">Other</div>
+                                                    
+                                                <div class="flexR gap2">
+                                                    
+                                                    <div class="subDetails flexC">
+                                                
+                                                        <div class="detailContainer flexC">
+                                                            <div class="gridSubDetails  detailLabel fontSmall">Believe in Horoscope match</div>
+                                                                <div class="flexR">
+                                                                    <div class="male">
+                                                                        <input type="radio" id="male" name="disability" value="yes" checked="checked" >
+                                                                        <label for="yes">Yes</label><br>
+                                                                    </div>
+                                                                    
+                                                                    <div class="female">
+                                                                        <input type="radio" id="female" name="disability" value="no"  >
+                                                                        <label for="no">No</label><br>
+                                                                    </div>
+                                                                </div>     
+                                                                                                               
+                                                            </div>
+                                                        <div class="detailContainer flexC">
+                                                            <div class="gridSubDetails  detailLabel fontSmall">Birth time</div>
+                                                            <input type="time" id="birthtime" name="birthtime" placeholder="birthtime" class="timeInput mediumWidth" value="22:53" required>
+                                                        </div>
+                
+                                                    
+                                                    </div>
+                                                    <div class="subDetails flexC">
+                                                    
+                                                        <div class="detailContainer flexC">
+                                                            <div class="gridSubDetails  detailLabel fontSmall">Rashi</div>
+                                                            <div class="gridSubDetails  detailData fontAverage  rashi">Kanya</div>
+                                                        </div>
+                                                    
+                                                        <div class="detailContainer flexC">
+                                                            <div class="gridSubDetails  detailLabel fontSmall">Birth place</div>
+                                                            <input type="text" id="jobCity" name="jobCity" placeholder="Job in City of" value="Rajkot Gujarat India" required>
+                                                        </div>
+
+                                                    
+                
+                                                    
+                                                    </div>
+                                                    <div class="subDetails flexC">
+                                                        <div class="detailContainer flexC">
+                                                            <div class="gridSubDetails  detailLabel fontSmall">Are you Manglik</div>
+                                                            <div class="flexR">
+                                                                <div class="male">
+                                                                    <input type="radio" id="male" name="manglik" value="yes" >
+                                                                    <label for="yes">Yes</label><br>
+                                                                </div>
+                                                                
+                                                                <div class="female">
+                                                                    <input type="radio" id="female" name="manglik" value="no" checked="checked"  >
+                                                                    <label for="no">No</label><br>
+                                                                </div>
+                                                            </div>                                                         
+                                                         </div>
+                                                        <div class="detailContainer flexC">
+                                                            <div class="gridSubDetails  detailLabel fontSmall">Native Place</div>
+                                                            <input type="text" id="jobCity" name="jobCity" placeholder="native Place" value="-" required>
+                                                        </div>
+                
+                                                    
+                                                    
+                                                    </div>
+                                                    <div class="subDetails flexC">
+                                                    
+                                                    
+                                                        <div class="detailContainer flexC">
+                                                            <div class="gridSubDetails  detailLabel fontSmall">Do you have Shani Dosh</div>
+                                                            <div class="flexR">
+                                                                <div class="male">
+                                                                    <input type="radio" id="male" name="shani" value="yes" >
+                                                                    <label for="yes">Yes</label><br>
+                                                                </div>
+                                                                
+                                                                <div class="female">
+                                                                    <input type="radio" id="female" name="shani" value="no" checked="checked"  >
+                                                                    <label for="no">No</label><br>
+                                                                </div>
+                                                            </div> 
+                                                        </div>
+
+                                                        <div class="detailContainer flexC">
+                                                            <div class="gridSubDetails  detailLabel fontSmall">Looking to go abroad</div>
+                                                            <select name="abroad" id="abroad" class="abroad longWidth dropDown">
+                                                                <option value="Yes" >Yes</option>
+                                                                <option value="No">No</option>
+                                                                <option value="Maybe" selected>Maybe</option>
+                                                                
+                                                            </select>                                                             </div>
+                                                    
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                        <div class="aboutGridSub aboutme flexC">
+                                            <div class="gridSubTitle bold  fontAverage flexC">Interests</div>
+                                                
+                                            <div class="flexR gap2">
+                                                
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">Hobbies</div>
+                                                    <input type="text" id="hobbies" name="hobbies" placeholder="native Place" value="Cricket, Truck driving" required>
+
+                                                    
+                                                </div>
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">Movies</div>
+                                                    <input type="text" id="movies" name="movies" placeholder="native Place" value="Comedy , Drama" required>
+
+                                                    
+                                                </div>
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">Songs</div>
+                                                    <input type="text" id="songs" name="songs" placeholder="native Place" value="Old , Mashup" required>
+                                                
+                                                </div>
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">Other Interests</div>
+                                                    <input type="text" id="OtherInterests" name="OtherInterests" placeholder="native Place" value="-" required>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="aboutGridSub aboutme flexC">
+                                        <div class="gridSubTitle bold  fontAverage flexC">Favorite Places</div>
+                                            
+                                        <div class="flexR gap2">
+                                            
+                                            <div class="detailContainer flexC">
+                                                <div class="gridSubDetails  detailLabel fontSmall">Favorite Holiday places</div>
+                                                <input type="text" id="favoriteHoliday" name="favoriteHoliday" placeholder="native Place" value="Kedarnath , Rishikesh, Goa, Gujarat, Kerala" required>
+
+                                                
+                                            </div>
+                                        </div>
+                                     </div>  
+                                    </div>
+                                    <div class="contactDetails flexR start">
+                                        <div class="aboutGridSub aboutme flexC">
+                                            <div class="gridSubTitle bold  fontAverage flexC">Contact</div>
+                                                
+                                            <div class="flexR gap2">
+                                                
+                                                <div class="subDetails flexC">
+                                            
+                                                    <div class="detailContainer flexC">
+                                                        <div class="gridSubDetails  detailLabel fontSmall">Phone Number</div>
+                                                        <input type="number" id="contact number" name="contact number" placeholder="motherNumber" class="fullWidth" value="+91 9876543210" required >                                                        
+                                                    </div>
+
+                                                    <div class="detailContainer flexC">
+                                                        <div class="gridSubDetails  detailLabel fontSmall">Pin Code</div>
+                                                        <input type="number" id="pincode" name="pincode" placeholder="motherNumber" class="fullWidth" value="380015" maxlength="6" required >                                                        
+                                                    </div>
+                                                    
+                                                    <div class="detailContainer flexC">
+                                                        <div class="gridSubDetails  detailLabel fontSmall">Address</div>
+                                                        <textarea class="address">I really think this could go viral we are a non-profit organization, and why is a 15mb gif on the startpage a bad idea</textarea>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="aboutGridSub aboutme flexC">
+                                            <div class="subDetails flexC">
+                                                <div class="gridSubTitle bold  fontAverage flexC">For Office Use Only</div>
+            
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">Whatsapp Number</div>
+                                                    <input type="number" id="whatsappNumber" name="whatsappNumber" placeholder="whatsappNumber" class="fullWidth" value="+91 9876543210" required >                                                        
+                                                </div>
+            
+                                                <div class="detailContainer flexC">
+                                                    <div class="gridSubDetails  detailLabel fontSmall">Email to get updates on</div>
+                                                    <input type="email" id="email" name="email" placeholder="email address" class="fullWidth" value="user@email.com" required >                                                        
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+               
+            </div>
+            
+        
+        
+        <!--Footer-->
+        <!-- <div class="footer"></div> -->
+
+    </body>
+    <link rel="stylesheet" href="search.css" >
+    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="script.js"></script>
+
+    <style>
+    .contactNumberContainer{
+        height: 8.25vw;
+    }
+    .timeInput{
+        background-color: rgba(0,0,0,0);
+    width: auto;
+    border-radius: var(--radius);
+    height: 1.5vw;
+    text-align: center;
+    border: 0.1vw solid rgba(0,0,0,0.2);
+    font-size: 0.85vw;
+    font-weight: 400;
+    padding: 2%;
+   font-family: inherit; 
+    }
+    </style>
+</html>
