@@ -898,9 +898,13 @@ overflow: clip;
     width: 100%;
     box-shadow: none;
 }
+option:checked, option:hover {
+    background: var(--primary) !important;
+    color: white !important;
+}
 /*General CSS Ends*/
 
-/* @media screen and (max-width: 1600px) {
+ @media screen and (max-width: 1600px) {
     .heroSection {
         background-size: cover;
         height: 75vh;    
@@ -911,7 +915,7 @@ overflow: clip;
 }
 @media screen and (max-width: 991px) {
     .heroSection{
-        height: 45vh;
+        height: 48vh;
     }
     .years{
         margin: 16% 0% 0% 16%;
@@ -919,6 +923,28 @@ overflow: clip;
 
 }
 @media screen and (max-width: 550px) {
+    .fontLargest {
+        font-size: 8vw;
+    
+    }
+    .fontLarge {
+        font-size: 6vw;
+    }
+    .fontMedium {
+        font-size: 4.5vw;
+    }
+    .fontAverage{
+        font-size: 4.2vw;
+    }
+    .fontSmall {
+        font-size: 4vw;
+    }
+    input[type="email" i],input[type="text" i],input[type="number" i],input[type="tel" i],input[type="password" i],input[type="date" i],input[type="time" i] {
+        width: 25vw;
+        height: 8vw;
+        font-size: 4vw;
+        padding: 2%;
+    }
     
     ::-webkit-scrollbar {
         width: 0px;
@@ -929,50 +955,136 @@ overflow: clip;
     }
 
     .heroSection{
-        background-image: url("assets/heroMobile.png");
-        background-repeat: no-repeat;
-        object-fit:fill;
+        /* background-image: url("assets/heroMobile.png"); */
+        
+        /* border: 1px solid red; */
         width: 100vw;
-        height: 50vh;
+        height: 60vh;
+        background: url("assets/heroMobile.webp");
+       
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit:fill;
+
+    }
+    .yearImage{
+        height:auto ;
+        width: 42vw;
     }
     .years{
-        display: none;
-        /* background: rgba(0,0,0,0.1);
-        margin: 28% 0% 0% 0%;
-        width: 97vw;
+        background:linear-gradient(180deg, rgba(0, 0, 0, 0) 67.42%, #000000 96.59%);
+
+        align-items: center;
+        justify-items: center;
+        display: grid;
+        place-content: center;
+        /* border: 1px solid red; */
+        width: 98%;
+        
+        margin: 65% 0% 0% 0%;
+     /*   width: 97vw;
         backdrop-filter: blur(4vw); */
-    /*}
-    /* .yearsTitle {
-        font-size: 8vw;  
     }
+  
     .yearsSub{
-        font-size: 5vw;
         width: 85%;
     }
-    */
-    /* .shehnaiFeatures{
+    
+     .shehnaiFeatures{
         padding-top: 100% !important;
     }
     .featureCards {
-        grid-template-columns: auto;
+        flex-direction: column;
     }
     .feature{
+        width: 80vw;
         margin-bottom:5% ;
         border-radius: 2vw;
+        padding: 5%;
+        gap: 2vw;
     }
-    .featureTitle fontLarge{
-        font-size: 6vw;
-    }
-    .featureDescr ,.featureSub {
-        font-size: 3.5vw;
-    }
+  
+ 
     .featureSub{
         text-align: center;
     }
-    .featureName {
-        font-size: 4vw;
-    }
+  
     .featureVector {
         width: 16vw;
-    } */
-   
+    } 
+    .testimonialContainer {
+        width: 80vw;
+        flex-direction: column;
+        border-radius:3vw;
+    }
+   .couplePhotoLargeContainer{
+     width: 60vw;
+     height: 60vw;
+     
+     
+   }
+   .couplePhoto{
+    width: 80vw;
+    height: 80vw;
+   }
+   .testimonialText{
+    width: 80vw;
+    text-align: justify;
+   }
+   .testimonialSelector{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    width: 80vw;
+    overflow: clip;
+    gap: 5vw;
+   }
+   .coupleContainer {
+    height: 12vw;
+    width: 12vw;
+   }
+   .coupleSelectImage{
+    height: 16vw;
+    width: 16vw;
+   }
+   #activeTestimonial{
+    outline: 4px solid white;
+    height:12vw;
+    width: 12vw;
+   }
+   .goldList{
+    flex-direction: column;
+   }
+   .goldMemberImgContainer{
+    width: 60vw;
+    height: 60vw;
+    align-items: flex-start;
+   }
+   .goldFrame{
+    width: 70vw;
+    height: 62vw;
+   }
+   .goldMemberImg{
+    object-fit: cover;
+    height: 60vw;
+    width: 60vw;
+   }
+   .plansContainer{
+    flex-direction: column;
+    align-items: center;
+    gap: 4vw;
+   }
+   .planCard{
+    width: 80vw;
+    gap: 8vw;
+}
+   .planfeature{
+
+
+    height: 5vw;
+    width: 5vw;
+   }
+   .featureList {
+    gap: 8vw;
+   }
+}
