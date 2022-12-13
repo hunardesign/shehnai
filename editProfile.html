@@ -42,6 +42,7 @@
                             <div class="profileNavItem flexR fontSmall viewPartnerPreferences" onclick="viewPartnerPreferences()">Partner Preferences</div>
                             <div class="profileNavItem flexR fontSmall viewOtherDetails" onclick="viewOtherDetails()">Other Details</div>
                             <div class="profileNavItem flexR fontSmall viewContactDetails" onclick="viewContactDetails()">Contact Details</div>
+                            <div class="profileNavItem flexR fontSmall viewContactDetailsMobile" onclick="viewContactDetails()">Contact Details</div>
                         </div>
                         <form class="editProfile">
                             <div class="profileDetailsSub flexC">
@@ -106,9 +107,9 @@
                                             
                                             <div class="gridSubTitle bold  fontAverage">Basic Details</div>
                                             
-                                            <div class="subDetails flexR">
+                                            <div class="subDetails flexR mFlexC">
                                             
-                                                <div class="detailContainer flexC">
+                                                <div class="detailContainer flexC ">
                                                     <div class="gridSubDetails  detailLabel fontSmall">Birthdate</div>
                                                     <input type="date" id="birthdate" name="birthdate" placeholder="birthdate" class="mediumWidth" value="1995-03-12" required>
                                                 </div>
@@ -291,7 +292,7 @@
                                             
                                             <div class="gridSubTitle bold  fontAverage">Education & Profession</div>
                                             
-                                                <div class="flexR gap2">
+                                                <div class="flexR gap2 educationSub">
                                                     <div class="subDetails flexC">
                                                 
                                                         <div class="detailContainer flexC">
@@ -343,7 +344,7 @@
                                                     
                                                     
                                                     </div>
-                                                    <div class="subDetails flexC">
+                                                    <div class="subDetails flexC bottomPadding10">
                                                     
                                                     
                                                         <div class="detailContainer flexC">
@@ -527,8 +528,8 @@
                                                                         
                                         </div>
                                 
-                                        <div class="siblingsDetailsSub aboutGridSub">
-                                                <div class="subDetails flexR siblingSub">
+                                        <div class="siblingsDetailsSub aboutGridSub bottomPadding10">
+                                                <div class="subDetails flexR siblingSub ">
                                                     <div class="detailContainer flexC">
                                                         <div class="gridSubDetails  detailLabel fontSmall">Total Brothers</div>
                                                         <input type="text" id="totalBrothers" name="totalBrothers" class="mediumWidth" placeholder="totalBrothers" value="01" required>
@@ -561,7 +562,7 @@
                                                     
                                                 <div class="gridSubTitle bold  fontAverage">Partner Preferences</div>
 
-                                                        <div class="flexR gap2">
+                                                        <div class="flexR gap2 mFlexC">
                                                             <div class="subDetails flexC">
                                                         
                                                                 <div class="detailContainer flexC">
@@ -570,13 +571,13 @@
 
                                                                         <div class="minAge">
                                                                             
-                                                                            <input type="number" id="minAge" name="minAge" value="18" min="18" max="70" class="ageField">
+                                                                            <input type="number" id="minAge" name="minAge" value="18" min="18" max="70" class="ageField shortWidth">
                                                                             
                                                                         </div>
                                                                         to
                                                                         <div class="maxAge">
                                                                             
-                                                                            <input type="number" id="maxAge" name="maxAge" value="21" min="19" max="70" class="ageField">
+                                                                            <input type="number" id="maxAge" name="maxAge" value="21" min="19" max="70" class="ageField shortWidth">
                                                                             
                                                                         </div>
                                                                         
@@ -590,9 +591,9 @@
                                                             </div>
                                                             <div class="subDetails flexC">
                                                             
-                                                                <div class="detailContainer flexC">
+                                                                <div class="detailContainer flexC ">
                                                                     <div class="gridSubDetails  detailLabel fontSmall">Height Range</div>
-                                                                    <div class="flexR gap">
+                                                                    <div class="flexR gap mFlexC">
                                                                                 <div class="heightDropdown flexR">
                                                                     
                                                             
@@ -678,7 +679,7 @@
                                                             </div>
                                                             
                                                         </div>
-                                                        <div class="flexR gap">
+                                                        <div class="flexR gap mFlexC">
                                                             <div class="subDetails flexC">
                                                                 <div class="detailContainer flexC">
                                                                     <div class="gridSubDetails  detailLabel fontSmall">Marital Status</div>
@@ -751,7 +752,7 @@
                                                             
                                                             </div>
                                                         </div>
-                                                        <div class="subDetails flexC fullWidth">
+                                                        <div class="subDetails flexC fullWidth bottomPadding10">
                                                             
                                                             
                                                             <div class="detailContainer flexC fullWidth">
@@ -772,7 +773,7 @@
                                             <div class="aboutGridSub aboutme flexC">
                                                 <div class="gridSubTitle bold  fontAverage flexC">Other</div>
                                                     
-                                                <div class="flexR gap2">
+                                                <div class="flexR gap2 mFlexC">
                                                     
                                                     <div class="subDetails flexC">
                                                 
@@ -870,7 +871,7 @@
                                         <div class="aboutGridSub aboutme flexC">
                                             <div class="gridSubTitle bold  fontAverage flexC">Interests</div>
                                                 
-                                            <div class="flexR gap2">
+                                            <div class="flexR gap2 mFlexC">
                                                 
                                                 <div class="detailContainer flexC">
                                                     <div class="gridSubDetails  detailLabel fontSmall">Hobbies</div>
@@ -909,7 +910,7 @@
                                         </div>
                                      </div>  
                                     </div>
-                                    <div class="contactDetails flexR start">
+                                    <div class="contactDetails flexR start mFlexC">
                                         <div class="aboutGridSub aboutme flexC">
                                             <div class="gridSubTitle bold  fontAverage flexC">Contact</div>
                                                 
@@ -937,7 +938,7 @@
                                             </div>
                                             
                                         </div>
-                                        <div class="aboutGridSub aboutme flexC">
+                                        <div class="aboutGridSub aboutme flexC bottomPadding10">
                                             <div class="subDetails flexC">
                                                 <div class="gridSubTitle bold  fontAverage flexC">For Office Use Only</div>
             
@@ -990,6 +991,47 @@
     font-weight: 400;
     padding: 2%;
    font-family: inherit; 
+    }
+    .subDetails{
+        flex-direction: column;
+    }    input[type="email" i],input[type="text" i],input[type="number" i],input[type="tel" i],input[type="password" i],input[type="date" i],input[type="time" i] {
+        width: 80vw;
+    }
+    @media screen and (max-width: 991px) {
+    label{
+        display: block;
+    }
+    .detailContainer{
+        width: 80vw;
+    }
+    #shortInput,.mediumWidth,.longWidth,textarea{
+        width: 80vw !important;
+    }
+    .shortWidth{
+        width: 30vw !important;
+    }
+    .educationSub{
+        flex-direction: column;
+    }
+    .educationSub div{
+        width: 80vw;
+    }
+    .siblingSub,.parent{
+        grid-template-columns: auto;
+    }
+    .parent .subDetails, .parent  .subDetails .{
+        width: 80vw !important;
+    }
+    .mFlexC{
+        flex-direction: column;
+    }
+    .contactDetails{
+        padding: 0 !important;
+    }
+    .bottomPadding10{
+        padding-bottom: 15%;
+
+    }
     }
     </style>
 </html>

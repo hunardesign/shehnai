@@ -907,6 +907,9 @@ option:checked, option:hover {
     background: var(--primary) !important;
     color: white !important;
 }
+.viewContactDetailsMobile{
+    display: none;
+}
 /*General CSS Ends*/
 
  @media screen and (max-width: 1600px) {
@@ -925,7 +928,16 @@ option:checked, option:hover {
     .years{
         margin: 16% 0% 0% 16%;
     }
-
+    .viewContactDetailsMobile{
+        display: block;
+        position: fixed;
+        width: 100vw;
+        background: var(--primary);
+        color: white;
+        z-index: 1;
+        padding: 2% 8%;
+        bottom: 0;
+    }
 }
 @media screen and (max-width: 550px) { /*mobile*/
     .start{
@@ -935,6 +947,7 @@ option:checked, option:hover {
         display: flex;
         flex-direction: row;
     }
+    
     .fontLargest {
         font-size: 8vw;
     
@@ -1320,5 +1333,5 @@ textarea{
         align-items: start;
         margin: 0;
     }
-    
+   
 }
