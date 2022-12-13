@@ -146,59 +146,31 @@
 
     <style>
     
-    body{
-        /* overflow: hidden; */
+    .profiletabs{
+        flex-direction: row;
     }
-    .search{
-        position: fixed;
-        top: 15vh;
-        margin: 0;
-        margin-left: 7vw;
-        width: 60vw;
-    }
-    
-    .feed{
-        overflow: clip;
-        overflow: visible;
-        
-        gap: 2vw;
-        position: absolute;
-        margin-left:7vw ;
-        margin-top: 9vw;
-        align-items: center;
-        z-index: -1;
-    }
-    .feedMember{
-        /* border: 1px solid red; */
-        width: 61vw;
-        height: auto;
-        
-        background: white;
-        justify-content: stretch;
-        align-items: flex-start;
-        box-shadow: var(--shadow);
-    }
-    .specialImage{
-        height: 30vw;
-        width: 30vw;
-    }
-    .feedData{
-        /* height: 25vw; */
+    .profile{
+        display: flex;
+        flex-direction: column;
+        margin:  15% 0%  ;
         width: 100%;
-        height: auto;
-        gap: 1vw;
-        align-items: flex-start;
     }
-    .feedDetails {
-        gap: 1vw;
+    .profilePhotoContainer{
+        height: 85vw;
+    width: 100vw;
+    }
+    .profileDetails {
+        gap: 5vw;
         height: max-content;
-        align-items: flex-start;
     }
-    .specialButtons *{
-        width: 100%;
+    .detailContainer {
     }
-    .specialButtons {
-        
+    .detailData {
+        width: max-content !important;
+    }
+    .notificationImage{
+        width: 10vw;
+        height: 10vw;
     }
     </style>
 </html>
