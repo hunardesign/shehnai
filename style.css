@@ -297,8 +297,8 @@ a {
 }
 
 #activeTestimonial img{
-    height: 15vw;
-    width: 15vw;
+    height: 12vw;
+    width: 12vw;
 }
 #activeTestimonial img:hover{
     cursor: default;
@@ -309,6 +309,10 @@ a {
     padding: 8% 2%;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.goldMemberContainer:hover{
+    filter: opacity(0.6);
+    cursor: pointer;
 }
 .goldList{
     gap: 5vw;
@@ -907,18 +911,43 @@ option:checked, option:hover {
     background: var(--primary) !important;
     color: white !important;
 }
-.viewContactDetailsMobile{
+.mobileOnly,.viewContactDetailsMobile{
     display: none;
 }
 /*General CSS Ends*/
 
  @media screen and (max-width: 1600px) {
+    .fontLargest {
+        font-size: 4.5vw;
+    
+    }
+    #activeProfileNav{
+        padding: 2% 1% ;
+    }
+    .fontLarge {
+        font-size: 3.5vw;
+    }
+    .fontMedium {
+        font-size: 1.5vw;
+    }
+    .fontAverage{
+        font-size: 1.1vw;
+    }
+    .fontSmall {
+        font-size: 0.9vw;
+    }
     .heroSection {
         background-size: cover;
-        height: 75vh;    
+        height: 85vh;    
     }
     .years{
         margin: 12% 0% 0% 14%;
+    }
+    .shehnaiFeatures {
+        margin-top: 10%;
+    }
+    .mapEmbed{
+        height: 35vw;
     }
 }
 @media screen and (max-width: 991px) {
@@ -1333,5 +1362,12 @@ textarea{
         align-items: start;
         margin: 0;
     }
-   
+    .profile  {
+        display: none;
+    }
+    .feedMember {
+        flex-direction: column;
+        height: max-content;
+    }
+
 }

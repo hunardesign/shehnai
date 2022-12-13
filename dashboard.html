@@ -127,8 +127,9 @@
 
                 <div class="feedContainer">
                     <div class="searchbar">
+                        <div class="flexR fontMedium gap2 showSearch" onclick="showSearch()">Show Search </div>
                         <form class="search">
-
+                            <div class="flexR fontMedium gap2 hideSearch" onclick="hideSearch()">Close Search <img src="assets/close.svg" class="mobileOnly closeIcon"></div>
                             <div class="searchItem">
                                 <div class="searchTitle">I'm looking for a</div>
                                 
@@ -366,69 +367,128 @@
         <!-- <div class="footer"></div> -->
 
     </body>
-
-    <link rel="stylesheet" href="search.css">
+  
     <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="search.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="script.js"></script>
-
     <style>
     
-    body{
-        /* overflow: hidden; */
-    }
-    .search{
-        position: fixed;
-        top: 15vh;
-        margin: 0;
-        margin-left: 7vw;
-        width: 60vw;
-    }
-    
-    .feed{
-        overflow: clip;
-        overflow: visible;
+        body{
+            /* overflow: hidden; */
+        }
+        .search{
+            position: fixed;
+            top: 15vh;
+            margin: 0;
+            margin-left: 7vw;
+            width: 60vw;
+        }
         
-        gap: 2vw;
-        position: absolute;
-        margin-left:7vw ;
-        margin-top: 9vw;
-        align-items: center;
-        z-index: -1;
-    }
-    .feedMember{
-        /* border: 1px solid red; */
-        width: 61vw;
-        height: auto;
-        
-        background: white;
-        justify-content: stretch;
-        align-items: flex-start;
-        box-shadow: var(--shadow);
-    }
-    .specialImage{
-        height: 30vw;
-        width: 30vw;
-    }
-    .feedData{
-        /* height: 25vw; */
-        width: 100%;
-        height: auto;
-        gap: 1vw;
-        align-items: flex-start;
-    }
-    .feedDetails {
-        gap: 1vw;
-        height: max-content;
-        align-items: flex-start;
-    }
-    .specialButtons *{
-        width: 100%;
-    }
-    .specialButtons {
-        
-    }
+        .feed{
+            overflow: clip;
+            overflow: visible;
+            
+            gap: 2vw;
+            position: absolute;
+            margin-left:7vw ;
+            margin-top: 9vw;
+            align-items: center;
+            z-index: -1;
+        }
+        .feedMember{
+            /* border: 1px solid red; */
+            width: 61vw;
+            height: auto;
+            
+            background: white;
+            justify-content: stretch;
+            align-items: flex-start;
+            box-shadow: var(--shadow);
+        }
+        .specialImage{
+            height: 30vw;
+            width: 30vw;
+        }
+        .feedData{
+            /* height: 25vw; */
+            width: 100%;
+            height: auto;
+            gap: 1vw;
+            align-items: flex-start;
+        }
+        .feedDetails {
+            gap: 1vw;
+            height: max-content;
+            align-items: flex-start;
+        }
+        .specialButtons *{
+            width: 100%;
+        }
+        .specialButtons {
+            
+        }
+       .showSearch{
+        display: none;
+       }
+       
+        @media screen and (max-width: 550px) {
+
+                .mobileOnly{
+                    display: block;
+                }
+                .closeIcon{
+                    width: 6vw;
+                }
+                .search{
+                    position: fixed;
+                    top: 24vw;
+                    width: 100%;
+                    margin: 0;
+                }
+                .feed{
+                    top: 115vw;
+                    width: 100%;
+                    margin: 10% 0%  ;
+                }
+                .subDetails {
+                    flex-direction: column;
+                }
+                .feedMember{
+                    width: 100%;
+                }
+                .specialImage{
+                    width: 100vw;
+                    height: 100vw;
+                }
+                .showSearch{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 24%;
+                    position: absolute;
+                    background: white;
+                    padding: 2%;
+                }
+                .detailData{
+                    padding: 2%;
+                }
+                .detailData.about{
+                    width: 90vw;
+                }
+                .feedDetails {
+                 gap: 4vw;   
+                 padding: 2%;
+                 width: 100%;
+                }
+                .detailContainer {
+                    width: 100% !important;
+                }
+                
+            }
     </style>
+        
 </html>
