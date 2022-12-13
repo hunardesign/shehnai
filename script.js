@@ -1,3 +1,4 @@
+
 $.get("navbar.html", function(data){
     $(".navbar").replaceWith(data);
 });
@@ -5,7 +6,7 @@ $.get("navbar.html", function(data){
  $.get("footer.html", function(data){
    $(".footer").replaceWith(data);
  });
-
+ 
  function Activity(){
   
   let none = document.querySelector('.profileSub');
@@ -36,7 +37,9 @@ $.get("navbar.html", function(data){
   document.querySelector('#activeProfileNav').setAttribute('id','');
   document.querySelector('.viewAbout').setAttribute('id','activeProfileNav')
   
-  document.querySelector('.aboutGrid').style.display='grid'
+
+    document.querySelector('.aboutGrid').style.display='grid'
+  
   document.querySelector('.familyDetails').style.display='none'
   document.querySelector('.partnerPreferences').style.display='none'
   document.querySelector('.otherDetails').style.display='none'

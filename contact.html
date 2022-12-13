@@ -69,71 +69,74 @@
 
     </body>
 
+    <style>
+        .aboutSection{
+                display: flex;
+                flex-direction: column;
+                padding: 2% 0%; 
+        }
+        .contactMap{
+            display: flex;
+            gap: 1vw;
+            background: white;
+            flex-direction: row-reverse;
+            overflow: clip;
+            margin: 0% 7%;
+            width: 80vw;
+        }
+        
+        .contactFormContainer{
+            display: flex;
+            flex-direction: column;
+            padding: 2%;
+            width: 30vw;
+            gap: 1vw;
+           
+           
+        }
+        .contactForm{
+            display: flex;
+            flex-direction: column;
+            gap: 1vw;
+            width: 100%;
+            align-items: stretch;
+        }
+        .mapEmbed{
+            width: 46vw;
+            height: auto;
+        }
+        .contactDetailsContainer{
+            display: flex;
+            width: 100%;
+            gap: 1vw;
+            justify-content: space-evenly;
+        }
+        .contactDetailCard{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1%;
+            gap: 0.5vw;
+        }
+        .searchButton{
+            width: 100%;
+        }
+       
+        .contactTitle{
+        
+            text-align: center;
+        }
+        </style>
     <link rel="stylesheet" href="search.css">
     <link rel="stylesheet" href="style.css" >
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="script.js"></script>
-
-    <style>
-    .aboutSection{
-            display: flex;
-            flex-direction: column;
-            padding: 2% 0%; 
-    }
-    .contactMap{
-        display: flex;
-        gap: 1vw;
-        background: white;
-        flex-direction: row-reverse;
-        overflow: clip;
-        margin: 0% 7%;
-        width: 80vw;
-    }
-    
-    .contactFormContainer{
-        display: flex;
-        flex-direction: column;
-        padding: 2%;
-        width: 30vw;
-        gap: 1vw;
-       
-       
-    }
-    .contactForm{
-        display: flex;
-        flex-direction: column;
-        gap: 1vw;
-        width: 100%;
-        align-items: stretch;
-    }
-    .mapEmbed{
-        width: 46vw;
-        height: auto;
-    }
-    .contactDetailsContainer{
-        display: flex;
-        width: 100%;
-        gap: 1vw;
-        justify-content: space-evenly;
-    }
-    .contactDetailCard{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 1%;
-        gap: 0.5vw;
-    }
-    .searchButton{
-        width: 100%;
-    }
-    input[type="email" i],input[type="text" i],input[type="number" i],input[type="tel" i],input[type="password" i] {
-            text-align: left;   
-        }
-    .contactTitle{
-    
-        text-align: center;
-    }
-    </style>
+<style>
+ input[type="email" i],input[type="text" i],input[type="number" i],input[type="tel" i],input[type="password" i] {
+                text-align: left;  
+                /* width: 78vw; */
+            }
+</style>
 </html>

@@ -52,7 +52,7 @@ body {
     font-family: Prata;
     src: url(assets/font/Prata-Regular.ttf);
 }
-
+.genderLabel{display: block;}
 .heroSection {
     background-image: url("assets/heroImage.webp");
     background-size: contain;
@@ -113,6 +113,7 @@ a {
 }
 .start{
    align-items: flex-start;
+   justify-content: start;
    gap: 1vw;
 }
 .centerAlign{
@@ -671,8 +672,12 @@ textarea {
 .detailContainer{
    gap: 0.5vw;
     align-items: flex-start;
+    width: max-content;
+    height: 100%;
 }
-
+.gridSubDetails  {
+    width: 100%;
+}
 .specialMember:hover .specialData{
     opacity: 1;
 }
@@ -737,7 +742,7 @@ textarea {
 }
 .profileDetails{
     align-items: flex-start;
-    gap: 1vw;
+    gap: 0.5vw;
 }
 .editButton{
     padding: 1% 2%;
@@ -922,7 +927,14 @@ option:checked, option:hover {
     }
 
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 550px) { /*mobile*/
+    .start{
+        gap: 5vw;
+    }
+    .mFlexR{
+        display: flex;
+        flex-direction: row;
+    }
     .fontLargest {
         font-size: 8vw;
     
@@ -1093,7 +1105,7 @@ textarea{
     gap: 8vw;
    }
   .aboutSection, .shehnaiPricing{
-    margin-top: 36vw;
+    margin-top: 24vw;
    }
    .offlineOnline,.paymentInformation,.paymentDetails{
     flex-direction: column;
@@ -1198,4 +1210,115 @@ textarea{
         height: 4vw;
         width: 4vw;
     }
+    .viewProfile {
+        flex-direction: column;
+        width: 100vw;
+        margin: 0;
+        margin-top:32vw ;
+
+    }
+    .viewContactDetails{
+        display: none;
+    }
+    .profileAboutDetails{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .profileDetailsNav{
+        justify-content: space-evenly;
+        gap: 8vw;
+        text-align: center;
+        width: 90vw;
+        height: 15vw;
+        transition: ease-in 300ms;
+    }
+    .viewProfileImage{
+        width: 100vw;
+
+    }
+    #activeProfileNav{
+        background: #f7f7f7;
+        box-shadow: none;
+        border-bottom: 2px solid rgb(0, 0, 0);
+        padding: 1%;
+        font-weight: 600;
+    }
+    .aboutGrid{
+        
+        grid-template-areas:
+        " item1   "
+        " item2   "
+        " item3   "
+        " item4   "
+        " item5   "
+        ;
+        gap: 1vw;
+        
+    }
+    .aboutGridSub {
+        width: 90vw;
+        gap: 6vw;
+        height: max-content;
+        flex-direction: column;    
+        box-shadow: none;
+    }
+    .subDetails{
+        max-width: none;
+        gap: 4vw;
+    }
+    .detailContainer {
+        width:60%;
+    }
+    .gridSubDetails  {
+        width:max-content ;
+        max-width: none;
+
+    }
+    .gridSubTitle{
+        /* width: 100%; */
+    }
+    .profileID {
+        flex-direction: column;
+        align-items: flex-start;
+        width: max-content;
+    }
+    .profileIDShare{
+        width: 100% ;
+    }
+    .editButton{
+        width: max-content;
+    }
+    .detailData {
+        max-width: 85vw;
+    }
+    .wrap{
+        flex-wrap: wrap;
+    }
+    .mobileGrid{
+        display: grid;
+        grid-template-columns:auto auto auto ;
+    }
+  
+    .familyDetails,.partnerPreferences,.otherDetails,.contactDetails{
+    padding: 2%;
+    }
+    .parent{
+        gap: 4vw;
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: start;
+    }
+    .partnerPrefSub,.siblingSub{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .otherDetailsSub{
+        width: 100%;
+        display: flex;    
+        flex-direction: column;
+        align-items: start;
+        margin: 0;
+    }
+    
 }
