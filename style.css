@@ -940,11 +940,16 @@ option:checked, option:hover {
         font-size: 4vw;
     }
     input[type="email" i],input[type="text" i],input[type="number" i],input[type="tel" i],input[type="password" i],input[type="date" i],input[type="time" i] {
-        width: 25vw;
+        width: 78vw;
         height: 8vw;
         font-size: 4vw;
         padding: 2%;
     }
+textarea{
+    width: 78vw;
+    height: 30vw;
+    font-size: inherit;
+}
     
     ::-webkit-scrollbar {
         width: 0px;
@@ -1075,7 +1080,7 @@ option:checked, option:hover {
     gap: 4vw;
    }
    .planCard{
-    width: 80vw;
+    width: 85vw;
     gap: 8vw;
 }
    .planfeature{
@@ -1087,4 +1092,110 @@ option:checked, option:hover {
    .featureList {
     gap: 8vw;
    }
+  .aboutSection, .shehnaiPricing{
+    margin-top: 36vw;
+   }
+   .offlineOnline,.paymentInformation,.paymentDetails{
+    flex-direction: column;
+    gap: 8vw;
+
+   }
+   .featureSubContainer{
+    flex-direction: column;
+   }
+   .paymentInformation{
+    width: 85vw;
+   }
+   .featureSub{
+    text-align: justify;
+    width: 85vw;
+   }
+   .paymentpartners{
+    width: 60vw;
+   }
+   .planDetails{
+    overflow: scroll;
+    margin: 5%;
+   }
+   .pricingVector{
+    height: 96vw;
+    margin-left: 100%;
+   }
+   .aboutContainer {
+    flex-direction: column;
+   }
+   .aboutImage{
+    width: 85vw;
+    height: 75vw;
+   }
+   .aboutText {
+    width: 86%;
+    padding:0% 5% ;
+   }
+   .contactMap{
+    flex-direction: column;
+    width: 85vw;
+   }
+   .contactForm{
+    gap: 5vw;
+   }
+   .contactFormContainer{
+    gap: 5vw;
+    width: 85vw;
+   }
+   .searchButton{
+    width: 82vw;
+    }    
+    .mapEmbed{
+        
+        height: 85vw; 
+    }
+    .generalForm{
+        width: 100vw;
+        margin: 110% 0% 0% 0%;
+        gap: 5vw;
+        align-items: center;
+        padding: 5% 0%;
+    }
+    .contacNo {
+        align-items: flex-start;
+    }
+    label{display: none;}
+    .phoneField{
+        width: 58vw !important;
+        height: 9vw !important;
+    }
+    .roundedBorder{
+        padding: 15% 2%;
+        width: 20vw !important;
+        height: 12vw !important;
+    }
+    .captcha{
+        flex-direction: column !important;
+    }
+    .inactiveIcon{
+        width: 12vw;
+    }
+    .specialContainer{
+        grid-template-columns: auto;
+    }
+    .specialMember {
+        flex-direction: column;
+    }
+    .specialData{
+        display: none;
+    }
+    .specialMember {
+        width: 85vw;
+        height: 70vw;
+    }
+    .specialImage{
+        width: 85vw;
+        height: 70vw;
+        object-fit: cover;
+    }
+    .actionIcon{
+        height: 4vw;
+        width: 4vw;
+    }
 }
