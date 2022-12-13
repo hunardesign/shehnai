@@ -969,6 +969,10 @@ option:checked, option:hover {
     }
 }
 @media screen and (max-width: 550px) { /*mobile*/
+    .bottomPadding10{
+        padding-bottom: 15%;
+
+    }
     .start{
         gap: 5vw;
     }

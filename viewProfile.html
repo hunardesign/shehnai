@@ -42,6 +42,8 @@
                             <div class="profileNavItem flexR fontSmall viewPartnerPreferences" onclick="viewPartnerPreferences()">Partner Preferences</div>
                             <div class="profileNavItem flexR fontSmall viewOtherDetails" onclick="viewOtherDetails()">Other Details</div>
                             <div class="profileNavItem flexR fontSmall viewContactDetails" onclick="viewContactDetails()">Contact Details</div>
+                            <div class="profileNavItem flexR fontSmall viewContactDetailsMobile" onclick="viewContactDetails()">Contact Details</div>
+
                         </div>
                             
                         <div class="profileDetailsSub flexC">
@@ -233,7 +235,7 @@
                                                 
                                                 
                                                 </div>
-                                                <div class="subDetails flexC">
+                                                <div class="subDetails flexC bottomPadding10">
                                                 
                                                 
                                                     <div class="detailContainer flexC">
@@ -369,7 +371,7 @@
                                                                     
                                     </div>
                                
-                                    <div class="siblingsDetailsSub aboutGridSub">
+                                    <div class="siblingsDetailsSub aboutGridSub bottomPadding10">
                                             <div class="subDetails flexR siblingSub">
                                                 <div class="detailContainer flexC">
                                                     <div class="gridSubDetails  detailLabel fontSmall">Total Brothers</div>
@@ -475,7 +477,7 @@
                                                     
                                                     </div>
                                                 </div>
-                                                <div class="subDetails flexC fullWidth">
+                                                <div class="subDetails flexC fullWidth bottomPadding10">
                                                     
                                                     
                                                     <div class="detailContainer flexC fullWidth">
@@ -618,7 +620,7 @@
                                     </div>
                                     
                                 </div>
-                                <div class="aboutGridSub aboutme flexC">
+                                <div class="aboutGridSub aboutme flexC bottomPadding10">
                                     <div class="subDetails flexC">
                                         <div class="gridSubTitle bold  fontAverage flexC">For Office Use Only</div>
     
@@ -655,7 +657,13 @@
     <script src="script.js"></script>
 
     <style>
-    
+        @media screen and (max-width: 550px) { /*mobile*/
+
+            .contactDetails {
+                padding: 0 !important;
+                margin: 0 !important;
+            }   
+    }
    
     </style>
 </html>
