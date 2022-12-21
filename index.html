@@ -23,9 +23,10 @@
         <!--Hero Section-->
 
         <div class="heroSection">
-            
-            <div class="navbar"></div>
-
+            <!-- Slideshow -->
+           
+                    
+                
             <div class="years flexC white">
                 <div class="yearsTitle fontLargest">
                     <img src="assets/anniversary.webp" class="yearImage">
@@ -34,6 +35,54 @@
                    of Exclusive Experience In Matchmaking For Highly Qualified Candidates !
                 </div>
             </div>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+
+                    </ol>
+                
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="sliderImage slider1">
+                            
+                            </div>
+                        </div>
+                
+                        <div class="item">
+                        <div class="sliderImage slider2">
+                            
+                            </div>
+                        </div>
+                    
+                        <div class="item">
+                        <div class="sliderImage slider3">
+                            
+                            </div>
+                        </div>
+
+                    
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                </div>
+            
+
+            <div class="navbar"></div>
+
+            
 
             <div class="searchContainer">
                 <form class="search">
@@ -122,7 +171,7 @@
                 
                     <div class="featureName fontMedium">Highly Qualified
                         Candidates</div>
-                    <div class="featureDescr fontSmall">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</div>
+                    <div class="featureDescr  featureWidth fontSmall">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</div>
                 
                 </div>
                 
@@ -133,7 +182,7 @@
                     </div>
                 
                     <div class="featureName fontMedium">One time Fee</div>
-                    <div class="featureDescr fontSmall">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</div>
+                    <div class="featureDescr  featureWidth fontSmall">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</div>
                 
                 </div>
 
@@ -145,7 +194,7 @@
                     </div>
                   
                     <div class="featureName fontMedium">Detailed profile</div>
-                    <div class="featureDescr fontSmall">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</div>
+                    <div class="featureDescr  featureWidth fontSmall">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</div>
 
                 </div>
 
@@ -267,17 +316,25 @@
         <div class="footer"></div>
 
     </body>
-
-    <link rel="stylesheet" href="style.css" >
-    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    
+    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="search.css">
     <script src="script.js"></script>
 
     <style>
        .home{
         color:black
+       }
+       @media screen and (max-width: 550px) { /*mobile*/
+    
+            .logo{
+                width: 43vw;
+            }
        }
     </style>
 </html>
