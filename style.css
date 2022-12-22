@@ -558,17 +558,25 @@ textarea {
 .aboutSection{
     margin-top: 8%;
 }
+.aboutParentGrid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2vw;
+    
+    place-content: center;
+    place-items: center;
+}
 .aboutImageContainer,.aboutContainer{
     overflow: clip;
 }
 .aboutContainer{
-    width: 85%;
+    width: max-content;
     border-radius: var(--radius);
     margin: 1% 7%;
     background: white;
     
-    align-items: stretch;
-    gap: 2vw;
+    align-items: center;
+    gap: 1vw;
     box-shadow: var(--shadow);
 }
 
@@ -587,7 +595,7 @@ textarea {
     text-align: justify;
 }
 .aboutText{
-    width: 28vw;
+    width: 22vw;
 }
 .shrutiModiText{
     color: white;
@@ -854,6 +862,7 @@ overflow: clip;
     gap: 1vw;
     
 }
+
 .aboutme{grid-area: item1;}
 .basic{grid-area: item2;}
 .body{grid-area: item3;}
@@ -1207,15 +1216,19 @@ textarea{
     height: 96vw;
     margin-left: 100%;
    }
+   .aboutParentGrid{
+    grid-template-columns: auto;
+   }
    .aboutContainer {
     flex-direction: column;
+    width: 85vw;
    }
    .aboutImage{
     width: 85vw;
     height: 75vw;
    }
    .aboutText {
-    width: 86%;
+    width: 95%;
     padding:0% 5% ;
    }
    .contactMap{
