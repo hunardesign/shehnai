@@ -1263,6 +1263,8 @@ textarea{
    .aboutImage{
     width: 85vw;
     height: 85vw;
+    filter: saturate(1);
+
    }
    .aboutText {
     width: 95%;
