@@ -560,45 +560,78 @@ textarea {
 }
 .aboutParentGrid{
     display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 2vw;
-    
+    grid-template-columns: auto auto ;
+    gap: 4vw;
+    row-gap: 10vw;
     place-content: center;
     place-items: center;
+    margin-top: 10%;
 }
-.aboutImageContainer,.aboutContainer{
+.aboutImageContainer{
     overflow: clip;
 }
 .aboutContainer{
+    width: 40vw !important;
     width: max-content;
     border-radius: var(--radius);
     margin: 1% 7%;
     background: white;
-    
+    border-top-left-radius: 32%;
+    border-top-right-radius:32%;
     align-items: center;
     gap: 1vw;
-    box-shadow: var(--shadow);
-}
+    transition: 200ms ease-in;
 
-.aboutImage{
-    align-items: flex-end;
-    height: 28vw;
-    width: 24vw;
-    background-position: top;
-    background-size: cover;
+}
+.about1{
+    background-image:
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 67.42%, #000000 96.59%),
+    url('assets/ShrutiModi.webp');
+    
+}
+.about2{
     background-image:
     linear-gradient(180deg, rgba(0, 0, 0, 0) 67.42%, #000000 96.59%),
     url('assets/ShrutiModi.webp');
 }
+.about3{
+    background-image:
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 67.42%, #000000 96.59%),
+    url('assets/ShrutiModi.webp');
+}
+.about4{
+    background-image:
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 67.42%, #000000 96.59%),
+    url('assets/ShrutiModi.webp');
+}
+.aboutImage{
+    filter: saturate(0);
+    align-items: flex-end;
+    height: 18vw;
+    width: 18vw;
+    background-position: top;
+    background-size: cover;
+    border-radius: 100%;
+    /* position: absolute; */
+    margin-top: -20%;    
+    transition: 200ms ease-in;
+}
+.aboutContainer:hover .aboutImage{
+    filter: saturate(1);
+}
+.aboutContainer:hover{
+    box-shadow: var(--shadow);
+
+}
 .aboutText{
     color: rgba(0,0,0,0.7);
     text-align: justify;
-}
-.aboutText{
-    width: 22vw;
+    top:0;
+    width: 35vw;
+
 }
 .shrutiModiText{
-    color: white;
+    /* color: white; */
     font-weight: 600;  
     padding: 1vw;  
 }
@@ -1218,14 +1251,18 @@ textarea{
    }
    .aboutParentGrid{
     grid-template-columns: auto;
+    row-gap: 25vw;
+    margin-top: 20%;
    }
    .aboutContainer {
     flex-direction: column;
-    width: 85vw;
+    width: 95vw !important;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
    }
    .aboutImage{
     width: 85vw;
-    height: 75vw;
+    height: 85vw;
    }
    .aboutText {
     width: 95%;
