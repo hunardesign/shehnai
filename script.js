@@ -3,36 +3,65 @@ $.get("navbar.html", function(data){
     $(".navbar").replaceWith(data);
 });
 
+$.get("navBarLogin.html", function(data){
+  $(".navbarLogin").replaceWith(data);
+});
+
  $.get("footer.html", function(data){
    $(".footer").replaceWith(data);
  });
  
+ function NotificationTab(){
+  
+  let none1 = document.querySelector('.activitySub');
+  none1.style.display = "none";
+
+  let none2 = document.querySelector('.profileSub');
+  none2.style.display = "none";
+  
+  let show = document.querySelector(".notificationContainer");
+  show.style.display = "flex";
+  
+  document.querySelector("#activeTab").setAttribute("id","disableTab")
+  document.querySelector(".notificationTab").setAttribute("id","activeTab")
+  
+
+ }
  function Activity(){
   
-  let none = document.querySelector('.profileSub');
-  none.style.display = "none";
+  let none1 = document.querySelector('.notificationContainer');
+  none1.style.display = "none";
+
+  let none2 = document.querySelector('.profileSub');
+  none2.style.display = "none";
   
   let show = document.querySelector(".activitySub");
   show.style.display = "flex";
   
-  document.querySelector(".activeTab").setAttribute("class","disableTab")
-  document.querySelector(".disableTab").setAttribute("class","activeTab")
+  
+  document.querySelector("#activeTab").setAttribute("id","disableTab")
+  document.querySelector(".activity").setAttribute("id","activeTab")
   
 
  }
 
  function MyProfile(){
-  let none = document.querySelector('.activitySub');
-  none.style.display = "none";
+  let none1 = document.querySelector('.activitySub');
+  none1.style.display = "none";
+
+  let none2 = document.querySelector('.notificationContainer');
+  none2.style.display = "none";
   
   let show = document.querySelector(".profileSub");
   show.style.display = "flex";
   
-  document.querySelector(".disableTab").setAttribute("class","activeTab")
-  document.querySelector(".activeTab").setAttribute("class","disableTab")
+  
+  
+  document.querySelector("#activeTab").setAttribute("id","disableTab")
+  document.querySelector(".myprofile").setAttribute("id","activeTab")
   
  }
-
+ 
  function viewAbout(){
   document.querySelector('#activeProfileNav').setAttribute('id','');
   document.querySelector('.viewAbout').setAttribute('id','activeProfileNav')
@@ -164,5 +193,60 @@ function showSearch(){
   document.querySelector('.hideSearch').style.display='flex';
   document.querySelector('.search').style.display='flex';
   document.querySelector('.feed').style.top='115vw'
+
+}
+
+function basicSearch(){
+  document.querySelector('#activeSearchNav').setAttribute('id','disabledSearchNav');
+  document.querySelector('.basicSearchNav').setAttribute('id','activeSearchNav');
+  
+  document.querySelector('.keywordSearch').style.display='none';
+  document.querySelector('.advanceSearch').style.display='none';
+  document.querySelector('.basicSearch').style.display='flex';
+  document.querySelector('.feed').style.marginTop='12vw'
+
+}
+
+function advanceSearch(){
+  document.querySelector('#activeSearchNav').setAttribute('id','disabledSearchNav');
+  document.querySelector('.advanceSearchNav').setAttribute('id','activeSearchNav');
+
+  document.querySelector('.keywordSearch').style.display='none';
+  document.querySelector('.basicSearch').style.display='none';
+  document.querySelector('.advanceSearch').style.display='flex';
+  document.querySelector('.feed').style.marginTop='18vw'
+}
+function keywordSearch(){
+  document.querySelector('#activeSearchNav').setAttribute('id','disabledSearchNav');
+  document.querySelector('.keywordSearchNav').setAttribute('id','activeSearchNav');
+
+  document.querySelector('.advanceSearch').style.display='none';
+  document.querySelector('.basicSearch').style.display='none';
+  document.querySelector('.keywordSearch').style.display='flex';
+  document.querySelector('.feed').style.marginTop='12vw'
+
+}
+
+function likeToggle(obj){
+  
+  if(obj.getAttribute('src')=='assets/like.svg'){
+
+    obj.setAttribute('src','assets/liked.svg')
+  }
+  else{
+    obj.setAttribute('src','assets/like.svg')
+  }
+
+}
+
+function saveToggle(obj){
+  
+  if(obj.getAttribute('src')=='assets/save.svg'){
+
+    obj.setAttribute('src','assets/saved.svg')
+  }
+  else{
+    obj.setAttribute('src','assets/save.svg')
+  }
 
 }

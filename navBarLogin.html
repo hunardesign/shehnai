@@ -1,0 +1,162 @@
+
+<div class="navBarContainer" id="navbar">
+    <a href="/">
+        <div class="navBarLogo">
+            <img src="assets/logo.svg" loading="lazy" alt="" class="logo"/>
+        </div>
+    </a> 
+    <div class="navbuttons">
+            <div class="home links"><a href="dashboard.html">Dashboard</a></div>
+            <div class="pricing links"><a href="pricing.html">Pricing</a></div>
+            <div class="about links"><a href="about.html">About</a></div>
+            <div class="contact links"><a href="contact.html">Contact</a></div>
+            <div class="viewCounter links"><a href="profile.html" onclick="ShowProfile()"><div class="viewCounter">
+            0</div> Views Remaining</a></div>
+    </div>               
+        <div class="menu"><a href="javascript:void(0);" class="icon" onclick="hideMenu()"><img src="assets/menu.svg" class="menuIcon"></a></div>
+</div>
+<style>
+
+    .navBarContainer {
+        margin: 1.5% 7%;
+        z-index: 2;
+        animation: slideDown 600ms ease-in-out;
+        padding: 0.5% 0%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 85vw;
+        position: fixed;
+        height: max-content;
+        left: 0px;
+        top: 0px;
+        background: var(--glass);
+        backdrop-filter: blur(1vw);
+        border-radius: var(--radius);
+   }
+
+    .navbuttons{
+        display: flex;
+        gap: 1vw;
+        font-size: 0.8vw;
+        font-weight: 600;
+        color: black;
+        display: flex;
+        color: rgba(0, 0, 0, 0.4);
+        padding: 0% 1%;
+   }
+   .links{
+    display: flex;
+    padding: 1.5% 0%;
+    width: 5vw;
+    align-items: center;
+    justify-content: center;
+   }
+   .navBarLogo{
+        height: auto;
+   }
+   .logo{
+        width: 10vw;
+        padding: 0% 10%;
+   }
+   .viewCounter{
+    flex-wrap: wrap;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    color: rgb(162, 127, 0);
+    background: rgba(253, 255, 191, 0.4);
+   }
+   .login{
+        width: 7vw;
+        color: white;
+        background-color: var(--primary);
+        border-radius: var(--radius); 
+   }
+   .editButton,.register{
+         width: 7vw;
+        color: var(--primary);
+        border: 2px solid var(--primary);
+        border-radius: var(--radius); 
+        cursor: pointer;
+   }
+
+
+   @media screen and (max-width: 1600px) { /*small display*/
+        .navbuttons{
+            font-size: 1vw;    
+            /* margin-right: 25%; */
+        }
+        .logo{
+            width: 10vw;
+        }
+    }
+    @media screen and (max-width: 991px) { /*tablets*/
+        .navbuttons{
+            font-size: 1.4vw;    
+            margin-right: 36%;
+        }
+        .logo{
+            width: 14vw;
+        }
+    }
+    @media screen and (max-width: 550px) { /*mobile*/
+    .navbuttons{
+        /* background-color: rgba(255, 255, 255, 0.4); */
+        padding-bottom: 2%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        font-size: 4.2vw;
+        flex-direction: column;
+    }
+    .logo{
+        width: 35vw;
+    }
+
+    .navBarContainer{
+        
+        position: fixed;
+        margin-top: 5% !important;
+        
+        flex-direction: column;
+        height: max-content;
+        align-items: flex-start;
+        border-radius: 2vw;
+    }
+    .login{
+        
+        border-radius: 8px;
+    }
+    .menu{
+        display: block !important;
+        position: absolute;
+        right: 5vw;
+        top:6vw;
+
+    }
+    .links{
+        width: 75%;
+    }
+    .register{
+        border: none;
+    }
+    }
+</style>
+<script>
+    const mediaQuery = window.matchMedia('(min-width: 768px)')
+
+    if(!mediaQuery.matches){
+        $('.links').hide(); 
+    }
+
+     function hideMenu() {
+        if($('.links').css('display') == 'none'){ 
+            $('.links').show('slow'); 
+        } else { 
+            $('.links').hide('slow'); 
+        }
+
+    }
+</script>

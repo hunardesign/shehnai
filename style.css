@@ -49,6 +49,8 @@ body {
     background-color: var(--background);
     background-image: url("assets/backgroundPattern.png");
     background-repeat: repeat;
+    background-attachment: fixed;
+
 }
 
 @font-face {
@@ -127,9 +129,22 @@ a {
 .gap2{
     gap: 2vw;
 }
+.justify-content-start{
+    justify-content: flex-start;
+}
+.align-items-end{
+    align-items: flex-end;
+}
 .fullWidth{
     width: 96% !important;
     
+}
+.borderButton{
+    border: 1px solid var(--primary) !important;
+    background: none !important;
+    height: 1vw;
+    width: max-content !important;
+    color: var(--primary) !important;
 }
 .start{
    align-items: flex-start;
@@ -686,7 +701,7 @@ textarea {
     border-radius: var(--radius);
 }
 .actionContainer{
-   
+   cursor: pointer;
     color: rgba(255,255,255,0.6);
     gap: 0.25vw;
 }
@@ -779,26 +794,50 @@ textarea {
     padding: 4% 2% ;
     width: 100%;
     background: #f0f0f0;
-    opacity: 0.6;
+    opacity: 1;
+    color: rgba(0,0,0,0.5);
     
 }
 
-.activeTab{
+#activeTab{
     font-weight: bold;
     background: #ffffff;
+    color: black;
     opacity: 1;
 }
-.closeIcon,.disableTab{
+.closeIcon,#disableTab{
     cursor: pointer;
+    transition: ease-in 300ms;
 }
-.activitySub,.profileSub{
+#disableTab:hover{
+    background: #fff;
+    color: rgba(0, 0, 0, 1);
+    box-shadow: var(--shadow);
+}
+.notificationContainer,.activitySub,.profileSub{
     margin-top: 1vw;
     gap: 1vw;
     width: 100%;
     padding-bottom: 2% ;
     transition: ease-in 100ms;
+    height: 40vw;
+    justify-content: start;
     /* border: 1px solid; */
+    
 }
+.activityContainer{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2vw;
+}
+
+.activitySub,.notificationContainer{
+    display: none;
+}
+.notificationContainer{
+    overflow-y: scroll;
+}
+
 .profilePhotoContainer{
     /* outline: 12px solid red; */
     height: 22vw;

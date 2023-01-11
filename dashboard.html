@@ -14,7 +14,182 @@
         <meta name="Keywords" content="Shehnai Matrimonials,Shehnai,Matrimonials,matrimonial,matrimony,matrimonials,indian matrimonials,marriage,marriage sites,matchmaking,shaadi,shehnai,couple goals,boys,Doctors,High Profile,Doctors Marraige,high profile candidate,engineers,architrct matrimony,doctors matrimony,marraige bureau,Shehnai Matrimonials india,Shehnai Matrimonials gujarat ahmedabad,Shehnai Matrimonials in ahmedabad,indian bride,NRI matrimonials,nri,nri marraige bureau,highly qualified, highly qulified candidate ">
         <meta name="robots" content="index, follow">
         <meta name="language" content="English">
+        <link rel="stylesheet" href="style.css" >
+        <link rel="stylesheet" href="search.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script src="script.js"></script>
+        <style>
         
+            body{
+                /* overflow: hidden; */
+            }
+            .search {
+                position: fixed;
+                top: 15vh;
+                margin: 0;
+                margin-left: 7vw;
+                width: 60.5vw;
+                align-items: stretch;
+                justify-content: start;
+                padding-top: 0;
+                padding-left: 0;
+                padding-right: 0;
+            }
+            .searchItemsContainer{
+                width: 100%;
+                justify-content: stretch;
+                align-items: flex-end;
+            }
+            #activeSearchNav{
+                background: #fff;
+                color: rgba(0, 0, 0, 1);
+                font-weight: bold;
+            }
+            #disabledSearchNav{
+                background: #f0f0f0;
+                color: rgba(0, 0, 0, 0.4);
+                cursor: pointer;
+                transition: ease-in 300ms;
+            }
+            #disabledSearchNav:hover{
+                background: #fff;
+                color: rgba(0, 0, 0, 1);
+                box-shadow: var(--shadow);
+            }
+            .searchItem{
+                height: 4vw;
+                width: max-content;
+            }
+            .searchNav{
+                justify-content: flex-start;
+                background: #f0f0f0;
+                
+            }
+            .searchNavItem{
+                padding: 2%;
+            }
+            .feed{
+              
+                gap: 2vw;
+                position: absolute;
+                margin-left:7vw ;
+                margin-top: 12vw;
+                align-items: center;
+                z-index: -1;
+            }
+            .feedMember{
+                /* overflow: clip; */
+                width: 61vw;
+                height: 25vw;                
+                background: white;
+                justify-content: stretch;
+                align-items: flex-start;
+                box-shadow: var(--shadow);
+            }
+            .specialImage{
+                height: 30vw;
+                width: 30vw;
+            }
+            .feedData{
+                /* height: 25vw; */
+                width: 100%;
+                height: auto;
+                gap: 1vw;
+                align-items: flex-start;
+            }
+            .feedDetails {
+                gap: 1vw;
+                height: max-content;
+                align-items: flex-start;
+            }
+            .searchNavContainer{
+                width: 100%;
+                color: black;
+                display: flex;
+            }
+            .specialButtons *{
+                width: 100%;
+            }
+      
+           .showSearch{
+            display: none;
+           }
+           .hideSearch{
+            display: none;
+           }
+           .advanceSearch,.keywordSearch{
+                display: none;
+            }
+            .advanceSearch{
+                align-items: flex-start;
+                justify-content: space-between;
+            }
+            .subActivityItemContainer{
+                gap: 1vw;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                padding:  1vw 0.25vw;
+                border-radius: 0.5vw;
+            }
+            @media screen and (max-width: 550px) {
+                .hideSearch{
+                     display: flex;
+                }
+                    .mobileOnly{
+                        display: block;
+                    }
+                    .closeIcon{
+                        width: 6vw;
+                    }
+                    .search{
+                        position: fixed;
+                        top: 24vw;
+                        width: 100%;
+                        margin: 0;
+                    }
+                    .feed{
+                        top: 115vw;
+                        width: 100%;
+                        margin: 10% 0%  ;
+                    }
+                    .subDetails {
+                        flex-direction: column;
+                    }
+                    .feedMember{
+                        width: 100%;
+                    }
+                    .specialImage{
+                        width: 100vw;
+                        height: 100vw;
+                    }
+                    .showSearch{
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 24%;
+                        position: absolute;
+                        background: white;
+                        padding: 2%;
+                    }
+                    .detailData{
+                        padding: 2%;
+                    }
+                    .detailData.about{
+                        width: 90vw;
+                    }
+                    .feedDetails {
+                     gap: 4vw;   
+                     padding: 2%;
+                     width: 100%;
+                    }
+                    .detailContainer {
+                        width: 100% !important;
+                    }
+                    
+                }
+        </style>
         <title>Shehnai Matrimonials - Home | Shehnai Matrimonials | High Profile Candidate | 20+ years of Exclusive Experience In Matchmaking For Highly Qualified Candidates !</title>
 
     </head>
@@ -23,14 +198,16 @@
 
 
             
-        <div class="navbar"></div>
+        <div class="navbarLogin"></div>
 
             <div class="dashboard">
                 
                 <div class="profile">
                     <div class="profiletabs">
-                        <div class="activity disableTab" onclick="Activity()">Activity</div>
-                        <div class="myprofile activeTab" onclick="MyProfile()">My Profile</div>
+                        <div class="myprofile" id="activeTab"onclick="MyProfile()">My Profile</div>
+                        <div class="notificationTab" id="disableTab" onclick="NotificationTab()">Notification</div>
+                        <div class="activity" id="disableTab" onclick="Activity()">Activity</div>
+
                     </div>
                     <div class="profileSub flexC">                        
                         <div class="profilePhotoContainer">
@@ -83,7 +260,7 @@
                         </div>
                     </div>
                     
-                    <div class="activitySub flexC">
+                    <div class="notificationContainer flexC">
                        
                         <div class="notfication flexR space-between">
                             <div class="notificationSub flexR">
@@ -108,6 +285,84 @@
                             </div>
                             <img src="assets/close.svg" class="closeIcon">
                         </div>
+                        <div class="notfication flexR space-between">
+                            <div class="notificationSub flexR">
+                                <img src="assets/c1.webp" class="notificationImage">
+                                <div class="notificationText  flexC">
+                                    <div class="notificationTitle fontAverage bold">UIDF10215N0125</div>
+                                    <div class="notificationSub fontSmall">liked your profile</div>
+                                    <div class="notificationLink fontSmall red">View Profile ></div>
+                                </div>
+                            </div>
+                            <img src="assets/close.svg" class="closeIcon">
+                        </div>
+                        <div class="notfication flexR space-between">
+                            <div class="notificationSub flexR">
+                                <img src="assets/c1.webp" class="notificationImage">
+                                <div class="notificationText  flexC">
+                                    <div class="notificationTitle fontAverage bold">UIDF10215N0125</div>
+                                    <div class="notificationSub fontSmall">liked your profile</div>
+                                    <div class="notificationLink fontSmall red">View Profile ></div>
+                                </div>
+                            </div>
+                            <img src="assets/close.svg" class="closeIcon">
+                        </div>
+                        <div class="notfication flexR space-between">
+                            <div class="notificationSub flexR">
+                                <img src="assets/c1.webp" class="notificationImage">
+                                <div class="notificationText  flexC">
+                                    <div class="notificationTitle fontAverage bold">UIDF10215N0125</div>
+                                    <div class="notificationSub fontSmall">liked your profile</div>
+                                    <div class="notificationLink fontSmall red">View Profile ></div>
+                                </div>
+                            </div>
+                            <img src="assets/close.svg" class="closeIcon">
+                        </div>
+                        <div class="notfication flexR space-between">
+                            <div class="notificationSub flexR">
+                                <img src="assets/c1.webp" class="notificationImage">
+                                <div class="notificationText  flexC">
+                                    <div class="notificationTitle fontAverage bold">UIDF10215N0125</div>
+                                    <div class="notificationSub fontSmall">liked your profile</div>
+                                    <div class="notificationLink fontSmall red">View Profile ></div>
+                                </div>
+                            </div>
+                            <img src="assets/close.svg" class="closeIcon">
+                        </div>
+                        <div class="notfication flexR space-between">
+                            <div class="notificationSub flexR">
+                                <img src="assets/c1.webp" class="notificationImage">
+                                <div class="notificationText  flexC">
+                                    <div class="notificationTitle fontAverage bold">UIDF10215N0125</div>
+                                    <div class="notificationSub fontSmall">liked your profile</div>
+                                    <div class="notificationLink fontSmall red">View Profile ></div>
+                                </div>
+                            </div>
+                            <img src="assets/close.svg" class="closeIcon">
+                        </div>
+                        <div class="notfication flexR space-between">
+                            <div class="notificationSub flexR">
+                                <img src="assets/c1.webp" class="notificationImage">
+                                <div class="notificationText  flexC">
+                                    <div class="notificationTitle fontAverage bold">UIDF10215N0125</div>
+                                    <div class="notificationSub fontSmall">liked your profile</div>
+                                    <div class="notificationLink fontSmall red">View Profile ></div>
+                                </div>
+                            </div>
+                            <img src="assets/close.svg" class="closeIcon">
+                        </div>
+
+                        <div class="notfication flexR space-between">
+                            <div class="notificationSub flexR">
+                                <img src="assets/c1.webp" class="notificationImage">
+                                <div class="notificationText  flexC">
+                                    <div class="notificationTitle fontAverage bold">UIDF10215N0125</div>
+                                    <div class="notificationSub fontSmall">liked your profile</div>
+                                    <div class="notificationLink fontSmall red">View Profile ></div>
+                                </div>
+                            </div>
+                            <img src="assets/close.svg" class="closeIcon">
+                        </div>
 
                         <div class="notfication flexR space-between">
                             <div class="notificationSub flexR">
@@ -123,80 +378,243 @@
 
                     </div>
 
+                    <div class="activitySub flexC">
+                       <div class="activityContainer">
+                           <div class="subActivityItemContainer flexC"><div class="subActivityItem interestSent fontSmall bold">0</div>Interest Sent</div>
+                           <div class="subActivityItemContainer flexC"><div class="subActivityItem interestReceived fontSmall bold">0</div>Interest Received</div>
+                           <div class="subActivityItemContainer flexC"><div class="subActivityItem interestAccepted fontSmall bold">0</div>Interest Accepted</div>
+                           <div class="subActivityItemContainer flexC"><div class="subActivityItem interestRejected fontSmall bold">0</div>Interest Rejected</div>
+                           <div class="subActivityItemContainer flexC"><div class="subActivityItem contactsviewed fontSmall bold">0</div>Contact Viewed You</div>
+                           <div class="subActivityItemContainer flexC"><div class="subActivityItem contactsviewedme fontSmall bold">0</div>Contacts You Viewed</div>
+                           <div class="subActivityItemContainer flexC"><div class="subActivityItem shortlistProfiles fontSmall bold">0</div>Shortlist Profiles</div>
+                           <div class="subActivityItemContainer flexC"><div class="subActivityItem recentvisitors fontSmall bold">0</div>Recent Visitors</div>
+
+                       </div>
+                        
+                    </div>
+
                 </div>
 
                 <div class="feedContainer">
                     <div class="searchbar">
                         <div class="flexR fontMedium gap2 showSearch" onclick="showSearch()">Show Search </div>
-                        <form class="search">
-                            <div class="flexR fontMedium gap2 hideSearch" onclick="hideSearch()">Close Search <img src="assets/close.svg" class="mobileOnly closeIcon"></div>
-                            <div class="searchItem">
-                                <div class="searchTitle">I'm looking for a</div>
-                                
-                                <div class="genderRadio">
-                                    <div class="male">
-                                        <input type="radio" id="male" name="gender" value="male">
-                                        <label for="male">Male</label><br>
-                                    </div>
-                                    
-                                    <div class="female">
-                                        <input type="radio" id="female" checked="checked" name="gender" value="female"  >
-                                        <label for="female">Female</label><br>
-                                    </div>
-                                    
-                                </div>
-                        
-                            </div>
-                        
-                            <div class="searchItem">
-                                
-                                <div class="searchTitle">Age</div>
+                        <div class="flexC">
                             
-                                <div class="age">
-                        
-                                    <div class="minAge">
-                                        
-                                        <input type="number" id="minAge" name="minAge" value="18" min="18" max="70" class="ageField">
-                                        
-                                    </div>
-                                    to
-                                    <div class="maxAge">
-                                        
-                                        <input type="number" id="maxAge" name="maxAge" value="21" min="18" max="70" class="ageField">
-                                        
-                                    </div>
-                                    
+                            <form class="search flexC">
+
+                                <div class="flexR fontMedium searchNav"> 
+                                    <div class="searchNavItem fontSmall basicSearchNav" id="activeSearchNav" onclick="basicSearch()">Basic Search</div>
+                                    <div class="searchNavItem fontSmall advanceSearchNav" id="disabledSearchNav" onclick="advanceSearch()">Advanced Search</div>
+                                    <div class="searchNavItem fontSmall keywordSearchNav" id="disabledSearchNav" onclick="keywordSearch()">Keyword Search</div>
                                 </div>
-                        
-                            </div> 
-                            <div class="searchItem caste">
+                                <div class="flexR searchItemsContainer basicSearch" id="activeSearch">
+                                    <div class="flexR fontMedium gap2 hideSearch" onclick="hideSearch()">Close Search <img src="assets/close.svg" class="mobileOnly closeIcon"></div>
                                 
-                                <div class="searchTitle">of Caste</div>
+                                    <div class="searchItem">
+                                        <div class="searchTitle">I'm looking for a</div>
+                                        
+                                        <div class="genderRadio">
+                                            <div class="male">
+                                                <input type="radio" id="male" name="gender" value="male">
+                                                <label for="male">Male</label><br>
+                                            </div>
+                                            
+                                            <div class="female">
+                                                <input type="radio" id="female" checked="checked" name="gender" value="female"  >
+                                                <label for="female">Female</label><br>
+                                            </div>
+                                            
+                                        </div>
                                 
-                                <select name="caste" id="caste">
-                                    <option value="BRAHMIN">Brahmin</option>
-                                    <option value="JAIN">Jain</option>
-                                    <option value="PATEL">Patel</option>
-                                    <option value="VAISHNAV">Vaishnav</option>
-                                    <option value="VANIA">Vania</option>
-                                    <option value="OTHER">Other</option>
-                                </select>
+                                    </div>
                                 
-                            </div>
-                            <div class="searchButtonContainer">
-                                <input type="submit" value="Search" class="searchButton">
-                            </div>
+                                    <div class="searchItem">
+                                        
+                                        <div class="searchTitle">Age</div>
+                                    
+                                        <div class="age">
+                                
+                                            <div class="minAge">
+                                                
+                                                <input type="number" id="minAge" name="minAge" value="18" min="18" max="70" class="ageField">
+                                                
+                                            </div>
+                                            to
+                                            <div class="maxAge">
+                                                
+                                                <input type="number" id="maxAge" name="maxAge" value="21" min="18" max="70" class="ageField">
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                
+                                    </div>
+    
+                                   
+    
+                                   
+    
+                                    <div class="searchItem caste">
+                                        
+                                        <div class="searchTitle">of Caste</div>
+                                        
+                                        <select name="caste" id="caste">
+                                            <option value="BRAHMIN">Brahmin</option>
+                                            <option value="JAIN">Jain</option>
+                                            <option value="PATEL">Patel</option>
+                                            <option value="VAISHNAV">Vaishnav</option>
+                                            <option value="VANIA">Vania</option>
+                                            <option value="OTHER">Other</option>
+                                        </select>
+                                        
+                                    </div>
+    
+                                    <div class="searchButtonContainer">
         
-                        </form>
+                                        <input type="submit" value="Search" class="searchButton">
+                                    </div>
+
+                                </div>
+                                <div class="flexC searchItemsContainer advanceSearch" id="disableSearch">
+                                    <div class="flexR fontMedium gap2 hideSearch" onclick="hideSearch()">Close Search <img src="assets/close.svg" class="mobileOnly closeIcon"></div>
+                                    
+                                    <div class="flexR gap2 fullWidth justify-content-start">
+                                        <div class="searchItem">
+                                            <div class="searchTitle">I'm looking for a</div>
+                                            
+                                            <div class="genderRadio">
+                                                <div class="male">
+                                                    <input type="radio" id="male" name="gender" value="male">
+                                                    <label for="male">Male</label><br>
+                                                </div>
+                                                
+                                                <div class="female">
+                                                    <input type="radio" id="female"  name="gender" value="female"  >
+                                                    <label for="female">Female</label><br>
+                                                </div>
+                                                
+                                            </div>
+                                    
+                                        </div>
+                                    
+                                        <div class="searchItem">
+                                            
+                                            <div class="searchTitle">Age</div>
+                                        
+                                            <div class="age">
+                                    
+                                                <div class="minAge">
+                                                    
+                                                    <input type="number" id="minAge" name="minAge" value="18" min="18" max="70" class="ageField">
+                                                    
+                                                </div>
+                                                to
+                                                <div class="maxAge">
+                                                    
+                                                    <input type="number" id="maxAge" name="maxAge" value="21" min="18" max="70" class="ageField">
+                                                    
+                                                </div>
+                                                
+                                            </div>
+                                    
+                                        </div>
+        
+                                    
+        
+                                    
+        
+                                        <div class="searchItem caste">
+                                            
+                                            <div class="searchTitle">of Caste</div>
+                                            
+                                            <select name="caste" id="caste">
+                                                <option value="BRAHMIN">Brahmin</option>
+                                                <option value="JAIN">Jain</option>
+                                                <option value="PATEL">Patel</option>
+                                                <option value="VAISHNAV">Vaishnav</option>
+                                                <option value="VANIA">Vania</option>
+                                                <option value="OTHER">Other</option>
+                                            </select>
+                                            
+                                        </div>
+
+                                        <div class="searchItem education">
+                                            
+                                            <div class="searchTitle">of education</div>
+                                            
+                                            <select name="education" id="education">
+                                                <option value="MBBS">MBBS</option>
+                                                <option value="JAIN">Jain</option>
+                                                <option value="PATEL">Patel</option>
+                                                <option value="VAISHNAV">Vaishnav</option>
+                                                <option value="VANIA">Vania</option>
+                                                <option value="OTHER">Other</option>
+                                            </select>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="flexR gap2 fullWidth justify-content-start align-items-end">
+                                        <div class="searchItem">
+                
+                                            <div class="searchTitle">Height</div>
+                                        
+                                            <div class="height flexR gap">
+                                    
+                                                <div class="minHeight flexR gap">
+                                                    
+                                                    <input type="number" id="minHeightIn" name="minHeightIn" value="4" min="4" max="6" class="ageField">ft
+                                                    <input type="number" id="minHeightIn" name="minHeightIn" value="0" min="0" max="11" class="ageField">in
+                                                    
+                                                </div>
+                                                to
+                                                <div class="maxHeight flexR gap">
+                                                    
+                                                    <input type="number" id="maxHeightft" name="maxHeightft" value="5" min="4" max="7" class="ageField">ft
+                                                    <input type="number" id="maxHeightIn" name="maxHeightIn" value="0" min="0" max="11" class="ageField">in
+        
+                                                </div>
+                                                
+                                            </div>
+                                    
+                                        </div>
+        
+                                        <div class="searchButtonContainer">
+            
+                                            <input type="submit" value="Search" class="searchButton">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="flexR searchItemsContainer keywordSearch" id="disableSearch">
+                                    <div class="searchItem">
+            
+                                        <div class="searchTitle">Keyword search</div>
+
+                                        <div class="height flexR gap">
+                                            <input type="text" id="keyword" name="keyword"  class="ageField">
+                                        </div>
+                                
+                                    </div>
+                                   
+                                    <div class="searchButtonContainer">
+        
+                                        <input type="submit" value="Search" class="searchButton">
+                                    </div>
+
+                                </div>
+                          
+                            </form>
+                        </div>
+                        
                     </div>
                         
-                    <div class="feed flexC">
+                    <div class="feed flexC ">
                         
                         <div class="feedMember flexR">
                             <img src="assets/special2.webp" class="specialImage"> 
                             <div class="actions flexR">
-                                <div class="actionContainer flexC fontSmall"><img src="assets/like.svg" class="likeIcon actionIcon">Like</div>
-                                <div class="actionContainer flexC fontSmall"><img src="assets/save.svg" class="saveIcon actionIcon">Save</div>
+                                <div class="actionContainer flexC fontSmall"><img src="assets/like.svg" class="likeIcon actionIcon" onclick="likeToggle(this)" data-userID="SH001">Like</div>
+                                <div class="actionContainer flexC fontSmall"><img src="assets/save.svg" class="saveIcon actionIcon" onclick="saveToggle(this)">Save</div>
                             </div>
                             <div class="feedData flexC">
                                 <div class="specialButtons flexR">
@@ -250,8 +668,8 @@
                         <div class="feedMember flexR">
                             <img src="assets/special2.webp" class="specialImage"> 
                             <div class="actions flexR">
-                                <div class="actionContainer flexC fontSmall"><img src="assets/like.svg" class="likeIcon actionIcon">Like</div>
-                                <div class="actionContainer flexC fontSmall"><img src="assets/save.svg" class="saveIcon actionIcon">Save</div>
+                                <div class="actionContainer flexC fontSmall"><img src="assets/like.svg" class="likeIcon actionIcon" onclick="likeToggle(this)" data-userID="SH002">Like</div>
+                                <div class="actionContainer flexC fontSmall"><img src="assets/save.svg" class="saveIcon actionIcon" onclick="saveToggle(this)">Save</div>
                             </div>
                             <div class="feedData flexC">
                                 <div class="specialButtons flexR">
@@ -305,8 +723,8 @@
                        <div class="feedMember flexR">
                             <img src="assets/special2.webp" class="specialImage"> 
                             <div class="actions flexR">
-                                <div class="actionContainer flexC fontSmall"><img src="assets/like.svg" class="likeIcon actionIcon">Like</div>
-                                <div class="actionContainer flexC fontSmall"><img src="assets/save.svg" class="saveIcon actionIcon">Save</div>
+                                <div class="actionContainer flexC fontSmall"><img src="assets/like.svg" class="likeIcon actionIcon" onclick="likeToggle(this)" data-userID="SH003">Like</div>
+                                <div class="actionContainer flexC fontSmall"><img src="assets/save.svg" class="saveIcon actionIcon" onclick="saveToggle(this)">Save</div>
                             </div>
                             <div class="feedData flexC">
                                 <div class="specialButtons flexR">
@@ -368,131 +786,29 @@
 
     </body>
   
-    <link rel="stylesheet" href="style.css" >
-    <link rel="stylesheet" href="search.css">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <script src="script.js"></script>
-    <style>
-    
-        body{
-            /* overflow: hidden; */
-        }
-        .search{
-            position: fixed;
-            top: 15vh;
-            margin: 0;
-            margin-left: 7vw;
-            width: 60vw;
-        }
-        
-        .feed{
-            overflow: clip;
-            overflow: visible;
-            
-            gap: 2vw;
-            position: absolute;
-            margin-left:7vw ;
-            margin-top: 9vw;
-            align-items: center;
-            z-index: -1;
-        }
-        .feedMember{
-            /* border: 1px solid red; */
-            width: 61vw;
-            height: auto;
-            
-            background: white;
-            justify-content: stretch;
-            align-items: flex-start;
-            box-shadow: var(--shadow);
-        }
-        .specialImage{
-            height: 30vw;
-            width: 30vw;
-        }
-        .feedData{
-            /* height: 25vw; */
-            width: 100%;
-            height: auto;
-            gap: 1vw;
-            align-items: flex-start;
-        }
-        .feedDetails {
-            gap: 1vw;
-            height: max-content;
-            align-items: flex-start;
-        }
-        .specialButtons *{
-            width: 100%;
-        }
-        .specialButtons {
-            
-        }
-       .showSearch{
-        display: none;
-       }
-       .hideSearch{
-        display: none;
-       }
-        @media screen and (max-width: 550px) {
-            .hideSearch{
-                 display: flex;
-            }
-                .mobileOnly{
-                    display: block;
-                }
-                .closeIcon{
-                    width: 6vw;
-                }
-                .search{
-                    position: fixed;
-                    top: 24vw;
-                    width: 100%;
-                    margin: 0;
-                }
-                .feed{
-                    top: 115vw;
-                    width: 100%;
-                    margin: 10% 0%  ;
-                }
-                .subDetails {
-                    flex-direction: column;
-                }
-                .feedMember{
-                    width: 100%;
-                }
-                .specialImage{
-                    width: 100vw;
-                    height: 100vw;
-                }
-                .showSearch{
-                    width: 100%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin-top: 24%;
-                    position: absolute;
-                    background: white;
-                    padding: 2%;
-                }
-                .detailData{
-                    padding: 2%;
-                }
-                .detailData.about{
-                    width: 90vw;
-                }
-                .feedDetails {
-                 gap: 4vw;   
-                 padding: 2%;
-                 width: 100%;
-                }
-                .detailContainer {
-                    width: 100% !important;
-                }
-                
-            }
-    </style>
+   
         
 </html>
+<!--  <div class="searchItem">
+            
+                                    <div class="searchTitle">Height</div>
+                                
+                                    <div class="height flexR gap">
+                            
+                                        <div class="minHeight flexR gap">
+                                            
+                                            <input type="number" id="minHeightIn" name="minHeightIn" value="4" min="4" max="6" class="ageField">ft
+                                            <input type="number" id="minHeightIn" name="minHeightIn" value="0" min="0" max="11" class="ageField">in
+                                            
+                                        </div>
+                                        to
+                                        <div class="maxHeight flexR gap">
+                                            
+                                            <input type="number" id="maxHeightft" name="maxHeightft" value="5" min="4" max="7" class="ageField">ft
+                                            <input type="number" id="maxHeightIn" name="maxHeightIn" value="0" min="0" max="11" class="ageField">in
+
+                                        </div>
+                                        
+                                    </div>
+                            
+                                </div> -->

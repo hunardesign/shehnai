@@ -58,13 +58,15 @@ select {
     border-radius: var(--radius);
 }
 
-
+.searchItemContainer{
+  justify-content: space-between;
+}
 .searchItem{
     padding: 2%;
     display: flex;
     flex-direction: column;
-    width: 10vw;
-
+    /* width: 10vw; */
+    height: max-content ;
 }
 .disabilityRadio,.genderRadio,.age{
     display: flex;
@@ -84,7 +86,7 @@ select {
 
 .searchTitle {
     font-size: 0.9vw;
-    padding-bottom: 10%;
+    padding-bottom: 1vw;
 
 }
 
