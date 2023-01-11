@@ -1,11 +1,45 @@
-<div class="footer">
+<div class="footer flexC ">
+    
+    <div class="footerLinksContainer flexR">
+        <div class="footerLinks flexC gap2">
+            <div class="footerHeader fontMedium">Help & Support</div>
+            <div class="linksSub flexC gap2">
+                <div class=""><a class="fontSmall" href="Contact.html">Contact Us</a></div>
+                <div class=""><a class="fontSmall" href="/">Feedback</a></div>
+                <div class=""><a class="fontSmall" href="pricing.html">FAQ</a></div>
+            </div>
+        </div>
+        <div class="footerLinks flexC gap2">
+            <div class="footerHeader fontMedium">Quick Links</div>
+            <div class="linksSub flexC gap2">
+                <div class=""><a class="fontSmall" href="#">Privacy Policy</a></div>
+                <div class=""><a class="fontSmall" href="#">Terms & Condition</a></div>
+                <div class=""><a class="fontSmall" href="#">Services</a></div>
+            </div>
+        </div>
+        <div class="footerLinks flexC gap2">
+            <div class="footerHeader fontMedium">My Matrimony</div>
+            <div class="linksSub flexC gap2">
+                <div class=""><a class="fontSmall" href="Bride.html">Bride</a></div>
+                <div class=""><a class="fontSmall" href="Groom.html">Groom</a></div>
+            </div>
+        </div>
+        <div class="footerLinks flexC gap2">
+            <div class="footerHeader fontMedium">Media</div>
+            <div class="linksSub flexC gap2">
+                <div class=""><a class="fontSmall" href="#">Advertise</a></div>
+                <div class=""><a class="fontSmall" href="#">Videos</a></div>
+                <div class=""><a class="fontSmall" href="#">Testimonials</a></div>
+            </div>
+        </div>
+    </div>
     <div class="footerContainer">
         <div class="socialMedia">
             <img src="assets/facebook.svg" class="socialIcon">
             <img src="assets/instagram.svg" class="socialIcon">
             <img src="assets/twitter.svg" class="socialIcon">
         </div>
-        <a href="/">
+        <a  href="/">
             <div class="navBarLogo">
                 <img src="assets/logo.svg" loading="lazy" alt="" class="logo"/>
             </div>
@@ -15,38 +49,52 @@
         </div>
         
     </div>
-    <div class="footerLinks">
-        <div class=""><a href="/">Home</a></div>
-        <div class=""><a href="pricing.html">Pricing</a></div>
-        <div class=""><a href="about.html">About</a></div>
-        <div class=""><a href="Contact.html">Contact</a></div>
-        <!-- <div class=""><a href="help.html">Help</a></div> -->
-    </div>
 </div>
 <style>
+   .linksSub *{
+    color: rgba(255,255,255,0.6);
+    cursor: pointer;
+    transition: ease-in 300ms;
+   }
+   .linksSub *:hover{
+    color: var(--primary);
+    text-decoration: none;
+   }
+    .footerLinks,.linksSub{
+        align-items: flex-start !important;
+    }
     .footer{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        
     }
     .footerLinks{
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 1%;
-        width: 99vw;
+        /* width: 99vw; */
         color:white !important;
-        background:black;
+        
         column-gap: 2.8vw;
 
+    }
+    .footerLinksContainer{
+        background:rgb(19, 0, 0);
+        width: 100vw;
+        height: 15vw;
+        align-items: flex-start ;
+        /* justify-content: space-around; */
+        gap: 5vw;
     }
     .footerContainer{
         display: flex;
         width: 99vw;
         background:white;
-        justify-content: space-around;
+        gap: 15vw;
         padding:1%;
         align-items: center;
+        justify-content: center;
     }
     .signup{
         background-color: var(--primary);
@@ -63,6 +111,9 @@
    .socialIcon{
     padding: 2%;
     cursor: pointer;
+   }
+   .socialIcon:hover{
+     opacity:0.4;
    }
    @media screen and (max-width: 550px) {
     .footer{

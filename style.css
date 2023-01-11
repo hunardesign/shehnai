@@ -60,7 +60,7 @@ body {
 .genderLabel{display: block;}
 .heroSection {
     
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
@@ -182,6 +182,7 @@ a {
 /* Features */
 
 .shehnaiFeatures {
+    margin-top: 5%;
     background: url("assets/chooseBg.webp");
     padding: 5% 7%;
     margin-left: auto;
@@ -465,7 +466,7 @@ a {
     background: white;
     border-radius: var(--radius);
     position: absolute;
-    margin: 10% 0% 0% 8%;
+    margin: 10% 0% 0% 40%;
     width: 20vw;
    }
 .formTitle{
@@ -1020,6 +1021,70 @@ option:checked, option:hover {
 .mobileOnly,.viewContactDetailsMobile{
     display: none;
 }
+
+.BrideGroomSelect{
+    overflow: clip;
+    border-radius: var(--radius);
+    background: #f0f0f0;
+    color:rgba(0,0,0,0.6);
+    box-shadow: var(--shadow);
+}
+#activeBrideGroom{
+    background: white;
+    color: black;
+    font-weight: bold;
+}
+/* .BrideGroomCarousel{
+    background: rgba(0,0,0,0.6);
+} */
+#disabledBrideGroom:hover{
+    cursor: pointer;
+    background: white;
+    box-shadow: var(--shadow);
+}
+.selector{
+    padding: 1vw 2vw;
+    transition: ease-in 300ms;
+}
+.personInfo{
+    display: none;
+    padding: 1vw 2vw;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(8px);
+    height: 100%
+}
+.personContainer{
+    cursor: pointer;
+    height: 15vw;
+    width: 15vw;   
+    border-radius: var(--radius);
+    overflow: clip;
+}
+.GroomImages{
+    display: none;
+}
+.bride1{
+    background-image: url("assets/goldMember1.webp");
+}
+.bride2{
+    background-image: url("assets/goldMember1.webp");
+}
+.bride3{
+    background-image: url("assets/goldMember1.webp");
+}
+.groom1{
+    background-image: url("assets/goldMember2.webp");
+}
+.groom2{
+    background-image: url("assets/goldMember2.webp");
+}
+.groom3{
+    background-image: url("assets/goldMember2.webp");
+}
+.personContainer:hover .personInfo{
+    display: flex;
+}
+
 /*General CSS Ends*/
 
  @media screen and (max-width: 1600px) {

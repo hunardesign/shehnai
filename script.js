@@ -250,3 +250,16 @@ function saveToggle(obj){
   }
 
 }
+
+function setBride(){
+  document.querySelector('#activeBrideGroom').setAttribute('id','disabledBrideGroom')
+  document.querySelector('.BrideSelect').setAttribute('id','activeBrideGroom')
+  document.querySelector('.GroomImages').style.display='none';
+  document.querySelector('.BrideImages').style.display='flex';
+}
+function setGroom(){
+  document.querySelector('#activeBrideGroom').setAttribute('id','disabledBrideGroom')
+  document.querySelector('.GroomSelect').setAttribute('id','activeBrideGroom')
+  document.querySelector('.BrideImages').style.display='none';
+  document.querySelector('.GroomImages').style.display='flex';
+}
