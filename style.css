@@ -710,7 +710,7 @@ textarea {
     height: 1vw;
     width: 1vw;
 }
-.feedData,.specialData flexC{
+.feedData,.specialData gap flexC{
     opacity: 0;
     position: absolute;
     background: rgba(255,255,255,0.6);
