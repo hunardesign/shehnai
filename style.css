@@ -87,6 +87,13 @@ a {
     color:inherit;
     text-decoration: inherit;
 }
+.card {
+    padding: 2%;
+    background: white;
+    border-radius: var(--radius);
+    width: 80vw;
+    margin: 1% 0% ;
+}
 .flexR{
     display: flex;
     align-items: center;
@@ -391,6 +398,11 @@ a {
     border-radius: var(--radius);
     width: 20%;
     gap: 2vw;
+    transition: ease-in 300ms;
+}
+.planCard:hover{
+    box-shadow: var(--shadowDark);
+    cursor: pointer;
 }
 .featureItem {
 
@@ -501,7 +513,7 @@ input[type="email" i],input[type="text" i],input[type="number" i],input[type="te
     width: 3vw;
 }
 .address,.expectations,.aboutMeArea,.aboutFamily{
-    width: 25vw;
+    width: 23vw;
 }
 .dropDown{
     border-radius: var(--radius);
@@ -759,7 +771,7 @@ textarea {
    gap: 0.5vw;
     align-items: flex-start;
     width: max-content;
-    height: 100%;
+    /* height: 100%; */
 }
 .gridSubDetails  {
     width: 100%;
@@ -856,6 +868,7 @@ textarea {
 }
 .editButton{
     padding: 1% 2%;
+    background: white;
 }
 .activitySub{
     display: none;
@@ -950,7 +963,7 @@ overflow: clip;
     /* border:0.1vw solid rgba(0,0,0,0.1); */
     box-shadow: 3px 3px 12px rgba(0,0,0,0.1) ;
     border-radius: var(--radius);
-    padding: 2%;
+    padding: 1.5%;
     width: 98%;
 }
 
@@ -1357,12 +1370,14 @@ textarea{
     grid-template-columns: auto;
     row-gap: 25vw;
     margin-top: 20%;
+    
    }
    .aboutContainer {
     flex-direction: column;
     width: 95vw !important;
     border-top-left-radius: 15%;
     border-top-right-radius: 15%;
+    
    }
    .aboutImage{
     width: 85vw;
@@ -1377,6 +1392,7 @@ textarea{
    .contactMap{
     flex-direction: column;
     width: 85vw;
+    
    }
    .contactForm{
     gap: 5vw;
@@ -1454,6 +1470,7 @@ textarea{
         display: flex;
         flex-direction: column;
         align-items: stretch;
+        
     }
     .profileDetailsNav{
         justify-content: space-evenly;

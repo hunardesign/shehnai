@@ -23,9 +23,9 @@ select {
     justify-content: center;
     padding:2%;
   }
-  .searchButtonContainer .searchButton{
+  /* .searchButtonContainer .searchButton{
     width: 100% !important;
-  }
+  } */
   .searchButton{
     cursor: pointer;
     font-family: inherit;    

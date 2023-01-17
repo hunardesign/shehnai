@@ -16,7 +16,6 @@
         <meta name="language" content="English">
           
     <link rel="stylesheet" href="search.css">
-    <link rel="stylesheet" href="style.css" >
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
@@ -24,6 +23,8 @@
     <style>
         .shehnaiPricing{
          margin-top: 7%;
+         width: 100vw;
+         
         }
         .planDetails{
          padding: 2% 0%;
@@ -95,7 +96,12 @@
          width: max-content;
      
         }
+        .planCard{
+            width: 15.5%;
+        }
          </style>
+             <link rel="stylesheet" href="style.css" >
+
    
         <title>Shehnai Matrimonials - Home | Shehnai Matrimonials | High Profile Candidate | 20+ years of Exclusive Experience In Matchmaking For Highly Qualified Candidates !</title>
 
@@ -116,8 +122,8 @@
             <div class="plansContainer flexR">
 
                 <div class="basicPlan planCard flexC">
-                    <div class="priceTitle fontLarge basic">Basic</div>
-                    <div class="priceDetail fontMedium basic">₹ 499 / Monthly </div>
+                    <div class="priceTitle fontLarge basic">Regular</div>
+                    <div class="priceDetail basic fontMedium">₹ 7,199 / Monthly </div>
                     <div class="featureList flexC">
                         <div class="featureItem flexR"><img src="assets/blackCheck.svg" class="planfeature"><div class="featureText fontSmall">Highly Qualified Candidates</div></div>
                         <div class="featureItem flexR"><img src="assets/blackCheck.svg" class="planfeature"><div class="featureText fontSmall">Detailed Profiles</div></div>
@@ -126,85 +132,54 @@
                         <div class="featureItem flexR fadedFeature"><img src="assets/cross.svg" class="planfeature"><div class="featureText fontSmall">Advertise your profile </div></div>
                         <div class="featureItem flexR fadedFeature"><img src="assets/cross.svg" class="planfeature"><div class="featureText fontSmall">NRI Candidates</div></div>
                     </div>
-                    <div class="selectPlan basic">Select Basic</div>
-                    <div class="learnMore">Learn More</div>
+                    <div class="selectPlan basic">Select Regular</div>
+                    <div class="learnMore fontSmall">Learn More</div>
                 </div>
 
-                <div class="goldPlan planCard flexC">
-                    <div class="priceTitle fontLarge gold">Gold</div>
-                    <div class="priceDetail fontMedium gold">₹ 9,999 One-time</div>
-                    <div class="featureList flexC">
-                        <div class="featureItem flexR"><img src="assets/goldCheck.svg" class="planfeature"><div class="featureText fontSmall">Everything in Prime</div></div>
-                        <div class="featureItem flexR"><img src="assets/goldCheck.svg" class="planfeature"><div class="featureText fontSmall">NRI Candidates</div></div>
-                        <div class="featureItem flexR"><img src="assets/goldCheck.svg" class="planfeature"><div class="featureText fontSmall">One-time Fee</div></div>
+                <div class="basicPlan planCard flexC">
+                    <div class="priceTitle fontLarge basic">Premium</div>
+                    <div class="priceDetail basic fontMedium">₹ 9,999 / Yearly</div>                    <div class="featureList flexC">
+                        <div class="featureItem flexR"><img src="assets/blackCheck.svg" class="planfeature"><div class="featureText fontSmall">Highly Qualified Candidates</div></div>
+                        <div class="featureItem flexR"><img src="assets/blackCheck.svg" class="planfeature"><div class="featureText fontSmall">Detailed Profiles</div></div>
+                        <div class="featureItem flexR"><img src="assets/blackCheck.svg" class="planfeature"><div class="featureText fontSmall">Mobile Alerts</div></div>
+                        <div class="featureItem flexR fadedFeature"><img src="assets/cross.svg" class="planfeature"><div class="featureText fontSmall">Personal Assistance</div></div>
+                        <div class="featureItem flexR fadedFeature"><img src="assets/cross.svg" class="planfeature"><div class="featureText fontSmall">Advertise your profile </div></div>
+                        <div class="featureItem flexR fadedFeature"><img src="assets/cross.svg" class="planfeature"><div class="featureText fontSmall">NRI Candidates</div></div>
                     </div>
-                    <div class="selectPlan goldButton">Select Gold</div>
-                    <div class="learnMore">Learn More</div>
+                    <div class="selectPlan basic">Select Premium</div>
+                    <div class="learnMore fontSmall">Learn More</div>
                 </div>
 
                 <div class="primePlan planCard flexC">
-                    <div class="priceTitle fontLarge prime">Prime</div>
-                    <div class="priceDetail fontMedium prime">₹ 7,500 / Yearly</div>
+                    <div class="priceTitle fontLarge prime">NRI</div>
+                    <div class="priceDetail prime fontMedium">₹ 9,999 / Yearly</div>
                     <div class="featureList flexC">
-                        <div class="featureItem flexR"><img src="assets/redCheck.svg" class="planfeature"><div class="featureText fontSmall">Highly Qualified Candidates</div></div>
-                        <div class="featureItem flexR"><img src="assets/redCheck.svg" class="planfeature"><div class="featureText fontSmall">Detailed Profiles</div></div>
-                        <div class="featureItem flexR"><img src="assets/redCheck.svg" class="planfeature"><div class="featureText fontSmall">Mobile Alerts</div></div>
-                        <div class="featureItem flexR"><img src="assets/redCheck.svg" class="planfeature"><div class="featureText fontSmall">Personal Assistance</div></div>
-                        <div class="featureItem flexR"><img src="assets/redCheck.svg" class="planfeature"><div class="featureText fontSmall">Advertise your profile </div></div>
-                        <div class="featureItem flexR fadedFeature"><img src="assets/cross.svg" class="planfeature"><div class="featureText fontSmall">NRI Candidates</div></div>
+                        <div class="featureItem flexR"><img src="assets/redCheck.svg" class="planfeature"><div class="featureText">Highly Qualified Candidates</div></div>
+                        <div class="featureItem flexR"><img src="assets/redCheck.svg" class="planfeature"><div class="featureText">Detailed Profiles</div></div>
+                        <div class="featureItem flexR"><img src="assets/redCheck.svg" class="planfeature"><div class="featureText">Mobile Alerts</div></div>
+                        <div class="featureItem flexR"><img src="assets/redCheck.svg" class="planfeature"><div class="featureText">Personal Assistance</div></div>
+                        <div class="featureItem flexR"><img src="assets/redCheck.svg" class="planfeature"><div class="featureText">Advertise your profile </div></div>
+                        <div class="featureItem flexR fadedFeature"><img src="assets/cross.svg" class="planfeature"><div class="featureText">NRI Candidates</div></div>
                     </div>
-                    <div class="selectPlan prime">Select Prime</div>
-                    <div class="learnMore">Learn More</div>
+                    <div class="selectPlan prime">Select NRI</div>
+                    <div class="learnMore fontSmall">Learn More</div>
+                </div> 
+                <div class="goldPlan planCard flexC">
+                    <div class="priceTitle fontLarge gold">Supreme</div>
+                    <div class="priceDetail gold fontMedium">₹ 24,999 / Yearly</div>
+                    <div class="featureList flexC">
+                        <div class="featureItem flexR"><img src="assets/goldCheck.svg" class="planfeature"><div class="featureText">Everything in Prime</div></div>
+                        <div class="featureItem flexR"><img src="assets/goldCheck.svg" class="planfeature"><div class="featureText">NRI Candidates</div></div>
+                        <div class="featureItem flexR"><img src="assets/goldCheck.svg" class="planfeature"><div class="featureText">One-time Fee</div></div>
+                    </div>
+                    <div class="selectPlan goldButton">Select Supreme</div>
+                    <div class="learnMore fontSmall">Learn More</div>
                 </div>
+
+                
         
 
             </div>
-
-            <div class="planDetails">
-                <img src="assets/pricing.svg" class="pricingVector">
-            </div>
-            <div class="paymentInformationContainer">
-                <div class="paymentInformation">
-            
-                    <div class="paymentDetails">
-                        <div class="offlineOnline">
-                            <div class="featureText fontSmall bold">Offline (via Bank transfer through NEFT/UPI/Cheque) :</div>
-                            <div class="featureSub fontAverage">First you have to transfer the mentioned registration amount to our bank account as mentioned above via your bank NEFT / UPI transaction and have to mention the transaction details along with this form. No additional charges has to be paid via this mode. You can also deposit cheque to our bank account or send us cheque with details on out registered address.</div>
-                            <div class="featureText fontSmall bold">Online (via payment gateway) :</div>
-                            <div class="featureSub column">Payment will be done via payment gateway. <img src="assets/paymentPartners.webp" class="paymentpartners"></div>
-                        </div>
-    
-                        <div class="refund">
-                            <div class="featureText fontSmall bold">Cancellation and Refund Policy:</div>
-                            <div class="featureSub ">Membership cancellation will be accepted only against the written request sent by email to contact@shehnai.in or by correspondence at customer care- Any cancellation received within 10 days of membership subscription will be 100% refund of the fees amount paid- No refund will be made for cancellation on or after 10 days of membership subscription- All refunds will be made with in 30 days after cancellation of membership is done</div>
-                        </div>
-                    </div>
-                    <div class="bankDetails">
-                        <div class="featureText fontSmall bold">Bank Details</div>
-                        <div class="featureSubContainer">
-                            <div class="featureSub fontAverage">
-                                <div class="featureSub fontAverage">Bank Name </div>
-                                <div class="featureText fontSmall dark">HDFC BANK LTD</div>
-                            </div>
-                            <div class="featureSub fontAverage">
-                                <div class="featureSub fontAverage">Account Number</div>
-                                <div class="featureText fontSmall dark">50200043433490</div>
-                            </div>
-                            <div class="featureSub fontAverage">
-                                <div class="featureSub fontAverage">IFSC Code </div>
-                                <div class="featureText fontSmall dark">HDFC0003904</div>
-                            </div>
-                            <div class="featureSub fontAverage">
-                                <div class="featureSub fontAverage">Branch</div>
-                                <div class="featureText fontSmall dark">Naranpura Ahmedabad Branch</div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            
             
         </div>
         

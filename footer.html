@@ -5,15 +5,15 @@
             <div class="footerHeader fontMedium">Help & Support</div>
             <div class="linksSub flexC gap2">
                 <div class=""><a class="fontSmall" href="Contact.html">Contact Us</a></div>
-                <div class=""><a class="fontSmall" href="/">Feedback</a></div>
+                <div class=""><a class="fontSmall" href="#">Feedback</a></div>
                 <div class=""><a class="fontSmall" href="pricing.html">FAQ</a></div>
             </div>
         </div>
         <div class="footerLinks flexC gap2">
             <div class="footerHeader fontMedium">Quick Links</div>
             <div class="linksSub flexC gap2">
-                <div class=""><a class="fontSmall" href="#">Privacy Policy</a></div>
-                <div class=""><a class="fontSmall" href="#">Terms & Condition</a></div>
+                <div class=""><a class="fontSmall" href="privacyPolicy.html">Privacy Policy</a></div>
+                <div class=""><a class="fontSmall" href="termsCondition.html">Terms & Condition</a></div>
                 <div class=""><a class="fontSmall" href="#">Services</a></div>
             </div>
         </div>
@@ -27,9 +27,9 @@
         <div class="footerLinks flexC gap2">
             <div class="footerHeader fontMedium">Media</div>
             <div class="linksSub flexC gap2">
-                <div class=""><a class="fontSmall" href="#">Advertise</a></div>
+                <div class=""><a class="fontSmall" href="advertiseProfile.html">Advertise</a></div>
                 <div class=""><a class="fontSmall" href="#">Videos</a></div>
-                <div class=""><a class="fontSmall" href="#">Testimonials</a></div>
+                <div class=""><a class="fontSmall" href="reviews.html">Testimonials</a></div>
             </div>
         </div>
     </div>
@@ -116,13 +116,20 @@
      opacity:0.4;
    }
    @media screen and (max-width: 550px) {
+    .footerLinksContainer{
+        flex-direction: column;
+        height: max-content;
+        column-gap: 1vw !important;
+    }
     .footer{
-        height: 12vh;
+        height: max-content;
     }
     .footerLinks{
         font-size: 3vw;
         justify-content: space-around;
-        margin-top: 5%;
+        margin: 5%;
+        width: 100%;
+        
     }
     .footerContainer{
         display: flex;
