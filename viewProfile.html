@@ -46,8 +46,8 @@
                 <div class="profileLargeImage flexR">
                     <img src="assets/special2.webp" class="specialImage viewProfileImage"> 
                             <div class="actions flexR">
-                                <div class="actionContainer flexC fontSmall"><img src="assets/like.svg" class="likeIcon actionIcon">Like</div>
-                                <div class="actionContainer flexC fontSmall"><img src="assets/save.svg" class="saveIcon actionIcon">Save</div>
+                                <div class="actionContainer flexC fontSmall"><img src="assets/like.svg" class="likeIcon actionIcon" onclick="likeToggle(this)" data-userID="SH001">Like</div>
+                                <div class="actionContainer flexC fontSmall"><img src="assets/save.svg" class="saveIcon actionIcon" onclick="saveToggle(this)">Save</div>
                     </div>
                 </div>
                 <div class="flexC start">
@@ -65,8 +65,8 @@
                         <div class="profileDetailsSub flexC">
                             <div class="profileIDShare flexR space-between">
                                 <div class="profileID flexR">
-                                    <div class="detailLabel">Profile ID</div>
-                                    <div class="uidStyle uid">UIDF10215N0125</div>
+                                    <div class="detailLabel fontSmall ">Profile ID</div>
+                                    <div class="uidStyle fontSmall uid">UIDF10215N0125</div>
 
                                 </div>
                                 <div class="editButton flexR" onclick="share()">Share Profile</div>

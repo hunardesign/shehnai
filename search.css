@@ -6,7 +6,7 @@ select {
   border-radius: 4px;
   display: inline-block;
   font: inherit;
-  line-height: 1.5em;
+  height: 2vw;
   padding: 0.5em 3.5em 0.5em 1em;
 
   /* reset */
@@ -33,10 +33,12 @@ select {
     color: white;
     border-radius: var(--radius);   
     border: none;
-    width: 7vw;
+    min-width: 7vw;
     height: 5vh;
     font-weight: 500;
-    font-size: 0.8vw;   
+    font-size: 0.8vw;
+    width: 100%;
+   
   }
   .selectCaste{
     width: 13vw;
@@ -108,7 +110,8 @@ input{
 .male,.female {
     padding-right:2%;
     display: flex;
-    align-items: center;
+    gap: 0.25vw;
+    align-items: flex-start;
     justify-content: center;
 
 }
@@ -140,10 +143,11 @@ option{
 }
 @media screen and (max-width: 1600px) {
   .search{
-    top: 78vh; 
+    top: 75vh; 
     width: 55vw;
+    
   }
-
+  
 }
 @media screen and (max-width: 991px) {
   .search{
@@ -152,7 +156,7 @@ option{
   }
   
   .searchButton{
-      width: 7vw;
+      min-width: 7vw;
       height: 3.5vh;
       font-size: 1.25vw;
   }
@@ -184,12 +188,14 @@ option{
     overflow: clip;
   }
   .search{
+    
     border-radius: 2vw;
     top: 60vh; 
-    width: 95vw;
+    width: 100vw;
     flex-direction: column;
     align-items: stretch;
     padding: 2%;
+    z-index: 3;
   }
   
   .searchButton{
@@ -202,6 +208,7 @@ option{
     font-size: 5.25vw;
     padding-bottom: 3%;
   }
+  
   label{
     font-size: 4.5vw;
   }

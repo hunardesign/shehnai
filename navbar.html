@@ -11,7 +11,7 @@
             <div class="about links"><a href="about.html">About</a></div>
             <div class="pricing links"><a href="pricing.html">Pricing</a></div>
             <div class="pricing links"><a href="advertiseProfile.html">Advertise</a></div>
-            <div class="pricing links"><a href="displayMembers.html">Gold Members</a></div>
+            <div class="displayLink links"><a href="displayMembers.html">Gold Members</a></div>
             <div class="pricing links"><a href="reviews.html">Reviews</a></div>
             <div class="contact links"><a href="contact.html">Contact</a></div>
             <div class="login links"><a href="login.html">Login</a></div>
@@ -20,6 +20,7 @@
         <div class="menu"><a href="javascript:void(0);" class="icon" onclick="hideMenu()"><img src="assets/menu.svg" class="menuIcon"></a></div>
 </div>
 <style>
+    
     .navBarContainer {
         margin: 1.5% 7%;
         z-index: 2;
@@ -56,6 +57,9 @@
     justify-content: center;
     text-align: center;
    }
+   .displayLink{
+    width: 6.7vw;
+   }
    .navBarLogo{
         height: auto;
    }
@@ -75,8 +79,17 @@
         border: 2px solid var(--primary);
         border-radius: var(--radius); 
         cursor: pointer;
+        height: 2vw;
    }
+   
+   .navbuttons a{transition: 300ms ease-in;}
 
+   .navbuttons a:hover{
+
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+   }
 
    @media screen and (max-width: 1600px) { /*small display*/
         .navbuttons{
@@ -85,6 +98,15 @@
         }
         .logo{
             width: 10vw;
+        }
+        .searchButton,.editButton,.register{
+            min-height: 2.5vw;
+        }
+        .displayLink{
+            width: 8vw;
+        }
+        .links{
+            font-size: 0.85vw;
         }
     }
     @media screen and (max-width: 991px) { /*tablets*/
@@ -99,12 +121,14 @@
     @media screen and (max-width: 550px) { /*mobile*/
     .navbuttons{
         /* background-color: rgba(255, 255, 255, 0.4); */
+
         padding-bottom: 2%;
         width: 100%;
         align-items: center;
         justify-content: center;
         font-size: 4.2vw;
         flex-direction: column;
+        gap: 2vw;
     }
     .logo{
         width: 35vw;
@@ -133,6 +157,7 @@
     }
     .links{
         width: 75%;
+        font-size: 4.5vw;
     }
     .register{
         border: none;

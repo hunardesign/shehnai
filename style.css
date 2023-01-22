@@ -768,7 +768,7 @@ textarea {
     gap:1vw
 }
 .detailContainer{
-   gap: 0.5vw;
+    gap: 1vw;
     align-items: flex-start;
     width: max-content;
     /* height: 100%; */
@@ -961,7 +961,7 @@ overflow: clip;
     gap: 1.5vw;
     background: white;
     /* border:0.1vw solid rgba(0,0,0,0.1); */
-    box-shadow: 3px 3px 12px rgba(0,0,0,0.1) ;
+    /* box-shadow: 3px 3px 12px rgba(0,0,0,0.1) ; */
     border-radius: var(--radius);
     padding: 1.5%;
     width: 98%;
@@ -1004,13 +1004,10 @@ overflow: clip;
     align-items: flex-start;
     gap: 1vw;
 }
-.contactNumberContainer{
-    height: 8.5vw;
-    /* border: 1px solid; */
-}
+
 .parent {
     gap: 2vw;
-    justify-content: flex-start;
+    align-items: flex-start;
 }
 .siblingSub *{
     width: 10vw;
@@ -1072,6 +1069,7 @@ option:checked, option:hover {
     width: 15vw;   
     border-radius: var(--radius);
     overflow: clip;
+    background-size: cover;
 }
 .GroomImages{
     display: none;
@@ -1097,7 +1095,9 @@ option:checked, option:hover {
 .personContainer:hover .personInfo{
     display: flex;
 }
-
+.carousel-control{
+    z-index: 3;
+}
 /*General CSS Ends*/
 
  @media screen and (max-width: 1600px) {
@@ -1109,16 +1109,16 @@ option:checked, option:hover {
         padding: 2% 1% ;
     }
     .fontLarge {
-        font-size: 3.5vw;
+        font-size: 2.5vw;
     }
     .fontMedium {
         font-size: 1.5vw;
     }
     .fontAverage{
-        font-size: 1.1vw;
+        font-size: 0.9vw;
     }
     .fontSmall {
-        font-size: 0.9vw;
+        font-size: 0.75vw;
     }
     .heroSection {
         background-size: cover;
@@ -1132,6 +1132,31 @@ option:checked, option:hover {
     }
     .mapEmbed{
         height: 35vw;
+    }
+    input[type="email" i],input[type="text" i],input[type="number" i],input[type="tel" i],input[type="password" i],input[type="date" i],input[type="time" i] {
+    height: 2vw;
+    font-size: 0.75vw;
+    }
+    select{
+        height:2.35vw !important;
+        font-size: 0.75vw !important;
+    }
+
+    .profiletabs div,.editButton{
+        font-size: 0.8vw;
+    }
+    .closeIcon{
+        height: 1.35vw;
+        width: 1.35vw;
+    }
+    .subActivityItemContainer{
+        font-size: 0.75vw;
+    }
+    .feedDetails{
+        gap: 0.5vw;
+    }
+    .contactDetailCard{
+        font-size: 0.9vw;
     }
 }
 @media screen and (max-width: 991px) {
@@ -1156,6 +1181,37 @@ option:checked, option:hover {
     }
 }
 @media screen and (max-width: 550px) { /*mobile*/
+    .links{
+        height: 8vw;
+    }
+    .reviewContainer{
+        margin-top: 22%;
+     }
+    .BrideGroomContainer{
+        gap: 5vw;
+    }
+    .BrideGroomSelect{
+        width: 85vw;
+    }
+    .BrideImages,.GroomImages{
+        flex-direction: column;
+        gap: 5vw;
+        
+    }
+
+    .selector{
+        width: 50%;
+        display: grid;
+        place-items: center;
+        font-size: 5vw;
+    }
+    .personContainer{
+        height: 65vw;
+        width: 85vw;
+        border-radius: 8px;
+        overflow: clip;
+    }
+
     .bottomPadding10{
         padding-bottom: 15%;
 
@@ -1223,7 +1279,7 @@ textarea{
         width: 42vw;
     }
     .years{
-        background:linear-gradient(180deg, rgba(0, 0, 0, 0) 67.42%, #000000 96.59%);
+        
 
         align-items: center;
         justify-items: center;

@@ -22,15 +22,13 @@
         <script src="script.js"></script>
         <style>
         
-            body{
-                /* overflow: hidden; */
-            }
+           
             .search {
                 position: fixed;
                 top: 15vh;
                 margin: 0;
                 margin-left: 7vw;
-                width: 60.5vw;
+                width:61vw;
                 align-items: stretch;
                 justify-content: start;
                 padding-top: 0;
@@ -132,15 +130,23 @@
                 padding:  1vw 0.25vw;
                 border-radius: 0.5vw;
             }
+            @media screen and (max-width: 1600px) {
+                
+            }
             @media screen and (max-width: 550px) {
                 .hideSearch{
                      display: flex;
+                     width: 100%;
+                     color: var(--primary);
                 }
                     .mobileOnly{
                         display: block;
                     }
                     .closeIcon{
                         width: 6vw;
+                        height: 6vw;
+                        color: var(--primary);
+
                     }
                     .search{
                         position: fixed;
@@ -149,7 +155,7 @@
                         margin: 0;
                     }
                     .feed{
-                        top: 115vw;
+                        top: 135vw;
                         width: 100%;
                         margin: 10% 0%  ;
                     }
@@ -158,6 +164,7 @@
                     }
                     .feedMember{
                         width: 100%;
+                        height: 70vw;
                     }
                     .specialImage{
                         width: 100vw;
@@ -187,7 +194,26 @@
                     .detailContainer {
                         width: 100% !important;
                     }
-                    
+                    .searchItemsContainer{
+                        padding: 2%;
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+                    .searchItem{
+                        height: max-content 
+                    }
+                    select{
+                        font-size: 4vw !important;
+                        height: 12vw !important;
+                    }
+                    .advancelist1{
+                        padding: 2%;
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+                    .height{
+                        flex-direction: column;
+                    }
                 }
         </style>
         <title>Shehnai Matrimonials - Home | Shehnai Matrimonials | High Profile Candidate | 20+ years of Exclusive Experience In Matchmaking For Highly Qualified Candidates !</title>
@@ -478,18 +504,18 @@
                                 <div class="flexC searchItemsContainer advanceSearch" id="disableSearch">
                                     <div class="flexR fontMedium gap2 hideSearch" onclick="hideSearch()">Close Search <img src="assets/close.svg" class="mobileOnly closeIcon"></div>
                                     
-                                    <div class="flexR gap2 fullWidth justify-content-start">
+                                    <div class="advancelist1 flexR gap2 fullWidth justify-content-start">
                                         <div class="searchItem">
                                             <div class="searchTitle">I'm looking for a</div>
                                             
                                             <div class="genderRadio">
                                                 <div class="male">
-                                                    <input type="radio" id="male" name="gender" value="male">
+                                                    <input type="radio" id="male" name="genderAdvanced" value="male">
                                                     <label for="male">Male</label><br>
                                                 </div>
                                                 
                                                 <div class="female">
-                                                    <input type="radio" id="female"  name="gender" value="female"  >
+                                                    <input type="radio" id="female"  name="genderAdvanced" value="female"  checked="checked">
                                                     <label for="female">Female</label><br>
                                                 </div>
                                                 
@@ -553,7 +579,7 @@
                                             
                                         </div>
                                     </div>
-                                    <div class="flexR gap2 fullWidth justify-content-start align-items-end">
+                                    <div class="advancelist1 flexR gap2 fullWidth justify-content-start align-items-end">
                                         <div class="searchItem">
                 
                                             <div class="searchTitle">Height</div>
@@ -586,6 +612,8 @@
 
                                 </div>
                                 <div class="flexR searchItemsContainer keywordSearch" id="disableSearch">
+                                    <div class="flexR fontMedium gap2 hideSearch" onclick="hideSearch()">Close Search <img src="assets/close.svg" class="mobileOnly closeIcon"></div>
+
                                     <div class="searchItem">
             
                                         <div class="searchTitle">Keyword search</div>
@@ -619,7 +647,7 @@
                             <div class="feedData flexC">
                                 <div class="specialButtons flexR">
                                     <div class="searchButton">View Details</div>
-                                    <div class="textLink contact">Contact</div>
+                                    <div class="textLink fontSmall contact">Contact</div>
                                 </div>
                                 <div class="feedDetails flexC">
         
@@ -674,7 +702,7 @@
                             <div class="feedData flexC">
                                 <div class="specialButtons flexR">
                                     <div class="searchButton">View Details</div>
-                                    <div class="textLink contact">Contact</div>
+                                    <div class="textLink fontSmall contact">Contact</div>
                                 </div>
                                 <div class="feedDetails flexC">
         
@@ -729,7 +757,7 @@
                             <div class="feedData flexC">
                                 <div class="specialButtons flexR">
                                     <div class="searchButton">View Details</div>
-                                    <div class="textLink contact">Contact</div>
+                                    <div class="textLink fontSmall contact">Contact</div>
                                 </div>
                                 <div class="feedDetails flexC">
         
@@ -774,7 +802,60 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="feedMember flexR">
+                            <img src="assets/special2.webp" class="specialImage"> 
+                            <div class="actions flexR">
+                                <div class="actionContainer flexC fontSmall"><img src="assets/like.svg" class="likeIcon actionIcon" onclick="likeToggle(this)" data-userID="SH003">Like</div>
+                                <div class="actionContainer flexC fontSmall"><img src="assets/save.svg" class="saveIcon actionIcon" onclick="saveToggle(this)">Save</div>
+                            </div>
+                            <div class="feedData flexC">
+                                <div class="specialButtons flexR">
+                                    <div class="searchButton">View Details</div>
+                                    <div class="textLink fontSmall contact">Contact</div>
+                                </div>
+                                <div class="feedDetails flexC">
         
+                                    <div class="detailContainer flexC">
+                                        <div class="detailLabel fontSmall">User ID</div>
+                                        <div class="detailData fontAverage  uid">UIDF10215N0125</div>
+                                    </div>
+                                    
+        
+                                    <div class="subDetails flexR">
+        
+                                        <div class="detailContainer flexC">
+                                            <div class="detailLabel fontSmall">Age</div>
+                                            <div class="detailData fontAverage  age">29</div>
+                                        </div>
+                                        
+                                        <div class="detailContainer flexC">
+                                            <div class="detailLabel fontSmall">Status</div>
+                                            <div class="detailData fontAverage  status">Never married</div>
+                                        </div>
+                                        <div class="detailContainer flexC">
+                                            <div class="detailLabel fontSmall">Caste</div>
+                                            <div class="detailData fontAverage  caste">Patel</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="detailContainer flexC">
+                                        <div class="detailLabel fontSmall">About</div>
+                                        <div class="detailData fontAverage  about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum gravida erat. Sed eget iaculis nisi.</div>
+                                    </div>
+                                    
+                                    <div class="detailContainer flexC">
+                                        <div class="detailLabel fontSmall">Location</div>
+                                        <div class="detailData fontAverage  location">Rajkot , Gujarat</div>
+                                    </div>
+                                    
+                                    <div class="detailContainer flexC">    
+                                        <div class="detailLabel fontSmall">Education</div>
+                                        <div class="detailData fontAverage  education">Diploma in Dermatology</div>
+                                    </div>
+        
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
              </div>
