@@ -1012,10 +1012,7 @@ overflow: clip;
 .siblingSub *{
     width: 10vw;
 }
-.otherDetailsSub{
-    width: 98%;
-    margin-left:4% ;
-}
+
 .contactDetails{
     width: 96%;
     margin-left:2% ;
@@ -1133,13 +1130,17 @@ option:checked, option:hover {
     .mapEmbed{
         height: 35vw;
     }
+    .feature{
+        width: 25vw;
+    }
+    
     input[type="email" i],input[type="text" i],input[type="number" i],input[type="tel" i],input[type="password" i],input[type="date" i],input[type="time" i] {
     height: 2vw;
     font-size: 0.75vw;
     }
     select{
         height:2.35vw !important;
-        font-size: 0.75vw !important;
+        font-size: 0.75vw;
     }
 
     .profiletabs div,.editButton{
@@ -1245,6 +1246,10 @@ option:checked, option:hover {
         height: 8vw;
         font-size: 4vw;
         padding: 2%;
+    }
+    select{
+        font-size: 4vw ;
+        height: 10vw !important;
     }
 textarea{
     width: 78vw;
@@ -1626,9 +1631,6 @@ textarea{
     .profile  {
         display: none;
     }
-    .feedMember {
-        flex-direction: column;
-        height: max-content;
-    }
+ 
 
 }

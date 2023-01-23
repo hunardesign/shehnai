@@ -68,8 +68,11 @@
             .searchNavItem{
                 padding: 2%;
             }
+         
             .feed{
-              
+                height: 100vw;
+                position: relative;
+                
                 gap: 2vw;
                 position: absolute;
                 margin-left:7vw ;
@@ -98,7 +101,7 @@
                 align-items: flex-start;
             }
             .feedDetails {
-                gap: 1vw;
+                /* gap: 1vw; */
                 height: max-content;
                 align-items: flex-start;
             }
@@ -130,13 +133,14 @@
                 padding:  1vw 0.25vw;
                 border-radius: 0.5vw;
             }
+            .detailContainer {
+                gap: 0.2vw;
+            }
             @media screen and (max-width: 1600px) {
                 
             }
             @media screen and (max-width: 550px) {
-                .editButton{
-                    font-size: 4vw;
-                } 
+              
                 .hideSearch{
                      display: flex;
                      width: 100%;
@@ -156,18 +160,24 @@
                         top: 24vw;
                         width: 100%;
                         margin: 0;
+                        z-index: 1;
+
                     }
                     .feed{
                         top: 135vw;
                         width: 100%;
                         margin: 10% 0%  ;
+                        height: max-content;
                     }
                     .subDetails {
                         flex-direction: column;
                     }
                     .feedMember{
-                        width: 100%;
-                        height: 70vw;
+                        /* border: 1px solid; */
+                        width: 100vw;
+                        flex-direction: column;
+                        height: max-content;
+
                     }
                     .specialImage{
                         width: 100vw;
@@ -175,7 +185,7 @@
                     }
                     .showSearch{
                         width: 100%;
-                        display: flex;
+                        display: hidden;
                         align-items: center;
                         justify-content: center;
                         margin-top: 24%;
@@ -195,6 +205,7 @@
                      width: 100%;
                     }
                     .detailContainer {
+                       
                         width: 100% !important;
                     }
                     .searchItemsContainer{
@@ -216,6 +227,9 @@
                     }
                     .height{
                         flex-direction: column;
+                    }
+                    .navBarContainer{
+                        z-index: 3;
                     }
                 }
         </style>
@@ -424,7 +438,7 @@
 
                 </div>
 
-                <div class="feedContainer">
+                
                     <div class="searchbar">
                         <div class="flexR fontMedium gap2 showSearch" onclick="showSearch()">Show Search </div>
                         <div class="flexC">
@@ -638,7 +652,6 @@
                         </div>
                         
                     </div>
-                        
                     <div class="feed flexC ">
                         
                         <div class="feedMember flexR">
@@ -861,7 +874,7 @@
                         </div>
                     </div>
 
-             </div>
+             
             
         
         
