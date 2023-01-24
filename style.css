@@ -861,6 +861,8 @@ textarea {
     linear-gradient(180deg, rgba(0, 0, 0, 0) 67.42%, #000000 96.59%),
     url('assets/goldMember2.webp');
     border-radius: var(--radius);
+    align-items: flex-end;
+    justify-content: space-around;
 }
 .profileDetails{
     align-items: flex-start;
@@ -908,10 +910,7 @@ overflow: clip;
     object-fit: cover;
     
 }
-.profileLargeImage{
-    align-items: flex-start;
-    justify-content: flex-start;
-}
+
 .profileDetailsNav{
     gap: 1vw;
     background: #f7f7f7;
@@ -1095,6 +1094,36 @@ option:checked, option:hover {
 .carousel-control{
     z-index: 3;
 }
+.profilePhotoMiniContainer{
+    width: 90%;
+    height: max-content;
+    justify-content: space-around;
+    margin-bottom:5% ;
+}
+.profilePhotoMini{
+    height: 4vw;
+    width: 5vw;
+    background: grey;
+    border-radius: var(--radius);
+    background-size: cover;
+    cursor: pointer;
+}
+.profileMini1{
+    
+    background-image: url("assets/goldMember2.webp");
+}
+.profileMini2{
+    
+    background-image: url("assets/goldMember1.webp");
+}
+.profileMini3{
+    
+    background-image: url("assets/goldMember3.webp");
+}
+.profileMini4{
+    
+    background-image: url("assets/special2.webp");
+}
 /*General CSS Ends*/
 
  @media screen and (max-width: 1600px) {
@@ -1182,6 +1211,16 @@ option:checked, option:hover {
     }
 }
 @media screen and (max-width: 550px) { /*mobile*/
+   
+    .profileLargeImage{
+        align-items: flex-end;
+        justify-content: center;
+    }
+    
+    .profilePhotoMini {
+        height: 20vw; 
+        width: 20vw;  
+    }
     .links{
         height: 8vw;
     }

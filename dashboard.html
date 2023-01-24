@@ -136,6 +136,39 @@
             .detailContainer {
                 gap: 0.2vw;
             }
+            .feedMemberGallery{
+                width: 50vw;
+                height: 23.3vw;
+                /* border: 1px solid; */
+                overflow: clip;
+                align-items: flex-end;
+                justify-content: center;
+            }
+            .feedMember1{
+                background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 67.42%, #000000 96.59%),
+    url('assets/special2.webp')
+                ;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: top;
+                /* align-items: flex-end; */
+            }
+            .profilePhotoMiniContainer{
+                width: 90%;
+                /* height: 10vw; */
+            }
+            .feedMini1{
+                background-image: url("assets/special2.webp");
+            }
+            .feedMini2{
+                background-image: url("assets/special1.webp");
+            }
+            .feedMini3{
+                background-image: url("assets/special3.webp");
+            }
+            .feedMini4{
+                background-image: url("assets/goldMember2.webp");
+            }
             @media screen and (max-width: 1600px) {
                 
             }
@@ -253,7 +286,14 @@
 
                     </div>
                     <div class="profileSub flexC">                        
-                        <div class="profilePhotoContainer">
+                        <div class="profilePhotoContainer flexR">
+                            <div class="profilePhotoMiniContainer flexR gap">
+                                <div class="profilePhotoMini profileMini1" onclick="setLarge(this)"></div>
+                                <div class="profilePhotoMini profileMini2" onclick="setLarge(this)"></div>
+                                <div class="profilePhotoMini profileMini3" onclick="setLarge(this)"></div>
+                                <div class="profilePhotoMini profileMini4" onclick="setLarge(this)"></div>    
+                            </div>
+                            
                         </div>
                         <div class="profileDetails flexC">
                             <div class="flexR space-between">
@@ -654,12 +694,21 @@
                     </div>
                     <div class="feed flexC ">
                         
-                        <div class="feedMember flexR">
-                            <img src="assets/special2.webp" class="specialImage"> 
+                        <div class="feedMember flexR data-userID="SH001">
+                            <div class="feedMemberGallery feedMember1 flexR specialImage">
+                                <div class="profilePhotoMiniContainer flexR gap">
+                                    <div class="profilePhotoMini feedMini1"  data-userID="SH001" data-photoID="SH001p1" onclick="setLarge(this)"></div>
+                                    <div class="profilePhotoMini feedMini2"  data-userID="SH001" data-photoID="SH001p2" onclick="setLarge(this)"></div>
+                                    <div class="profilePhotoMini feedMini3"  data-userID="SH001" data-photoID="SH001p3" onclick="setLarge(this)"></div>
+                                    <div class="profilePhotoMini feedMini4"  data-userID="SH001" data-photoID="SH001p4" onclick="setLarge(this)"></div>    
+                                </div>
+                                
+                            </div>
                             <div class="actions flexR">
                                 <div class="actionContainer flexC fontSmall"><img src="assets/like.svg" class="likeIcon actionIcon" onclick="likeToggle(this)" data-userID="SH001">Like</div>
                                 <div class="actionContainer flexC fontSmall"><img src="assets/save.svg" class="saveIcon actionIcon" onclick="saveToggle(this)">Save</div>
                             </div>
+                            
                             <div class="feedData flexC">
                                 <div class="specialButtons flexR">
                                     <div class="searchButton">View Details</div>
@@ -710,11 +759,20 @@
                         </div>
 
                         <div class="feedMember flexR">
-                            <img src="assets/special2.webp" class="specialImage"> 
+                            <div class="feedMemberGallery feedMember1 flexR specialImage">
+                                <div class="profilePhotoMiniContainer flexR gap">
+                                    <div class="profilePhotoMini feedMini1"  data-userID="SH001" data-photoID="SH001p1" onclick="setLarge(this)"></div>
+                                    <div class="profilePhotoMini feedMini2"  data-userID="SH001" data-photoID="SH001p2" onclick="setLarge(this)"></div>
+                                    <div class="profilePhotoMini feedMini3"  data-userID="SH001" data-photoID="SH001p3" onclick="setLarge(this)"></div>
+                                    <div class="profilePhotoMini feedMini4"  data-userID="SH001" data-photoID="SH001p4" onclick="setLarge(this)"></div>       
+                                </div>
+                                
+                            </div>
                             <div class="actions flexR">
-                                <div class="actionContainer flexC fontSmall"><img src="assets/like.svg" class="likeIcon actionIcon" onclick="likeToggle(this)" data-userID="SH002">Like</div>
+                                <div class="actionContainer flexC fontSmall"><img src="assets/like.svg" class="likeIcon actionIcon" onclick="likeToggle(this)" data-userID="SH001">Like</div>
                                 <div class="actionContainer flexC fontSmall"><img src="assets/save.svg" class="saveIcon actionIcon" onclick="saveToggle(this)">Save</div>
                             </div>
+                            
                             <div class="feedData flexC">
                                 <div class="specialButtons flexR">
                                     <div class="searchButton">View Details</div>
@@ -764,12 +822,21 @@
                             </div>
                         </div>
 
-                       <div class="feedMember flexR">
-                            <img src="assets/special2.webp" class="specialImage"> 
+                        <div class="feedMember flexR">
+                            <div class="feedMemberGallery feedMember1 flexR specialImage">
+                                <div class="profilePhotoMiniContainer flexR gap">
+                                    <div class="profilePhotoMini feedMini1"  data-userID="SH001" data-photoID="SH001p1" onclick="setLarge(this)"></div>
+                                    <div class="profilePhotoMini feedMini2"  data-userID="SH001" data-photoID="SH001p2" onclick="setLarge(this)"></div>
+                                    <div class="profilePhotoMini feedMini3"  data-userID="SH001" data-photoID="SH001p3" onclick="setLarge(this)"></div>
+                                    <div class="profilePhotoMini feedMini4"  data-userID="SH001" data-photoID="SH001p4" onclick="setLarge(this)"></div>     
+                                </div>
+                                
+                            </div>
                             <div class="actions flexR">
-                                <div class="actionContainer flexC fontSmall"><img src="assets/like.svg" class="likeIcon actionIcon" onclick="likeToggle(this)" data-userID="SH003">Like</div>
+                                <div class="actionContainer flexC fontSmall"><img src="assets/like.svg" class="likeIcon actionIcon" onclick="likeToggle(this)" data-userID="SH001">Like</div>
                                 <div class="actionContainer flexC fontSmall"><img src="assets/save.svg" class="saveIcon actionIcon" onclick="saveToggle(this)">Save</div>
                             </div>
+                            
                             <div class="feedData flexC">
                                 <div class="specialButtons flexR">
                                     <div class="searchButton">View Details</div>
@@ -819,11 +886,20 @@
                             </div>
                         </div>
                         <div class="feedMember flexR">
-                            <img src="assets/special2.webp" class="specialImage"> 
+                            <div class="feedMemberGallery feedMember1 flexR specialImage">
+                                <div class="profilePhotoMiniContainer flexR gap">
+                                    <div class="profilePhotoMini feedMini1"  data-userID="SH001" data-photoID="SH001p1" onclick="setLarge(this)"></div>
+                                    <div class="profilePhotoMini feedMini2"  data-userID="SH001" data-photoID="SH001p2" onclick="setLarge(this)"></div>
+                                    <div class="profilePhotoMini feedMini3"  data-userID="SH001" data-photoID="SH001p3" onclick="setLarge(this)"></div>
+                                    <div class="profilePhotoMini feedMini4"  data-userID="SH001" data-photoID="SH001p4" onclick="setLarge(this)"></div>      
+                                </div>
+                                
+                            </div>
                             <div class="actions flexR">
-                                <div class="actionContainer flexC fontSmall"><img src="assets/like.svg" class="likeIcon actionIcon" onclick="likeToggle(this)" data-userID="SH003">Like</div>
+                                <div class="actionContainer flexC fontSmall"><img src="assets/like.svg" class="likeIcon actionIcon" onclick="likeToggle(this)" data-userID="SH001">Like</div>
                                 <div class="actionContainer flexC fontSmall"><img src="assets/save.svg" class="saveIcon actionIcon" onclick="saveToggle(this)">Save</div>
                             </div>
+                            
                             <div class="feedData flexC">
                                 <div class="specialButtons flexR">
                                     <div class="searchButton">View Details</div>

@@ -263,3 +263,12 @@ function setGroom(){
   document.querySelector('.BrideImages').style.display='none';
   document.querySelector('.GroomImages').style.display='flex';
 }
+
+function setLarge(obj){
+  
+  childbgImg= window.getComputedStyle(obj).backgroundImage;
+  parent = obj.parentElement.parentElement;
+  parentbgImg = window.getComputedStyle(parent).backgroundImage;
+  parent.style.backgroundImage = 'linear-gradient(rgba(0, 0, 0, 0) 67.42%, rgb(0, 0, 0) 96.59%),' + childbgImg
+
+}

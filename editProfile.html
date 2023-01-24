@@ -14,7 +14,142 @@
         <meta name="Keywords" content="Shehnai Matrimonials,Shehnai,Matrimonials,matrimonial,matrimony,matrimonials,indian matrimonials,marriage,marriage sites,matchmaking,shaadi,shehnai,couple goals,boys,Doctors,High Profile,Doctors Marraige,high profile candidate,engineers,architrct matrimony,doctors matrimony,marraige bureau,Shehnai Matrimonials india,Shehnai Matrimonials gujarat ahmedabad,Shehnai Matrimonials in ahmedabad,indian bride,NRI matrimonials,nri,nri marraige bureau,highly qualified, highly qulified candidate ">
         <meta name="robots" content="index, follow">
         <meta name="language" content="English">
+        <link rel="stylesheet" href="search.css" >
+        <link rel="stylesheet" href="style.css" >
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script src="script.js"></script>
+    
+        <style>
+             input[type="file" i]{
+                opacity: 0;
+                /* display: none; */
+            }
+            .editIcon{
+                height: 2vw;
+                width: 2vw;
+                /* display: none; */
+            }
+            .uploadPhoto{
+                display: none;
+                border-radius: var(--radius);
+                height: 4vw;
+                width: 5vw;
+                background: rgba(0,0,0,0.2);
+                align-items: center;
+            }
+            .profilePhotoMini:hover .uploadPhoto {
+                display: flex;
+            }
+            .profilePhotoMini:hover{
+                filter: saturate(0.1);
+                cursor: pointer;
+            }
+            .profileLargeImage{
+                background-image: url("assets/goldMember2.webp");
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 28vw;
+                height: 30vw;
+                /* border: 1px solid; */
+                background-position: top;
+                align-items: flex-end;
+                /* background-color: #f7f7f7; */
+            }
+            .viewContactDetailsMobile{
+                display: none;
+            }
+        /* .contactNumberContainer{
+            height: 8.25vw;
+        } */
+        .timeInput{
+            background-color: rgba(0,0,0,0);
+        width: auto;
+        border-radius: var(--radius);
+        height: 1.5vw;
+        text-align: center;
+        border: 0.1vw solid rgba(0,0,0,0.2);
+        font-size: 0.85vw;
+        font-weight: 400;
+        padding: 2%;
+       font-family: inherit; 
+        }
+    
+        input[type="email" i],input[type="text" i],input[type="number" i],input[type="tel" i],input[type="password" i],input[type="date" i],input[type="time" i] {
+            
+        }
         
+        @media screen and (max-width: 991px) {
+        label{
+            display: block;
+        }
+        .detailContainer{
+            width: 80vw;
+        }
+        #shortInput,.mediumWidth,.longWidth,textarea{
+            width: 80vw !important;
+        }
+        .shortWidth{
+            width: 30vw !important;
+        }
+        .educationSub{
+            flex-direction: column;
+        }
+        .educationSub div{
+            width: 80vw;
+        }
+        .siblingSub,.parent{
+            grid-template-columns: auto;
+        }
+        .parent .subDetails, .parent  .subDetails {
+            width: 80vw !important;
+        }
+        .mFlexC{
+            flex-direction: column ;
+        }
+        .contactDetails{
+            padding: 0 !important;
+        }
+        
+        }
+        @media screen and (max-width: 550px) {
+       
+            .editButton{
+                font-size:4vw;
+                height: max-content;
+            }
+            
+            option,select{
+                font-size: 4vw !important;
+                height: 12vw !important;
+            }
+            .mflexC{
+                flex-direction: column ;
+            }
+            .profileLargeImage{
+                    width: 100vw;
+                    height: 85vw;
+            }
+            .editIcon{
+                height: 10vw;
+                width: 10vw;
+                
+            }
+            .uploadPhoto{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 20vw;
+                width: 20vw;
+            }
+            .actions{
+                left: 0%;
+                top: 15%;
+            }
+        }
+       
+        </style>
         <title>Shehnai Matrimonials - Home | Shehnai Matrimonials | High Profile Candidate | 20+ years of Exclusive Experience In Matchmaking For Highly Qualified Candidates !</title>
 
     </head>
@@ -28,8 +163,18 @@
             <div class="viewProfile flexR gap2">
                
                 <div class="profileLargeImage flexR">
-                    <img src="assets/special2.webp" class="specialImage viewProfileImage"> 
-                           
+                    <!-- <img src="assets/special2.webp" class="specialImage viewProfileImage">  -->
+                    <div class="profilePhotoMiniContainer flexR">
+                        <label for="img1"><div class="profilePhotoMini profileMini1"><div class="uploadPhoto flexR"><img src="assets/edit.svg" class="editIcon"></div></div></label>
+                        <input type="file" id="img1" name="img" accept="image/*">
+                        <label for="img2"><div class="profilePhotoMini profileMini2"><div class="uploadPhoto flexR"><img src="assets/edit.svg" class="editIcon"></div></div></label>
+                        <input type="file" id="img2" name="img" accept="image/*">
+                        <label for="img2"><div class="profilePhotoMini profileMini3"><div class="uploadPhoto flexR"><img src="assets/edit.svg" class="editIcon"></div></div></label>
+                        <input type="file" id="img2" name="img" accept="image/*">
+                        <label for="img2"><div class="profilePhotoMini profileMini4"><div class="uploadPhoto flexR"><img src="assets/edit.svg" class="editIcon"></div></div></label>
+                        <input type="file" id="img2" name="img" accept="image/*">
+                    </div>
+                    
                 </div>
                 <div class="flexC start">
                     <div class="profileAboutDetails leftBorder">
@@ -966,87 +1111,5 @@
         <!-- <div class="footer"></div> -->
 
     </body>
-    <link rel="stylesheet" href="search.css" >
-    <link rel="stylesheet" href="style.css" >
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <script src="script.js"></script>
-
-    <style>
-        .viewContactDetailsMobile{
-            display: none;
-        }
-    /* .contactNumberContainer{
-        height: 8.25vw;
-    } */
-    .timeInput{
-        background-color: rgba(0,0,0,0);
-    width: auto;
-    border-radius: var(--radius);
-    height: 1.5vw;
-    text-align: center;
-    border: 0.1vw solid rgba(0,0,0,0.2);
-    font-size: 0.85vw;
-    font-weight: 400;
-    padding: 2%;
-   font-family: inherit; 
-    }
-    .subDetails{
-        
-    }    
-    input[type="email" i],input[type="text" i],input[type="number" i],input[type="tel" i],input[type="password" i],input[type="date" i],input[type="time" i] {
-        
-    }
-    .dropDown{
-        /* height:    2.1vw !important; */
-    }
-    @media screen and (max-width: 991px) {
-    label{
-        display: block;
-    }
-    .detailContainer{
-        width: 80vw;
-    }
-    #shortInput,.mediumWidth,.longWidth,textarea{
-        width: 80vw !important;
-    }
-    .shortWidth{
-        width: 30vw !important;
-    }
-    .educationSub{
-        flex-direction: column;
-    }
-    .educationSub div{
-        width: 80vw;
-    }
-    .siblingSub,.parent{
-        grid-template-columns: auto;
-    }
-    .parent .subDetails, .parent  .subDetails {
-        width: 80vw !important;
-    }
-    .mFlexC{
-        flex-direction: column ;
-    }
-    .contactDetails{
-        padding: 0 !important;
-    }
-    
-    }
-    @media screen and (max-width: 550px) {
-    .editButton{
-        font-size:4vw;
-        height: max-content;
-    }
-    
-    option,select{
-        font-size: 4vw !important;
-        height: 12vw !important;
-    }
-    .mflexC{
-        flex-direction: column ;
-    }
-    }
-    </style>
+   
 </html>

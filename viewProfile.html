@@ -22,10 +22,30 @@
     <script src="script.js"></script>
 
     <style>
+        .profileLargeImage{
+                background-image: url("assets/goldMember2.webp");
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 28vw;
+                height: 30vw;
+                /* border: 1px solid; */
+                background-position: top;
+                align-items: flex-end;
+                /* background-color: #f7f7f7; */
+            }
+        .actions{
+            
+            top: 15%;
+            left: 7%;
+        }
          @media screen and (max-width: 1600px) { /*Small Desktops*/
             .editButton{
                 padding: 0;
                 min-height: auto;
+            }
+            .actions{
+            
+                top: 16%;
             }
         }
         @media screen and (max-width: 550px) { /*mobile*/
@@ -35,11 +55,19 @@
                 margin: 0 !important;
             }   
             
-                .editButton{
-                    font-size: 4vw ;
-                    width: 30vw !important;
-                    height: 8vw !important;
-                } 
+            .editButton{
+                font-size: 4vw ;
+                width: 30vw !important;
+                height: 8vw !important;
+            } 
+            .profileLargeImage{
+                width: 100vw;
+                height: 85vw;
+            }
+            .actions{
+                left: 0%;
+                top: 15%;
+            }
     }
 
    
@@ -57,11 +85,23 @@
             <div class="viewProfile flexR gap2">
                
                 <div class="profileLargeImage flexR">
-                    <img src="assets/special2.webp" class="specialImage viewProfileImage"> 
+                    <!-- <img src="assets/special2.webp" class="specialImage viewProfileImage">  -->
+
                             <div class="actions flexR">
                                 <div class="actionContainer flexC fontSmall"><img src="assets/like.svg" class="likeIcon actionIcon" onclick="likeToggle(this)" data-userID="SH001">Like</div>
                                 <div class="actionContainer flexC fontSmall"><img src="assets/save.svg" class="saveIcon actionIcon" onclick="saveToggle(this)">Save</div>
-                    </div>
+                            </div>
+                            <div class="profilePhotoMiniContainer flexR">
+                                <div class="profilePhotoMini profileMini1"><div class="uploadPhoto flexR"></div></div>
+                                
+                                <div class="profilePhotoMini profileMini2"><div class="uploadPhoto flexR"></div></div>
+                                
+                                <div class="profilePhotoMini profileMini3"><div class="uploadPhoto flexR"></div></div>
+                                
+                                <div class="profilePhotoMini profileMini4"><div class="uploadPhoto flexR"></div></div>
+                                
+                            </div>
+
                 </div>
                 <div class="flexC start">
                     <div class="profileAboutDetails leftBorder">
