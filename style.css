@@ -1332,19 +1332,19 @@ textarea{
     }
     .yearImage{
         height:auto ;
-        width: 42vw;
+        width: 150vw;
     }
     .years{
         
-
+        overflow: clip;
         align-items: center;
         justify-items: center;
         display: grid;
         place-content: center;
         /* border: 1px solid red; */
-        width: 98%;
+        width: 100%;
         
-        margin: 65% 0% 0% 0%;
+        margin: 0%;
      /*   width: 97vw;
         backdrop-filter: blur(4vw); */
     }
