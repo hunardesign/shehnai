@@ -1,9 +1,9 @@
-<div class="footer flexC ">
+<div class="footer">
     
     <div class="footerLinksContainer flexR">
         <div class="footerLinks flexC gap2">
             <div class="footerHeader fontMedium">Help & Support</div>
-            <div class="linksSub flexC gap2">
+            <div class="linksSub flexC gap">
                 <div class=""><a class="fontSmall" href="Contact.html">Contact Us</a></div>
                 <div class=""><a class="fontSmall" href="#">Feedback</a></div>
                 <div class=""><a class="fontSmall" href="pricing.html">FAQ</a></div>
@@ -11,7 +11,7 @@
         </div>
         <div class="footerLinks flexC gap2">
             <div class="footerHeader fontMedium">Quick Links</div>
-            <div class="linksSub flexC gap2">
+            <div class="linksSub flexC gap">
                 <div class=""><a class="fontSmall" href="privacyPolicy.html">Privacy Policy</a></div>
                 <div class=""><a class="fontSmall" href="termsCondition.html">Terms & Condition</a></div>
                 <div class=""><a class="fontSmall" href="#">Services</a></div>
@@ -19,14 +19,14 @@
         </div>
         <div class="footerLinks flexC gap2">
             <div class="footerHeader fontMedium">My Matrimony</div>
-            <div class="linksSub flexC gap2">
+            <div class="linksSub flexC gap">
                 <div class=""><a class="fontSmall" href="Bride.html">Bride</a></div>
                 <div class=""><a class="fontSmall" href="Groom.html">Groom</a></div>
             </div>
         </div>
         <div class="footerLinks flexC gap2">
             <div class="footerHeader fontMedium">Media</div>
-            <div class="linksSub flexC gap2">
+            <div class="linksSub flexC gap">
                 <div class=""><a class="fontSmall" href="advertiseProfile.html">Advertise</a></div>
                 <div class=""><a class="fontSmall" href="#">Videos</a></div>
                 <div class=""><a class="fontSmall" href="reviews.html">Testimonials</a></div>
@@ -34,20 +34,21 @@
         </div>
     </div>
     <div class="footerContainer">
-        <div class="socialMedia">
-            <img src="assets/facebook.svg" class="socialIcon">
-            <img src="assets/instagram.svg" class="socialIcon">
-            <img src="assets/twitter.svg" class="socialIcon">
-        </div>
         <a  href="/">
             <div class="navBarLogo">
                 <img src="assets/logo.svg" loading="lazy" alt="" class="logo"/>
             </div>
         </a> 
+        
+        
         <div class="signup">
             Sign Up
         </div>
-        
+        <div class="socialMedia">
+            <img src="assets/facebook.svg" class="socialIcon">
+            <img src="assets/instagram.svg" class="socialIcon">
+            <img src="assets/twitter.svg" class="socialIcon">
+        </div>
     </div>
 </div>
 <style>
@@ -65,8 +66,12 @@
     }
     .footer{
         display: flex;
-        flex-direction: column;
-        
+        flex-direction: row-reverse;
+        width: 100vw ;
+        background: white;
+        justify-content: space-between;
+
+        padding: 2% 9%;
     }
     .footerLinks{
         display: flex;
@@ -81,29 +86,27 @@
     }
     .footerLinksContainer{
         background:white;
-        width: 100vw;
+        /* width: 100vw; */
         height: 15vw;
         align-items: flex-start ;
         /* justify-content: space-around; */
-        gap: 5vw;
+        gap: 3vw;
     }
     .footerContainer{
         display: flex;
-        width: 99vw;
+        flex-direction: column;
+        /* width: 99vw; */
         background:white;
-        gap: 15vw;
+        gap: 2vw;
         padding:1%;
-        align-items: center;
+        align-items: start;
         justify-content: center;
     }
     .signup{
         background-color: var(--primary);
         color: white;
         border-radius: var(--radius);   
-        padding: 1.5% ;
-        padding-right: 1.5% ;
-        padding-top:0.5%;
-        padding-bottom:0.5%;
+        padding: 5% 20%;
    }
    .socialMedia{
     width: 10vw;
@@ -115,6 +118,9 @@
    .socialIcon:hover{
      opacity:0.4;
    }
+   .logo{
+    padding: 0%;
+   }
    @media screen and (max-width: 550px) {
     .footerLinksContainer{
         flex-direction: column;
@@ -123,6 +129,7 @@
     }
     .footer{
         height: max-content;
+        flex-direction: column;
     }
     .footerLinks{
         font-size: 3vw;
@@ -134,10 +141,10 @@
     .footerContainer{
         display: flex;
         flex-direction: column;
-        width: 99vw;
+        /* width: 99vw; */
         background:white;
-        gap:2vw ;
-        padding:1.5%;
+        gap:10vw ;
+        /* padding:1.5%; */
         align-items: center;
         
     }
