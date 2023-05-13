@@ -1,25 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <link rel="icon" type="image/png" sizes="32*32" href="assets/favicon-32x32.png">
+<!-- saved from url=(0014)about:internet -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="icon" type="image/png" sizes="32*32" href="http://192.168.1.12:8080/shehnai/public/assets/document/favicon-32x32.png">
         
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="HandheldFriendly" content="true">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta name="title" content="Shehnai Matrimonials - Home | High Profile Candidate">
-        <meta name="description" content="Shehnai initially was a small-scale home-based social activity service, to help the prospective candidates of friends and family find a suitable match.">
-        <meta name="Keywords" content="Shehnai Matrimonials,Shehnai,Matrimonials,matrimonial,matrimony,matrimonials,indian matrimonials,marriage,marriage sites,matchmaking,shaadi,shehnai,couple goals,boys,Doctors,High Profile,Doctors Marraige,high profile candidate,engineers,architrct matrimony,doctors matrimony,marraige bureau,Shehnai Matrimonials india,Shehnai Matrimonials gujarat ahmedabad,Shehnai Matrimonials in ahmedabad,indian bride,NRI matrimonials,nri,nri marraige bureau,highly qualified, highly qulified candidate ">
-        <meta name="robots" content="index, follow">
-        <meta name="language" content="English">
-        <link rel="stylesheet" href="search.css">
-    <link rel="stylesheet" href="style.css" >
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <script src="script.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="title" content="Shehnai Matrimonials - Home | High Profile Candidate">
+<meta name="description" content="Shehnai initially was a small-scale home-based social activity service, to help the prospective candidates of friends and family find a suitable match.">
+<meta name="Keywords" content="Shehnai Matrimonials,Shehnai,Matrimonials,matrimonial,matrimony,matrimonials,indian matrimonials,marriage,marriage sites,matchmaking,shaadi,shehnai,couple goals,boys,Doctors,High Profile,Doctors Marraige,high profile candidate,engineers,architrct matrimony,doctors matrimony,marraige bureau,Shehnai Matrimonials india,Shehnai Matrimonials gujarat ahmedabad,Shehnai Matrimonials in ahmedabad,indian bride,NRI matrimonials,nri,nri marraige bureau,highly qualified, highly qulified candidate ">
+<meta name="robots" content="index, follow">
+<meta name="language" content="English">        <title>Shehnai Matrimonials - Register | Shehnai Matrimonials | High Profile Candidate | 20+ years of Exclusive Experience In Matchmaking For Highly Qualified Candidates !</title>
+
+         
+        <link rel="stylesheet" href="./register_files/search.css">
+        <link rel="stylesheet" href="./register_files/bootstrap.css">
+        <link rel="stylesheet" href="./register_files/style.css">
+        <!--  <link rel="stylesheet" href="http://192.168.1.12:8080/shehnai/public/assets/js/bootstrap.bundle.js">
+         <link rel="stylesheet" href="http://192.168.1.12:8080/shehnai/public/assets/js/bootstrap.js">  -->
+          <script src="./register_files/script.js.download"></script>
+          <script src="./register_files/bootstrap.bundle.js.download"></script>
+          <script src="./register_files/bootstrap.js.download"></script>
+    
+    <link rel="stylesheet" href="./register_files/jquery-ui.css">
+<script src="./register_files/jquery.min.js.download"></script>
     <style>
        
         .home{
@@ -30,8 +37,8 @@
             background-size: cover;
             background-repeat: no-repeat;
             width: 100vw;  
-            height: 45vw;          
-            background-image: url("assets/subtleHero.webp");
+            height: 55vw;          
+            background-image: url("http://localhost:8080/shehnai/public/assets/document/subtleHero.webp");
          }
         
         .years{
@@ -52,11 +59,235 @@
             }
         
         }
- 
+        
      </style>
-   
-        <title>Shehnai Matrimonials - Home | Shehnai Matrimonials | High Profile Candidate | 20+ years of Exclusive Experience In Matchmaking For Highly Qualified Candidates !</title>
+     <script type="text/javascript">
+       
+     </script>
+   <script type="text/javascript">
+       function getvalidation()
+       {
+            if(document.getElementById('emailid').value == "")
+            {
+                document.getElementById('LoadingDeal').innerHTML = "<span style='color: red;font-size:12px;'>Email ID connot be empty.</span>";
+                $("#LoadingDeal").fadeOut("slow");
+                $("#LoadingDeal").fadeIn();
+                document.getElementById('emailid').focus();
+                return false;
+            }
+            if(document.getElementById('emailid').value != "") 
+            {
+                var emailstr = document.getElementById('emailid').value;
+                var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 
+                if(reg.test(emailstr) == false) {
+                    document.getElementById('LoadingDeal').innerHTML = "<span style='color: red;font-size:12px;'>Invalid Email Address.</span>";
+                    $("#LoadingDeal").fadeOut("slow");
+                    $("#LoadingDeal").fadeIn();
+                    //alert('Invalid Email Address');
+                    document.getElementById('emailid').focus();
+                    return false;
+                }
+            }
+            if(document.getElementById('mobile').value == "")
+            {
+                document.getElementById('LoadingDealMobile').innerHTML = "<span style='color: red;font-size:12px;'>Mobile No connot be empty.</span>" ;
+                $("#LoadingDealMobile").fadeOut("slow");
+                $("#LoadingDealMobile").fadeIn();
+                document.getElementById('mobile').focus();
+                return false;
+            }
+            if(document.getElementById('mobile').value != "")
+            {
+                var y = document.getElementById('mobile').value;
+                var z = document.getElementById('mainusercode').value;
+                
+                if(isNaN(y) || y.indexOf(" ")!=-1)
+                {
+                    document.getElementById('LoadingDealMobile').innerHTML = "<span style='color: red;font-size:12px;'>Invalid Mobile No.</span>";
+                    document.getElementById('mobile').focus();
+                    return false;
+                }
+                if(z == 1)
+                {
+                    if (y.length>10 || y.length<10)
+                   {
+                        document.getElementById('LoadingDealMobile').innerHTML = "<span style='color: red;font-size:12px;'>Mobile No. should must be  10 digit.</span>";
+                        document.getElementById('mobile').focus();
+                        return false;
+                   }
+                    var regx = /^[6-9]\d{9}$/ ;
+                    if(!regx.test(y))
+                    {
+                        document.getElementById('LoadingDealMobile').innerHTML = "<span style='color: red;font-size:12px;'>Invalid Mobile No.</span>";
+                            document.getElementById('mobile').focus();
+                            return false;
+                    }
+                          
+                }
+                else
+                {
+                    if(y.length>10 || y.length<3)
+                    {
+                        document.getElementById('LoadingDealMobile').innerHTML = "Mobile No. should be between 4 to 10 digit.";
+                            document.getElementById('mobile').focus();
+                            return false;
+                    }
+                    var army=["0000", "00000", "000000", "0000000", "00000000","000000000","0000000000"];
+                     for(var i=0; i<army.length; i++)  
+                     {  
+                        var name = army[i];  
+                        if(name == y)
+                        {  
+                            document.getElementById('LoadingDealMobile').innerHTML = "Invalid Mobile No.";
+                            document.getElementById('mobile').focus();
+                            return false;
+                        }  
+
+                     }  
+                }
+            }
+            if(document.getElementById('regChkstatus').value == 0)
+            {
+                document.getElementById('emailid').focus();
+                return false;
+            }
+            if(document.getElementById('regChkstatusmobile').value == 0)
+            {
+                document.getElementById('mobile').focus();
+                return false;
+            }
+            if(document.getElementById('personname').value == "")
+            {
+                document.getElementById('Infopersonname').innerHTML = "<span style='color: red;font-size:12px;'>Contact PersonName connot be empty.</span>";
+                        document.getElementById('mobile').focus();
+                $("#Infopersonname").fadeOut("slow");
+                $("#Infopersonname").fadeIn();
+                document.getElementById('personname').focus();
+                return false;
+            }
+            if(document.getElementById('captcha').value == "")
+            {
+                document.getElementById('captchaname').innerHTML = "<span style='color: red;font-size:12px;'>Captcha code connot be empty.</span>";
+                $("#captchaname").fadeOut("slow");
+                $("#captchaname").fadeIn();
+                document.getElementById('captcha').focus();
+                return false;
+            }
+            if(document.getElementById('captcha').value != "")
+            {
+                var inputcaptcha = document.getElementById('captcha').value;
+                var sessionvalcaptcha = document.getElementById('sessionvalcaptcha').value;
+                
+                
+                if(inputcaptcha != sessionvalcaptcha)
+                {
+                     document.getElementById('captchaname').innerHTML = "<span style='color: red;font-size:12px;'>Invalid Captcha code.</span>";
+                   
+                $("#captchaname").fadeOut("slow");
+                $("#captchaname").fadeIn();
+                document.getElementById('captcha').focus();
+                    return false;
+                }
+            }
+            else
+            {
+                document.getElementById('captchaname').innerHTML = "";
+                return true;
+            }
+
+
+       }
+
+      function isNumber(evt) 
+      {
+         evt = (evt) ? evt : window.event;
+         var charCode = (evt.which) ? evt.which : evt.keyCode;
+         if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+             return false;
+         }
+         return true;
+      }
+      function check_usernameold(val){
+       if(val.length > 2){
+            //$('#LoadingDeal').show();
+             document.getElementById('LoadingDeal').innerHTML = '<img src="http://192.168.1.12:8080/shehnai/public/assets/document/loader.gif" height="30px" />'; 
+           
+        }
+    }
+
+ function check_username(val)
+  {
+    if(val !="")
+    {
+           
+        document.getElementById('LoadingDeal').innerHTML = '<img src="http://192.168.1.12:8080/shehnai/public/assets/document/loader.gif" height="30px" />'; 
+
+            var State = 1;
+            $.ajax({ 
+             url:"signupajax.php",
+              type: 'POST',
+              dataType:'html',
+              data:{val:val,State:State},
+              success:function(data)
+              {
+                document.getElementById('LoadingDeal').innerHTML = ""; 
+                if(data == 0)
+                {
+                    document.getElementById('LoadingDeal').innerHTML = '<img src="http://192.168.1.12:8080/shehnai/public/assets/document/yes.png" height="20px" />';
+                    document.getElementById('regChkstatus').value = 1; 
+
+                }
+                else
+                {
+                    document.getElementById('LoadingDeal').innerHTML = "<span style='color: red;font-size:12px;'>Email ID Already Exists.</span>";
+                    document.getElementById('regChkstatus').value = 0; 
+                }
+                
+
+              }  
+
+              });
+    }
+}
+
+function check_mobileno(val)
+{
+    if(val !="")
+    {
+       
+        document.getElementById('LoadingDealMobile').innerHTML = '<img src="http://192.168.1.12:8080/shehnai/public/assets/document/loader.gif" height="30px" />'; 
+
+        var State = 2;
+        $.ajax({  
+         url:"signupajax.php",
+         type: 'POST',
+          dataType:'html',
+          data:{val:val,State:State},
+          success:function(data)
+          {
+            //alert(data);
+            document.getElementById('LoadingDealMobile').innerHTML = ""; 
+            if(data == 0)
+            {
+                document.getElementById('LoadingDealMobile').innerHTML = '<img src="http://192.168.1.12:8080/shehnai/public/assets/document/yes.png" height="20px" />';
+                document.getElementById('regChkstatusmobile').value = 1; 
+            }
+            else
+            {
+                document.getElementById('LoadingDealMobile').innerHTML = "<span style='color: red;font-size:12px;'>Mobile No Already Exists.</span>";
+                document.getElementById('regChkstatusmobile').value = 0; 
+            }
+            
+
+          }  
+
+          });
+    }
+}
+
+</script>
+   
     </head>
 
     <body>
@@ -64,67 +295,492 @@
 
         <div class="heroSection">
             
-            <div class="navbar"></div>
+          <div class="navBarContainer" id="navbar">
+    <a href="http://localhost:8080/shehnai/index">
+        <div class="navBarLogo">
+            <img src="./register_files/logo.svg" loading="lazy" alt="" class="logo">
+        </div>
+    </a>
+    <div class="navbuttons">
 
+        <!-- <div class="home links"><a href="/">Home</a></div> -->
+            <div class="about links"><a href="http://localhost:8080/shehnai/about">About</a></div>
+            <div class="memberLink links"><a href="http://localhost:8080/shehnai/Membershipdetails">Membership Plans</a></div>
+            <!-- <div class="pricing links"><a href="Advertise">Advertise</a></div> -->
+            <div class="memberLink links"><a href="http://localhost:8080/shehnai/SupremeMembers">Supreme Members</a></div>
+            <div class="pricing links"><a href="http://localhost:8080/shehnai/Reviews">Reviews</a></div>
+            <div class="contact links"><a href="http://localhost:8080/shehnai/contact">Contact</a></div>
+            <div class="login links"><a href="http://localhost:8080/shehnai/Login">Login</a></div>
+            <div class="register links"><a href="http://localhost:8080/shehnai/Register">Register</a></div>
+            <div class="register links"><a href="http://localhost:8080/shehnai/SearchProfile">Search</a></div>
+
+    </div>
+
+        <div class="menu"><a href="javascript:void(0);" class="icon" onclick="hideMenu()"><img src="./register_files/menu.svg" class="menuIcon"></a></div>
+</div>
+<style>
+
+    .navBarContainer {
+        z-index: 2;
+        animation: slideDown 600ms ease-in-out;
+        padding: 15px 7%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        position: fixed;
+        height: max-content;
+        left: 0px;
+        top: 0px;
+        background: rgba(255,255,255,0.9);
+        backdrop-filter: blur(1vw);
+   }
+
+    .navbuttons{
+        display: flex;
+        gap: 1vw;
+        font-size: 0.8vw;
+        font-weight: 600;
+        color: black;
+        display: flex;
+        color: rgba(0, 0, 0, 0.4);
+        padding: 0% 1%;
+   }
+   .links{
+    display: flex;
+    padding: 0.5%;
+    width: 5vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   }
+   .displayLink{
+    width: 6.7vw;
+   }
+   .memberLink{
+    width: 9.7vw;
+   }
+   .navBarLogo{
+        height: auto;
+   }
+   .logo{
+        width: 10vw;
+        padding: 0% 10%;
+   }
+   .login{
+        width: 7vw;
+        color: white;
+        background-color: var(--primary);
+        border-radius: var(--radius);
+   }
+   .editButton,.register{
+         width: 7vw;
+        color: var(--primary);
+        border: 2px solid var(--primary);
+        border-radius: var(--radius);
+        cursor: pointer;
+        height: 2vw;
+   }
+
+   .navbuttons a{transition: 300ms ease-in;}
+
+   .navbuttons a:hover{
+
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+   }
+
+   @media screen and (max-width: 1600px) { /*small display*/
+        .navbuttons{
+            font-size: 1vw;
+            /* margin-right: 25%; */
+        }
+        .logo{
+            width: 10vw;
+        }
+        .searchButton,.editButton,.register{
+            min-height: 2.5vw;
+        }
+        .displayLink{
+            width: 8vw;
+        }
+        .links{
+            font-size: 0.85vw;
+        }
+    }
+    @media screen and (max-width: 991px) { /*tablets*/
+        .navbuttons{
+            font-size: 1.4vw;
+            margin-right: 36%;
+        }
+        .logo{
+            width: 14vw;
+        }
+    }
+    @media screen and (max-width: 550px) { /*mobile*/
+    .navbuttons{
+        /* background-color: rgba(255, 255, 255, 0.4); */
+
+        padding-bottom: 2%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        font-size: 4.2vw;
+        flex-direction: column;
+        gap: 2vw;
+    }
+    .logo{
+        width: 35vw;
+    }
+
+    .navBarContainer{
+
+        position: fixed;
+        margin-top: 5% !important;
+
+        flex-direction: column;
+        height: max-content;
+        align-items: flex-start;
+        border-radius: 2vw;
+    }
+    .login{
+
+        border-radius: 8px;
+    }
+    .menu{
+        display: block !important;
+        position: absolute;
+        right: 5vw;
+        top:6vw;
+
+    }
+    .links{
+        width: 75%;
+        font-size: 4.5vw;
+    }
+    .register{
+        border: none;
+    }
+    .footerLinksContainer{
+            align-items: start;
+    }
+}
+</style>
+<script>
+    const mediaQuery = window.matchMedia('(min-width: 768px)')
+
+    if(!mediaQuery.matches){
+        $('.links').hide();
+    }
+
+     function hideMenu() {
+        if($('.links').css('display') == 'none'){
+            $('.links').show('slow');
+        } else {
+            $('.links').hide('slow');
+        }
+
+    }
+</script>
             <div class="years">
                 <div class="yearsTitle">
-                    <img src="assets/anniversary.webp" class="yearImage">
+                    <img src="./register_files/anniversary.webp" class="yearImage">
                 </div>
                 <div class="yearsSub">
                    of Exclusive Experience In Matchmaking For Highly Qualified Candidates !
                 </div>
             </div>
             
-            <form class="registerForm generalForm flexC">
+             <form class="registerForm generalForm flexC" onsubmit="return getvalidation()" action="http://localhost:8080/shehnai/Mobileverify" method="POST">
 
                 <span class="formTitle fontMedium">Create New Account</span>
 
                 <label for="emailid" class="formLabel fontSmall">Email ID</label>
-                <input type="email" id="emailid" name="emailid" placeholder="Enter your email" required>
+                <input type="text" id="emailid" name="emailid" value="" size="60" maxlength="60" placeholder="Enter your email" onblur="check_username(this.value);" autocomplete="off">
+                <span id="LoadingDeal"></span>
                 
                 <span class="contacNo flexR">
                    
                     <span class="countryCode flexC">
                         <label for="phone" class="formLabel fontSmall">Country Code</label>
-                        <select class="roundedBorder" required>
-                            <option value="ind">+91</option>
+                        <select class="roundedBorder" name="mainusercode" id="mainusercode" required="">
+                            <option value="1">+91</option>
                             <option value="other">Other</option>
                         </select>
+                        
                     </span>
+                    <span id="LoadingDealMobileold"></span>
                    
                     <span class="number flexC">
                         <label for="phone" class="formLabel fontSmall">Mobile No.</label>
-                        <input type="number" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="9876543210" minlength="10" maxlength="10" class="phoneField" required>
+                        <input type="text" id="mobile" name="mobile" onkeypress="return isNumber(event);" placeholder="9876543210" onblur="return check_mobileno(this.value);" inputmode="numeric" maxlength="12" class="phoneField">
+                        
                     </span>    
                     
                 </span>
-                
+                <span id="LoadingDealMobile"></span>
                 <label for="userName" class="formLabel fontSmall">Your Name</label>
-                <input type="text" id="userName" name="userName" placeholder="Enter your name" required>
+                <input type="text" id="personname" name="personname" placeholder="Enter your name">
+                <span id="Infopersonname"></span>
 
                 <span class="captcha contacNo  flexR">
                    
                     <span class="countryCode flexC">
                         <label for="captcha" class="formLabel fontSmall">Enter captcha</label>
-                        <input type="text" id="captcha" name="captcha" placeholder="Enter Captcha" required>
+                        <input type="text" id="captcha" name="captcha" placeholder="Enter Captcha">
                     </span>
                    
-                    <span class="captcha">
-                        <img src="assets/captcha.svg">
-                    </span>    
+                    <span class="captcha" style="background-color:#ffcccc;">
+                        <!-- <img src="assets/captcha.svg"> -->
+                        78485                    </span>    
                     
                 </span>
+                <span id="captchaname"></span>
                 
                 <div class="searchButtonContainer">
+                    <input type="hidden" name="regChkstatus" id="regChkstatus" value="0">
+                     <input type="hidden" name="regChkstatusmobile" id="regChkstatusmobile" value="0">
+                    <input type="hidden" name="cnvalue" id="cnvalue" value="1">
+                    <input type="hidden" name="sessionvalcaptcha" id="sessionvalcaptcha" value="78485">
                     <input type="submit" value="Register" class="searchButton">
                 </div>
             </form>
+        
             
         </div>
         <!--Footer-->
-        <div class="footer"></div>
+       <div class="footer flexC ">
 
-    </body>
+    <div class="footerLinksContainer" style="height: auto;">
+        <div class="row" style="display: flex; justify-content: space-around;">
+            <div class="footer_sb">
+                <div class="footer-logo" style="margin-bottom: 23px;margin-top: 30%;">
+                  <img src="./register_files/logo.svg" loading="lazy" alt="" class="logo">
+                </div>
+                <div class="social_icon">
+                    <div class="socialMedia" style="text-align: center;">
+            <img src="./register_files/facebook.svg" class="socialIcon">
+            <img src="./register_files/instagram.svg" class="socialIcon">
+            <img src="./register_files/twitter.svg" class="socialIcon">
+        </div>
+                </div>
+
+            </div>
+            <div class="footer_sb">
+                <div class="footer_sb_link">
+                    <h3>Help &amp; Support</h3>
+                    <ul>
+                        <li> <a href="http://localhost:8080/shehnai/Register#">About Us</a></li>
+                        <li> <a href="http://localhost:8080/shehnai/Register#">Contact Us</a></li>
+                        <li> <a href="http://localhost:8080/shehnai/Register#">FAQ</a></li>
+                    </ul>
+                </div>
+       <!--           <div class="footerLinks gap2">
+            <div class="footerHeader fontMedium">Help & Support</div>
+            <div class="linksSub flexC gap2">
+                <div class=""><a class="fontSmall" href="about">About Us</a></div>
+                <div class=""><a class="fontSmall" href="contact">Contact Us</a></div>
+                <div class=""><a class="fontSmall" href="pricing.html">FAQ</a></div>
+            </div>
+        </div> -->
+            </div>
+            <div class="footer_sb">
+                <div class="footer_sb_link">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li> <a href="http://localhost:8080/shehnai/Register#">Privacy Policy</a></li>
+                        <li> <a href="http://localhost:8080/shehnai/Register#">Terms &amp; Condition</a></li>
+                        <li> <a href="http://localhost:8080/shehnai/Register#">Services</a></li>
+                    </ul>
+                </div>
+                <!--  <div class="footerLinks  gap2">
+            <div class="footerHeader fontMedium">Quick Links</div>
+            <div class="linksSub flexC gap2">
+                <div class=""><a class="fontSmall" href="privacypolicy">Privacy Policy</a></div>
+                <div class=""><a class="fontSmall" href="termscondition">Terms & Condition</a></div>
+                <div class=""><a class="fontSmall" href="#">Services</a></div>
+            </div>
+        </div> -->
+            </div>
+            <div class="footer_sb">
+                 <div class="footer_sb_link">
+                    <h3>My Matrimony</h3>
+                    <ul>
+                        <li> <a href="http://localhost:8080/shehnai/Register#">Bride</a></li>
+                        <li> <a href="http://localhost:8080/shehnai/Register#">Groom</a></li>
+                        <li> <a href="http://localhost:8080/shehnai/Register#">Feedback</a></li>
+                    </ul>
+                </div>
+               <!--  <div class="footerLinks  gap2">
+            <div class="footerHeader fontMedium">My Matrimony</div>
+            <div class="linksSub flexC gap2">
+                <div class=""><a class="fontSmall" href="Bride">Bride</a></div>
+                <div class=""><a class="fontSmall" href="Groom">Groom</a></div>
+                <div class=""><a class="fontSmall" href="#">Feedback</a></div>
+            </div>
+        </div> -->
+            </div>
+            <div class="footer_sb">
+                  <div class="footer_sb_link">
+                    <h3>Media</h3>
+                    <ul>
+                        <li> <a href="http://localhost:8080/shehnai/Register#">Advertise</a></li>
+                        <li> <a href="http://localhost:8080/shehnai/Register#">Videos</a></li>
+                        <li> <a href="http://localhost:8080/shehnai/Register#">Testimonials</a></li>
+                    </ul>
+                </div>
+                 <!-- <div class="footerLinks  gap2">
+            <div class="footerHeader fontMedium">Media</div>
+            <div class="linksSub flexC gap2">
+                <div class=""><a class="fontSmall" href="advertiseProfile.html">Advertise</a></div>
+                <div class=""><a class="fontSmall" href="#">Videos</a></div>
+                <div class=""><a class="fontSmall" href="reviews.html">Testimonials</a></div>
+            </div>
+        </div> -->
+            </div>
+        </div>
+       <div class="footer-link_info" style="background: #fff; color: #000; font-weight:600;">
+           <p class="copyright" style="text-align: center; display: inline-block; transform:translateX(-50%);margin-left: 50%;padding: 20px 1px 0px 1px; border-top: 3px solid #db1226; margin-top: 0px;">Copyright © 2023 <a href="http://localhost:8080/shehnai/index.php"> Shehnai matrimonials </a>| Design &amp; Developed by <a href="http://enlacecode.com/" target="_blank">Enlacecode Technology Pvt Ltd.</a></p>
+       </div>
+
+
+
+    </div>
+<!--     <div class="footerContainer">
+        <div class="socialMedia">
+            <img src="http://192.168.1.12:8080/shehnai/public/assets/document/facebook.svg" class="socialIcon">
+            <img src="http://192.168.1.12:8080/shehnai/public/assets/document/instagram.svg" class="socialIcon">
+            <img src="http://192.168.1.12:8080/shehnai/public/assets/document/twitter.svg" class="socialIcon">
+        </div>
+        <a  href="index">
+            <div class="navBarLogo">
+                <img src="http://192.168.1.12:8080/shehnai/public/assets/document/logo.svg" loading="lazy" alt="" class="logo"/>
+            </div>
+        </a>
+        <div class="signup">
+            Sign Up
+        </div>
+
+    </div> -->
+</div>
+<style>
+   .linksSub *{
+    color: rgba(255,255,255,0.6);
+    cursor: pointer;
+    transition: ease-in 300ms;
+   }
+   .linksSub *:hover{
+    color: var(--primary);
+    text-decoration: none;
+   }
+    .footerLinks,.linksSub{
+        align-items: flex-start !important;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        border-top:1px solid #db1226;
+
+    }
+    .footerLinks{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1%;
+        /* width: 99vw; */
+        color:white !important;
+
+        column-gap: 2.8vw;
+
+    }
+    .footerLinksContainer{
+        background:rgb(19, 0, 0);
+        width: 100vw;
+        height: 15vw;
+        align-items: flex-start ;
+        /* justify-content: space-around; */
+        gap: 5vw;
+    }
+    .footerContainer{
+        display: flex;
+        width: 99vw;
+        background:white;
+        gap: 15vw;
+        padding:1%;
+        align-items: center;
+        justify-content: center;
+    }
+    .signup{
+        background-color: var(--primary);
+        color: white;
+        border-radius: var(--radius);
+        padding: 1.5% ;
+        padding-right: 1.5% ;
+        padding-top:0.5%;
+        padding-bottom:0.5%;
+   }
+   .socialMedia{
+    width: 10vw;
+   }
+   .socialIcon{
+    padding: 2%;
+    cursor: pointer;
+   }
+   .socialIcon:hover{
+     opacity:0.4;
+   }
+   @media screen and (max-width: 550px) {
+    .footerLinksContainer{
+        flex-direction: column;
+        height: max-content;
+        column-gap: 1vw !important;
+    }
+    .footer{
+        height: max-content;
+    }
+    .footerLinks{
+        font-size: 3vw;
+        justify-content: space-around;
+        margin: 5%;
+        /* width: 100%; */
+
+    }
+    .footerContainer{
+        display: flex;
+        flex-direction: column;
+        width: 99vw;
+        background:white;
+        gap:2vw ;
+        padding:1.5%;
+        align-items: center;
+
+    }
+    .socialMedia{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 2vw;
+    }
+    .signup{
+
+        background-color: var(--primary);
+        color: white;
+        border-radius: 2vw;
+        padding: 2.5% ;
+        padding-right: 2.5% ;
+        padding-top:1.5%;
+        padding-bottom:1.5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 80%;
+        text-align: center;
+   }
+   }
+</style>
+
+    
   
     
-</html>
+
+</body></html>

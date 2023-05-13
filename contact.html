@@ -1,141 +1,618 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <link rel="icon" type="image/png" sizes="32*32" href="assets/favicon-32x32.png">
+
+<!-- saved from url=(0014)about:internet -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="icon" type="image/png" sizes="32*32" href="http://192.168.1.12:8080/shehnai/public/assets/document/favicon-32x32.png">
         
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="HandheldFriendly" content="true">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta name="title" content="Shehnai Matrimonials - Home | High Profile Candidate">
-        <meta name="description" content="Shehnai initially was a small-scale home-based social activity service, to help the prospective candidates of friends and family find a suitable match.">
-        <meta name="Keywords" content="Shehnai Matrimonials,Shehnai,Matrimonials,matrimonial,matrimony,matrimonials,indian matrimonials,marriage,marriage sites,matchmaking,shaadi,shehnai,couple goals,boys,Doctors,High Profile,Doctors Marraige,high profile candidate,engineers,architrct matrimony,doctors matrimony,marraige bureau,Shehnai Matrimonials india,Shehnai Matrimonials gujarat ahmedabad,Shehnai Matrimonials in ahmedabad,indian bride,NRI matrimonials,nri,nri marraige bureau,highly qualified, highly qulified candidate ">
-        <meta name="robots" content="index, follow">
-        <meta name="language" content="English">
-        <link rel="stylesheet" href="search.css">
-        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-        <script src="script.js"></script>
-    <style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="title" content="Shehnai Matrimonials - Home | High Profile Candidate">
+<meta name="description" content="Shehnai initially was a small-scale home-based social activity service, to help the prospective candidates of friends and family find a suitable match.">
+<meta name="Keywords" content="Shehnai Matrimonials,Shehnai,Matrimonials,matrimonial,matrimony,matrimonials,indian matrimonials,marriage,marriage sites,matchmaking,shaadi,shehnai,couple goals,boys,Doctors,High Profile,Doctors Marraige,high profile candidate,engineers,architrct matrimony,doctors matrimony,marraige bureau,Shehnai Matrimonials india,Shehnai Matrimonials gujarat ahmedabad,Shehnai Matrimonials in ahmedabad,indian bride,NRI matrimonials,nri,nri marraige bureau,highly qualified, highly qulified candidate ">
+<meta name="robots" content="index, follow">
+<meta name="language" content="English">
+
+   
+      <link rel="stylesheet" href="./contact_files/style.css">
+      <link rel="stylesheet" href="./contact_files/search.css">
+      <link rel="stylesheet" href="./contact_files/jquery-ui.css">
+      <script src="./contact_files/jquery-3.6.0.js.download"></script>
+      <script src="./contact_files/jquery-ui.js.download"></script>
+      <script src="./contact_files/script.js.download"></script>
+      <script type="text/javascript">
+         function getValidation()
+         {
+         //alert("hii");
+         
+         /*if(document.getElementById('forpersonid').value == "")
+         {
+         alert("kindly Enter View Contact Person  ID.");
+         forpersonid.focus();
+         return false;
+         }*/
+         if(document.getElementById('nameperson').value == "")
+         {
+         document.getElementById('errormsg').innerHTML = "<span style='color: red;font-size:12px;'>kindly Enter Name.</span>";
+         $("#errormsg").fadeOut("slow");
+         $("#errormsg").fadeIn();
+         nameperson.focus();
+         return false;
+         }
+         if(document.getElementById('mobile').value == "")
+         {
+         document.getElementById('errormsg').innerHTML = "<span style='color: red;font-size:12px;'>kindly Enter Your Contact Number.</span>";
+         $("#errormsg").fadeOut("slow");
+         $("#errormsg").fadeIn();
+         mobile.focus();
+         return false;
+         }
+         if(document.getElementById('mobile').value != "")
+         {
+         var val = mobile.value
+         if (/^\d{10}$/.test(val)) {
+         // value is ok, use it
+         } else {
+         document.getElementById('errormsg').innerHTML = "<span style='color: red;font-size:12px;'>Invalid number; must be ten digits.</span>";
+         $("#errormsg").fadeOut("slow");
+         $("#errormsg").fadeIn();
+         mobile.focus()
+         return false
+         }
+         }
+         
+         if(document.getElementById('email').value == "")
+         {
+         document.getElementById('errormsg').innerHTML = "<span style='color: red;font-size:12px;'>kindly Enter Your Email-ID.</span>";
+         $("#errormsg").fadeOut("slow");
+         $("#errormsg").fadeIn();
+         email.focus();
+         return false;
+         }
+         if(document.getElementById('email').value != "")
+         {
+         var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+         if (!reg.test(email.value) == false) 
+         {
+         
+         }
+         else
+         {
+         document.getElementById('errormsg').innerHTML = "<span style='color: red;font-size:12px;'>Invalid Email-ID.</span>";
+         $("#errormsg").fadeOut("slow");
+         $("#errormsg").fadeIn();
+         email.focus();
+         return false;
+         }
+         
+         
+         }
+         if(document.getElementById('content').value == "")
+         {
+         document.getElementById('errormsg').innerHTML = "<span style='color: red;font-size:12px;'>kindly Enter Your Message.</span>";
+         $("#errormsg").fadeOut("slow");
+         $("#errormsg").fadeIn();
+         content.focus();
+         return false;
+         }
+         
+         
+         }
+         function isNumber(evt) 
+         {
+         evt = (evt) ? evt : window.event;
+         var charCode = (evt.which) ? evt.which : evt.keyCode;
+         if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+         return false;
+         }
+         return true;
+         }
+      </script>
+      <style>
          .aboutSection{
-                    display: flex;
-                    flex-direction: column;
-                    padding: 2% 0%; 
-            }
-            .contactMap{
-                display: flex;
-                gap: 1vw;
-                background: white;
-                flex-direction: row-reverse;
-                overflow: clip;
-                margin: 0% 7%;
-                width: 80vw;
-            }
-            
-            .contactFormContainer{
-                display: flex;
-                flex-direction: column;
-                padding: 2%;
-                width: 30vw;
-                gap: 1vw;
-               
-               
-            }
-            .contactForm{
-                display: flex;
-                flex-direction: column;
-                gap: 1vw;
-                width: 100%;
-                align-items: stretch;
-            }
-            .mapEmbed{
-                width: 46vw;
-                height: auto;
-            }
-            .contactDetailsContainer{
-                display: flex;
-                width: 100%;
-                gap: 1vw;
-                justify-content: space-evenly;
-            }
-            .contactDetailCard{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding: 1%;
-                gap: 0.5vw;
-            }
-            .searchButton{
-                width: 100%;
-            }
-           
-            .contactTitle{
-            
-                text-align: center;
-            }
-     input[type="email" i],input[type="text" i],input[type="number" i],input[type="tel" i],input[type="password" i] {
-                    text-align: left;  
-                    /* width: 78vw; */
-                }
+         display: flex;
+         flex-direction: column;
+         padding: 2% 0%; 
+         }
+         .contactMap{
+         display: flex;
+         gap: 1vw;
+         background: white;
+         flex-direction: row-reverse;
+         overflow: clip;
+         margin: 0% 7%;
+         width: 80vw;
+         }
+         .contactFormContainer{
+         display: flex;
+         flex-direction: column;
+         padding: 2%;
+         width: 30vw;
+         gap: 1vw;
+         }
+         .contactForm{
+         display: flex;
+         flex-direction: column;
+         gap: 1vw;
+         width: 100%;
+         align-items: stretch;
+         }
+         .mapEmbed{
+         width: 46vw;
+         height: auto;
+         }
+         .contactDetailsContainer{
+         display: flex;
+         width: 100%;
+         gap: 1vw;
+         justify-content: space-evenly;
+         }
+         .contactDetailCard{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         padding: 1%;
+         gap: 0.5vw;
+         }
+         .searchButton{
+         width: 100%;
+         }
+         .contactTitle{
+         text-align: center;
+         }
+         input[type="email" i],input[type="text" i],input[type="number" i],input[type="tel" i],input[type="password" i] {
+         text-align: left;  
+         /* width: 78vw; */
+         }
+      </style>
+      <link rel="stylesheet" href="./contact_files/style(1).css">
+      <title>Shehnai Matrimonials - Home | Shehnai Matrimonials | High Profile Candidate | 20+ years of Exclusive Experience In Matchmaking For Highly Qualified Candidates !</title>
+   </head>
+   <body>
+      <div class="navBarContainer" id="navbar">
+    <a href="http://localhost:8080/shehnai/index">
+        <div class="navBarLogo">
+            <img src="./contact_files/logo.svg" loading="lazy" alt="" class="logo">
+        </div>
+    </a>
+    <div class="navbuttons">
 
-    </style>
-            <link rel="stylesheet" href="style.css" >
+        <!-- <div class="home links"><a href="/">Home</a></div> -->
+            <div class="about links"><a href="http://localhost:8080/shehnai/about">About</a></div>
+            <div class="memberLink links"><a href="http://localhost:8080/shehnai/Membershipdetails">Membership Plans</a></div>
+            <!-- <div class="pricing links"><a href="Advertise">Advertise</a></div> -->
+            <div class="memberLink links"><a href="http://localhost:8080/shehnai/SupremeMembers">Supreme Members</a></div>
+            <div class="pricing links"><a href="http://localhost:8080/shehnai/Reviews">Reviews</a></div>
+            <div class="contact links"><a href="http://localhost:8080/shehnai/contact">Contact</a></div>
+            <div class="login links"><a href="http://localhost:8080/shehnai/Login">Login</a></div>
+            <div class="register links"><a href="http://localhost:8080/shehnai/Register">Register</a></div>
+            <div class="register links"><a href="http://localhost:8080/shehnai/SearchProfile">Search</a></div>
 
-        <title>Shehnai Matrimonials - Home | Shehnai Matrimonials | High Profile Candidate | 20+ years of Exclusive Experience In Matchmaking For Highly Qualified Candidates !</title>
+    </div>
 
-    </head>
+        <div class="menu"><a href="javascript:void(0);" class="icon" onclick="hideMenu()"><img src="./contact_files/menu.svg" class="menuIcon"></a></div>
+</div>
+<style>
 
-    <body>
+    .navBarContainer {
+        z-index: 2;
+        animation: slideDown 600ms ease-in-out;
+        padding: 15px 7%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        position: fixed;
+        height: max-content;
+        left: 0px;
+        top: 0px;
+        background: rgba(255,255,255,0.9);
+        backdrop-filter: blur(1vw);
+   }
 
+    .navbuttons{
+        display: flex;
+        gap: 1vw;
+        font-size: 0.8vw;
+        font-weight: 600;
+        color: black;
+        display: flex;
+        color: rgba(0, 0, 0, 0.4);
+        padding: 0% 1%;
+   }
+   .links{
+    display: flex;
+    padding: 0.5%;
+    width: 5vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   }
+   .displayLink{
+    width: 6.7vw;
+   }
+   .memberLink{
+    width: 9.7vw;
+   }
+   .navBarLogo{
+        height: auto;
+   }
+   .logo{
+        width: 10vw;
+        padding: 0% 10%;
+   }
+   .login{
+        width: 7vw;
+        color: white;
+        background-color: var(--primary);
+        border-radius: var(--radius);
+   }
+   .editButton,.register{
+         width: 7vw;
+        color: var(--primary);
+        border: 2px solid var(--primary);
+        border-radius: var(--radius);
+        cursor: pointer;
+        height: 2vw;
+   }
 
-            
-        <div class="navbar"></div>
+   .navbuttons a{transition: 300ms ease-in;}
 
-            <div class="aboutSection">
-                <div class="featureHeader flexC">
-                    <div class="featureTitle fontLarge dark">Our Display Members</div>
-                    <div class="featureSub dark">Shehnai Matrimonials a long journey of 20+ years..!!!</div>    
-                </div>
-                <div class="contactMap">
-                    <div class="contactFormContainer">
-                        <div class="contactTitle formTitle fontMedium">Always ready to help you</div>
-                        <form action="../mail.php" method="post" class="contactForm">
-                            <input required type="text" class="formElement" id="name" placeholder="Enter Your Name" name="name" value=""/>
-                            <input required type="number" class="formElement" id="number" placeholder="Enter Your Number" name="number" value=""/>
-                            <input required type="text" class="formElement" id="email" placeholder="Enter Your Email" name="email" value=""/>
-                            <textarea required type="text" class="formElement" id="message" placeholder="Enter Your Message" name="message" value=""></textarea>
-                            <input type="submit" value="Send Message" class="searchButton">
-                        </form>
-                        <div class="contactDetailsContainer">
-                            
-                            <div class="contactDetailCard" onclick="tel()">
-                                <img src="../assets/phone.svg" class="contactIcons">
-                                <div>+91 98253 71115</div>
-                            </div>
-                            
-                            
-                            <div class="contactDetailCard" onclick="mailto()">
-                                <img src="../assets/mail.svg" class="contactIcons">
-                                <div>contact@shehnai.in</div>
-                                
-                            </div>
-                    </div>
+   .navbuttons a:hover{
 
-                </div>
-            
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.2870098834005!2d72.5576382155075!3d23.049937021087775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84b4701cffff%3A0xd1d2d613688c457!2sShehnai%20Matrimonials!5e0!3m2!1sen!2sin!4v1669794893013!5m2!1sen!2sin" class="mapEmbed" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+   }
+
+   @media screen and (max-width: 1600px) { /*small display*/
+        .navbuttons{
+            font-size: 1vw;
+            /* margin-right: 25%; */
+        }
+        .logo{
+            width: 10vw;
+        }
+        .searchButton,.editButton,.register{
+            min-height: 2.5vw;
+        }
+        .displayLink{
+            width: 8vw;
+        }
+        .links{
+            font-size: 0.85vw;
+        }
+    }
+    @media screen and (max-width: 991px) { /*tablets*/
+        .navbuttons{
+            font-size: 1.4vw;
+            margin-right: 36%;
+        }
+        .logo{
+            width: 14vw;
+        }
+    }
+    @media screen and (max-width: 550px) { /*mobile*/
+    .navbuttons{
+        /* background-color: rgba(255, 255, 255, 0.4); */
+
+        padding-bottom: 2%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        font-size: 4.2vw;
+        flex-direction: column;
+        gap: 2vw;
+    }
+    .logo{
+        width: 35vw;
+    }
+
+    .navBarContainer{
+
+        position: fixed;
+        margin-top: 5% !important;
+
+        flex-direction: column;
+        height: max-content;
+        align-items: flex-start;
+        border-radius: 2vw;
+    }
+    .login{
+
+        border-radius: 8px;
+    }
+    .menu{
+        display: block !important;
+        position: absolute;
+        right: 5vw;
+        top:6vw;
+
+    }
+    .links{
+        width: 75%;
+        font-size: 4.5vw;
+    }
+    .register{
+        border: none;
+    }
+    .footerLinksContainer{
+            align-items: start;
+    }
+}
+</style>
+<script>
+    const mediaQuery = window.matchMedia('(min-width: 768px)')
+
+    if(!mediaQuery.matches){
+        $('.links').hide();
+    }
+
+     function hideMenu() {
+        if($('.links').css('display') == 'none'){
+            $('.links').show('slow');
+        } else {
+            $('.links').hide('slow');
+        }
+
+    }
+</script>      <div class="aboutSection">
+         <div class="featureHeader flexC">
+         </div>
+         <div class="contactMap">
+            <div class="contactFormContainer">
+               <div class="contactTitle formTitle fontMedium">Always ready to help you</div>
+               <form action="http://localhost:8080/shehnai/contactus" method="post" class="contactForm" onsubmit="return getValidation()">
+                  <input type="text" id="nameperson" name="nameperson" value="" size="60" maxlength="60" class="formElement" placeholder="Enter Your Name" autocomplete="off">
+                  <input type="text" id="mobile" name="mobile" value="" maxlength="14" class="formElement" placeholder="Enter Your Mobile No" autocomplete="off" onkeypress="return isNumber(event);">
+                  <input type="text" id="email" name="email" value="" size="60" maxlength="60" class="formElement" placeholder="Enter Your Email" autocomplete="off">
+                  <textarea name="content" id="content" cols="68" rows="9" placeholder="Enter Your Message" autocomplete="off" class="formElement"></textarea>
+                  <h3 id="errormsg"></h3>
+                  <input type="submit" value="Send Message" class="searchButton">
+               </form>
+               <div class="contactDetailsContainer">
+                  <div class="contactDetailCard" onclick="tel()">
+                     <img src="./contact_files/phone.svg" class="contactIcons">
+                     <div>+91 98253 71115</div>
+                  </div>
+                  <div class="contactDetailCard" onclick="mailto()">
+                     <img src="./contact_files/mail.svg" class="contactIcons">
+                     <div>contact@shehnai.in</div>
+                  </div>
+               </div>
             </div>
-            
-        
-        
-        <!--Footer-->
-        <div class="footer"></div>
+            <iframe src="./contact_files/embed.html" class="mapEmbed" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+      </div>
+      <!--Footer-->
+      <div class="footer flexC ">
 
-    </body>
+    <div class="footerLinksContainer" style="height: auto;">
+        <div class="row" style="display: flex; justify-content: space-around;">
+            <div class="footer_sb">
+                <div class="footer-logo" style="margin-bottom: 23px;margin-top: 30%;">
+                  <img src="./contact_files/logo.svg" loading="lazy" alt="" class="logo">
+                </div>
+                <div class="social_icon">
+                    <div class="socialMedia" style="text-align: center;">
+            <img src="./contact_files/facebook.svg" class="socialIcon">
+            <img src="./contact_files/instagram.svg" class="socialIcon">
+            <img src="./contact_files/twitter.svg" class="socialIcon">
+        </div>
+                </div>
 
-</html>
+            </div>
+            <div class="footer_sb">
+                <div class="footer_sb_link">
+                    <h3>Help &amp; Support</h3>
+                    <ul>
+                        <li> <a href="http://localhost:8080/shehnai/contact#">About Us</a></li>
+                        <li> <a href="http://localhost:8080/shehnai/contact#">Contact Us</a></li>
+                        <li> <a href="http://localhost:8080/shehnai/contact#">FAQ</a></li>
+                    </ul>
+                </div>
+       <!--           <div class="footerLinks gap2">
+            <div class="footerHeader fontMedium">Help & Support</div>
+            <div class="linksSub flexC gap2">
+                <div class=""><a class="fontSmall" href="about">About Us</a></div>
+                <div class=""><a class="fontSmall" href="contact">Contact Us</a></div>
+                <div class=""><a class="fontSmall" href="pricing.html">FAQ</a></div>
+            </div>
+        </div> -->
+            </div>
+            <div class="footer_sb">
+                <div class="footer_sb_link">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li> <a href="http://localhost:8080/shehnai/contact#">Privacy Policy</a></li>
+                        <li> <a href="http://localhost:8080/shehnai/contact#">Terms &amp; Condition</a></li>
+                        <li> <a href="http://localhost:8080/shehnai/contact#">Services</a></li>
+                    </ul>
+                </div>
+                <!--  <div class="footerLinks  gap2">
+            <div class="footerHeader fontMedium">Quick Links</div>
+            <div class="linksSub flexC gap2">
+                <div class=""><a class="fontSmall" href="privacypolicy">Privacy Policy</a></div>
+                <div class=""><a class="fontSmall" href="termscondition">Terms & Condition</a></div>
+                <div class=""><a class="fontSmall" href="#">Services</a></div>
+            </div>
+        </div> -->
+            </div>
+            <div class="footer_sb">
+                 <div class="footer_sb_link">
+                    <h3>My Matrimony</h3>
+                    <ul>
+                        <li> <a href="http://localhost:8080/shehnai/contact#">Bride</a></li>
+                        <li> <a href="http://localhost:8080/shehnai/contact#">Groom</a></li>
+                        <li> <a href="http://localhost:8080/shehnai/contact#">Feedback</a></li>
+                    </ul>
+                </div>
+               <!--  <div class="footerLinks  gap2">
+            <div class="footerHeader fontMedium">My Matrimony</div>
+            <div class="linksSub flexC gap2">
+                <div class=""><a class="fontSmall" href="Bride">Bride</a></div>
+                <div class=""><a class="fontSmall" href="Groom">Groom</a></div>
+                <div class=""><a class="fontSmall" href="#">Feedback</a></div>
+            </div>
+        </div> -->
+            </div>
+            <div class="footer_sb">
+                  <div class="footer_sb_link">
+                    <h3>Media</h3>
+                    <ul>
+                        <li> <a href="http://localhost:8080/shehnai/contact#">Advertise</a></li>
+                        <li> <a href="http://localhost:8080/shehnai/contact#">Videos</a></li>
+                        <li> <a href="http://localhost:8080/shehnai/contact#">Testimonials</a></li>
+                    </ul>
+                </div>
+                 <!-- <div class="footerLinks  gap2">
+            <div class="footerHeader fontMedium">Media</div>
+            <div class="linksSub flexC gap2">
+                <div class=""><a class="fontSmall" href="advertiseProfile.html">Advertise</a></div>
+                <div class=""><a class="fontSmall" href="#">Videos</a></div>
+                <div class=""><a class="fontSmall" href="reviews.html">Testimonials</a></div>
+            </div>
+        </div> -->
+            </div>
+        </div>
+       <div class="footer-link_info" style="background: #fff; color: #000; font-weight:600;">
+           <p class="copyright" style="text-align: center; display: inline-block; transform:translateX(-50%);margin-left: 50%;padding: 20px 1px 0px 1px; border-top: 3px solid #db1226; margin-top: 0px;">Copyright © 2023 <a href="http://localhost:8080/shehnai/index.php"> Shehnai matrimonials </a>| Design &amp; Developed by <a href="http://enlacecode.com/" target="_blank">Enlacecode Technology Pvt Ltd.</a></p>
+       </div>
+
+
+
+    </div>
+<!--     <div class="footerContainer">
+        <div class="socialMedia">
+            <img src="http://192.168.1.12:8080/shehnai/public/assets/document/facebook.svg" class="socialIcon">
+            <img src="http://192.168.1.12:8080/shehnai/public/assets/document/instagram.svg" class="socialIcon">
+            <img src="http://192.168.1.12:8080/shehnai/public/assets/document/twitter.svg" class="socialIcon">
+        </div>
+        <a  href="index">
+            <div class="navBarLogo">
+                <img src="http://192.168.1.12:8080/shehnai/public/assets/document/logo.svg" loading="lazy" alt="" class="logo"/>
+            </div>
+        </a>
+        <div class="signup">
+            Sign Up
+        </div>
+
+    </div> -->
+</div>
+<style>
+   .linksSub *{
+    color: rgba(255,255,255,0.6);
+    cursor: pointer;
+    transition: ease-in 300ms;
+   }
+   .linksSub *:hover{
+    color: var(--primary);
+    text-decoration: none;
+   }
+    .footerLinks,.linksSub{
+        align-items: flex-start !important;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        border-top:1px solid #db1226;
+
+    }
+    .footerLinks{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1%;
+        /* width: 99vw; */
+        color:white !important;
+
+        column-gap: 2.8vw;
+
+    }
+    .footerLinksContainer{
+        background:rgb(19, 0, 0);
+        width: 100vw;
+        height: 15vw;
+        align-items: flex-start ;
+        /* justify-content: space-around; */
+        gap: 5vw;
+    }
+    .footerContainer{
+        display: flex;
+        width: 99vw;
+        background:white;
+        gap: 15vw;
+        padding:1%;
+        align-items: center;
+        justify-content: center;
+    }
+    .signup{
+        background-color: var(--primary);
+        color: white;
+        border-radius: var(--radius);
+        padding: 1.5% ;
+        padding-right: 1.5% ;
+        padding-top:0.5%;
+        padding-bottom:0.5%;
+   }
+   .socialMedia{
+    width: 10vw;
+   }
+   .socialIcon{
+    padding: 2%;
+    cursor: pointer;
+   }
+   .socialIcon:hover{
+     opacity:0.4;
+   }
+   @media screen and (max-width: 550px) {
+    .footerLinksContainer{
+        flex-direction: column;
+        height: max-content;
+        column-gap: 1vw !important;
+    }
+    .footer{
+        height: max-content;
+    }
+    .footerLinks{
+        font-size: 3vw;
+        justify-content: space-around;
+        margin: 5%;
+        /* width: 100%; */
+
+    }
+    .footerContainer{
+        display: flex;
+        flex-direction: column;
+        width: 99vw;
+        background:white;
+        gap:2vw ;
+        padding:1.5%;
+        align-items: center;
+
+    }
+    .socialMedia{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 2vw;
+    }
+    .signup{
+
+        background-color: var(--primary);
+        color: white;
+        border-radius: 2vw;
+        padding: 2.5% ;
+        padding-right: 2.5% ;
+        padding-top:1.5%;
+        padding-bottom:1.5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 80%;
+        text-align: center;
+   }
+   }
+</style>
+   
+</body></html>

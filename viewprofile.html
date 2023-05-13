@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+       <link rel="stylesheet" href="./viewprofile_files/search.css">
+        <link rel="stylesheet" href="./viewprofile_files/bootstrap.css">
+        <link rel="stylesheet" href="./viewprofile_files/style.css">
+        <!--  <link rel="stylesheet" href="http://192.168.1.12:8080/shehnai/public/assets/js/bootstrap.bundle.js">
+         <link rel="stylesheet" href="http://192.168.1.12:8080/shehnai/public/assets/js/bootstrap.js">  -->
+          <script src="./viewprofile_files/script.js.download"></script>
+          <script src="./viewprofile_files/bootstrap.bundle.js.download"></script>
+          <script src="./viewprofile_files/bootstrap.js.download"></script>
+    
+    <link rel="stylesheet" href="./viewprofile_files/jquery-ui.css">
+<script src="./viewprofile_files/jquery.min.js.download"></script>
+      <style>
+         .profileLargeImage{
+         background-image: url("assets/goldMember2.webp");
+         background-size: cover;
+         background-repeat: no-repeat;
+         width: 28vw;
+         height: 30vw;
+         /* border: 1px solid; */
+         background-position: top;
+         align-items: flex-end;
+         /* background-color: #f7f7f7; */
+         }
+         .actions{
+         top: 15%;
+         left: 7%;
+         }
+         .education_sec{
+            width: 250px;
+         }
+         .education_sec h3,.education_sec h4{
+            text-align: center;
+         }
+         @media screen and (max-width: 1600px) { /*Small Desktops*/
+         .editButton{
+         padding: 0;
+         min-height: auto;
+         }
+         .actions{
+         top: 16%;
+         }
+         }
+         @media screen and (max-width: 550px) { /*mobile*/
+         .contactDetails {
+         padding: 0 !important;
+         margin: 0 !important;
+         }   
+         .editButton{
+         font-size: 4vw ;
+         width: 30vw !important;
+         height: 8vw !important;
+         } 
+         .profileLargeImage{
+         width: 100vw;
+         height: 85vw;
+         }
+         .actions{
+         left: 0%;
+         top: 15%;
+         }
+         }
+      </style>
+      <title>Shehnai Matrimonials - Home | Shehnai Matrimonials | High Profile Candidate | 20+ years of Exclusive Experience In Matchmaking For Highly Qualified Candidates !</title>
+      <script type="text/javascript">
+
+function ajaxRegister(UserIDF,id,showid,maindiv,state,load)
+{
+   //alert("yess");
+   if((UserIDF != "") && (id !=""))
+   {
+          //var State = 4;
+          //var val = 34057;
+          //alert(val);
+            var State = 4;
+            $.ajax({ 
+             url:"http://localhost:8080/shehnai/signupajax.php",
+              type: 'POST',
+              dataType:'html',
+              data:{UserIDF:UserIDF,id:id,showid:showid,maindiv:maindiv,State:State},
+              success:function(data)
+              {
+               alert(data);
+               var datanew = data.split("=");
+               var chkstatus =  datanew[0];
+               if(chkstatus == 0)
+               {
+                  // document.getElementById("showimplistar").innerHTML='<div class="actionContainer flexC fontSmall"><img src="http://192.168.1.12:8080/shehnai/public/assets/document/liked.svg" class="likeIcon actionIcon" >Liked</div>';
+                  // document.getElementById("showimpli").innerHTML='<div class="editButton flexR" onclick="" style="width:150px !important;">Interest Sent</div>';
+               }
+                else if(chkstatus == 1)
+               {
+                  
+                  // document.getElementById("showimpli").innerHTML='<div class="editButton flexR" onclick="ajaxRegister('34057','177','sendinterestid','logindetails','4','sendintload')" style="width:150px !important;">Send Interest</div>';
+               }
+               else if(chkstatus == 4)
+               {
+
+                  // document.getElementById("showimpli").innerHTML='<div class="editButton flexR" onclick="ajaxRegister('34057','177','sendinterestid','logindetails','4','sendintload')" style="width:150px !important;">Send Interest</div>';
+               }
+               else
+               {
+                  alert("4");
+                  // var dateshow = datanew[1] + ' ' + datanew[2] + ' ' + datanew[3]; 
+                  // document.getElementById("showimpli").innerHTML='<p>You are limitted to sent only 4 interest per week<br /> as per our policy.<br/>You will be able to send interest after date<br/>' + dateshow;
+               }
+               
+              }  
+
+              });
+   }
+   
+}
+</script>
+   </head>
+   <body>
+      <div class="navbar">
+          <div class="navBarContainer" id="navbar">
+    <a href="http://localhost:8080/shehnai/Viewprofile/index">
+        <div class="navBarLogo">
+            <img src="./viewprofile_files/logo.svg" loading="lazy" alt="" class="logo">
+        </div>
+    </a>
+    <div class="navbuttons">
+
+        <!-- <div class="home links"><a href="/">Home</a></div> -->
+            <div class="about links"><a href="http://localhost:8080/shehnai/Viewprofile/about">About</a></div>
+            <div class="memberLink links"><a href="http://localhost:8080/shehnai/Viewprofile/Membershipdetails">Membership Plans</a></div>
+            <!-- <div class="pricing links"><a href="Advertise">Advertise</a></div> -->
+            <div class="memberLink links"><a href="http://localhost:8080/shehnai/Viewprofile/SupremeMembers">Supreme Members</a></div>
+            <div class="pricing links"><a href="http://localhost:8080/shehnai/Viewprofile/Reviews">Reviews</a></div>
+            <div class="contact links"><a href="http://localhost:8080/shehnai/Viewprofile/contact">Contact</a></div>
+            <div class="login links"><a href="http://localhost:8080/shehnai/Viewprofile/Login">Login</a></div>
+            <div class="register links"><a href="http://localhost:8080/shehnai/Viewprofile/Register">Register</a></div>
+            <div class="register links"><a href="http://localhost:8080/shehnai/Viewprofile/SearchProfile">Search</a></div>
+
+    </div>
+
+        <div class="menu"><a href="javascript:void(0);" class="icon" onclick="hideMenu()"><img src="./viewprofile_files/menu.svg" class="menuIcon"></a></div>
+</div>
+<style>
+
+    .navBarContainer {
+        z-index: 2;
+        animation: slideDown 600ms ease-in-out;
+        padding: 15px 7%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        position: fixed;
+        height: max-content;
+        left: 0px;
+        top: 0px;
+        background: rgba(255,255,255,0.9);
+        backdrop-filter: blur(1vw);
+   }
+
+    .navbuttons{
+        display: flex;
+        gap: 1vw;
+        font-size: 0.8vw;
+        font-weight: 600;
+        color: black;
+        display: flex;
+        color: rgba(0, 0, 0, 0.4);
+        padding: 0% 1%;
+   }
+   .links{
+    display: flex;
+    padding: 0.5%;
+    width: 5vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   }
+   .displayLink{
+    width: 6.7vw;
+   }
+   .memberLink{
+    width: 9.7vw;
+   }
+   .navBarLogo{
+        height: auto;
+   }
+   .logo{
+        width: 10vw;
+        padding: 0% 10%;
+   }
+   .login{
+        width: 7vw;
+        color: white;
+        background-color: var(--primary);
+        border-radius: var(--radius);
+   }
+   .editButton,.register{
+         width: 7vw;
+        color: var(--primary);
+        border: 2px solid var(--primary);
+        border-radius: var(--radius);
+        cursor: pointer;
+        height: 2vw;
+   }
+
+   .navbuttons a{transition: 300ms ease-in;}
+
+   .navbuttons a:hover{
+
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+   }
+
+   @media screen and (max-width: 1600px) { /*small display*/
+        .navbuttons{
+            font-size: 1vw;
+            /* margin-right: 25%; */
+        }
+        .logo{
+            width: 10vw;
+        }
+        .searchButton,.editButton,.register{
+            min-height: 2.5vw;
+        }
+        .displayLink{
+            width: 8vw;
+        }
+        .links{
+            font-size: 0.85vw;
+        }
+    }
+    @media screen and (max-width: 991px) { /*tablets*/
+        .navbuttons{
+            font-size: 1.4vw;
+            margin-right: 36%;
+        }
+        .logo{
+            width: 14vw;
+        }
+    }
+    @media screen and (max-width: 550px) { /*mobile*/
+    .navbuttons{
+        /* background-color: rgba(255, 255, 255, 0.4); */
+
+        padding-bottom: 2%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        font-size: 4.2vw;
+        flex-direction: column;
+        gap: 2vw;
+    }
+    .logo{
+        width: 35vw;
+    }
+
+    .navBarContainer{
+
+        position: fixed;
+        margin-top: 5% !important;
+
+        flex-direction: column;
+        height: max-content;
+        align-items: flex-start;
+        border-radius: 2vw;
+    }
+    .login{
+
+        border-radius: 8px;
+    }
+    .menu{
+        display: block !important;
+        position: absolute;
+        right: 5vw;
+        top:6vw;
+
+    }
+    .links{
+        width: 75%;
+        font-size: 4.5vw;
+    }
+    .register{
+        border: none;
+    }
+    .footerLinksContainer{
+            align-items: start;
+    }
+}
+</style>
+<script>
+    const mediaQuery = window.matchMedia('(min-width: 768px)')
+
+    if(!mediaQuery.matches){
+        $('.links').hide();
+    }
+
+     function hideMenu() {
+        if($('.links').css('display') == 'none'){
+            $('.links').show('slow');
+        } else {
+            $('.links').hide('slow');
+        }
+
+    }
+</script>      </div>
+      <div class="viewProfile flexR gap2">
+         <div class="profileLargeImage flexR">
+            <!-- <img src="assets/special2.webp" class="specialImage viewProfileImage">  -->
+            <div class="actions flexR" id="showimplistar">
+                                          <div class="actionContainer flexC fontSmall"><img src="./viewprofile_files/like.svg" class="likeIcon actionIcon" onclick="ajaxRegister(&#39;34057&#39;,&#39;177&#39;,&#39;sendinterestid&#39;,&#39;logindetails&#39;,&#39;4&#39;,&#39;sendintload&#39;)">Like</div>
+                             
+                                          <div class="actionContainer flexC fontSmall"><img src="./viewprofile_files/save.svg" class="saveIcon actionIcon" onclick="saveToggle(this)">Save</div>
+            </div>
+            <div class="profilePhotoMiniContainer flexR">
+               <div class="profilePhotoMini profileMini1">
+                  <div class="uploadPhoto flexR"></div>
+               </div>
+               <div class="profilePhotoMini profileMini2">
+                  <div class="uploadPhoto flexR"></div>
+               </div>
+               <div class="profilePhotoMini profileMini3">
+                  <div class="uploadPhoto flexR"></div>
+               </div>
+               <div class="profilePhotoMini profileMini4">
+                  <div class="uploadPhoto flexR"></div>
+               </div>
+            </div>
+         </div>
+         <div class="flexC start">
+            <div class="profileAboutDetails leftBorder">
+               <div class="profileDetailsNav flexR">
+                  <div class="profileNavItem flexR fontSmall viewAbout" id="activeProfileNav" onclick="viewAbout()">About</div>
+                  <div class="profileNavItem flexR fontSmall viewFamilyDetails" onclick="viewFamilyDetails()">Family Details</div>
+                  <div class="profileNavItem flexR fontSmall viewPartnerPreferences" onclick="viewPartnerPreferences()">Partner Preferences</div>
+                  <div class="profileNavItem flexR fontSmall viewOtherDetails" onclick="viewOtherDetails()">Other Details</div>
+                  <div class="profileNavItem flexR fontSmall viewContactDetails" onclick="viewContactDetails()">Contact Details</div>
+                  <div class="profileNavItem flexR fontSmall viewContactDetailsMobile" onclick="viewContactDetails()">Contact Details</div>
+               </div>
+               <div class="profileDetailsSub flexC">
+                  <div class="profileIDShare flexR space-between">
+                     <div class="profileID flexR">
+                        <div class="detailLabel fontSmall ">Profile ID</div>
+                        <div class="uidStyle fontSmall uid">SH19BA2014</div>
+                     </div>
+                     <div style="display: flex !important;width: 100%;justify-content: space-evenly;/* text-align: center; */align-items: center;" id="showimpli">
+                                                  <div class="editButton flexR" onclick="ajaxRegister(&#39;34057&#39;,&#39;177&#39;,&#39;sendinterestid&#39;,&#39;logindetails&#39;,&#39;4&#39;,&#39;sendintload&#39;)" style="width:150px !important;">Send Interest</div>
+                                             </div>
+                     
+                  </div>
+                  <div class="aboutsection aboutGrid grid">
+                     <div class="aboutGridSub aboutme flexC">
+                        <div class="gridSubTitle bold  fontAverage">About Me</div>
+                        <div class="subDetails flexR">
+                           
+                           <div class="detailContainer flexC">
+                              <div class="gridSubDetails  detailLabel fontSmall">Age</div>
+                              <div class="gridSubDetails  detailData fontAverage  age">30</div>
+                           </div>
+                           <div class="detailContainer flexC">
+                              <div class="gridSubDetails  detailLabel fontSmall">Gender</div>
+                              <div class="gridSubDetails  detailData fontAverage  gender">Male</div>
+                           </div>
+                           <div class="detailContainer flexC">
+                              <div class="gridSubDetails  detailLabel fontSmall">Birth Date</div>
+                              <div class="gridSubDetails  detailData fontAverage  gender">20 / 9 / 1992</div>
+                           </div>
+                           <div class="detailContainer flexC">
+                              <div class="gridSubDetails  detailLabel fontSmall">Birth Time</div>
+                              <div class="gridSubDetails  detailData fontAverage  gender">1:10 PM</div>
+                           </div>
+
+                        </div>
+                        <div class="subDetails flexR">
+                           
+                           
+                            <div class="detailContainer flexC">
+                              <div class="gridSubDetails  detailLabel fontSmall">Native Place</div>
+                              <div class="gridSubDetails  detailData fontAverage  status">LADOL</div>
+                           </div>
+                           <div class="detailContainer flexC">
+                              <div class="gridSubDetails  detailLabel fontSmall">Want To Go Abroad</div>
+                              <div class="gridSubDetails  detailData fontAverage  disability">No</div>
+                           </div>
+                           <!-- <div class="detailContainer flexC">
+                              <div class="gridSubDetails  detailLabel fontSmall">Gender</div>
+                              <div class="gridSubDetails  detailData fontAverage  gender">Male</div>
+                           </div>
+                           <div class="detailContainer flexC">
+                              <div class="gridSubDetails  detailLabel fontSmall">Birth Date</div>
+                              <div class="gridSubDetails  detailData fontAverage  gender">20 / 9 / 1992</div>
+                           </div>
+                           <div class="detailContainer flexC">
+                              <div class="gridSubDetails  detailLabel fontSmall">Birth Time</div>
+                              <div class="gridSubDetails  detailData fontAverage  gender">1:10 PM</div>
+                           </div> -->
+                           
+                        </div>
+                        <div class="detailContainer flexC">
+                           <div class="gridSubDetails  detailLabel fontSmall">About me</div>
+                           <div class="gridSubDetails  detailData fontAverage  ">-</div>
+                        </div>
+
+                     </div>
+                     <div class="aboutGridSub basic flexC">
+                        <div class="gridSubTitle bold  fontAverage">Basic Details</div>
+                        <div class="subDetails flexR">
+                           <!-- <div class="detailContainer flexC">
+                              <div class="gridSubDetails  detailLabel fontSmall">Birthdate</div>
+                              <div class="gridSubDetails  detailData fontAverage  birthdate ">20 / 9 / 1992</div>
+                           </div> -->
+                           <div class="detailContainer flexC">
+                              <div class="gridSubDetails  detailLabel fontSmall">Marital Status</div>
+                              <div class="gridSubDetails  detailData fontAverage  status">Never Married</div>
+                           </div>
+                           <div class="detailContainer flexC">
+                              <div class="gridSubDetails  detailLabel fontSmall">Disability Type</div>
+                              <div class="gridSubDetails  detailData fontAverage  disability"></div>
+                           </div>
+                           
+                        </div>
+                        <div class="subDetails flexR wrap">
+                           <div class="detailContainer flexC">
+                              <div class="gridSubDetails  detailLabel fontSmall">Currently Living in</div>
+                              <div class="gridSubDetails  detailData fontAverage  livingIn">
+                                 AHMEDABAD, GUJARAT                              </div>
+                           </div>
+                           <!-- <div class="detailContainer flexC">
+                              <div class="gridSubDetails  detailLabel fontSmall">Looking for Candidate in</div>
+                              <div class="gridSubDetails  detailData fontAverage  lookingIn">Rajkot Gujarat India</div>
+                           </div> -->
+                        </div>
+                        <div class="subDetails flexR">
+                           
+                           <div class="detailContainer flexC">
+                              <div class="gridSubDetails  detailLabel fontSmall">Believing Horoscope matching</div>
+                              <div class="gridSubDetails  detailData fontAverage  age">No</div>
+                           </div>
+                           
+                        </div>
+                        <div class="subDetails flexR">
+                           
+                           <div class="detailContainer flexC">
+                              <div class="gridSubDetails  detailLabel fontSmall">Manglik</div>
+                              <div class="gridSubDetails  detailData fontAverage  status">Yes</div>
+                           </div>
+                           <div class="detailContainer flexC">
+                              <div class="gridSubDetails  detailLabel fontSmall">Shani</div>
+                              <div class="gridSubDetails  detailData fontAverage  disability">Don't Know</div>
+                           </div>
+
+                            
+                           
+                        </div>
+                        
+
+                     </div>
+                     <div class="aboutGridSub body flexC ">
+                        <div class="gridSubTitle bold  fontAverage ">Body Composition</div>
+                        <div class="subDetails flexR mobileGrid">
+                           <div class="detailContainer flexC">
+                              <div class="gridSubDetails  detailLabel fontSmall">Height</div>
+                              <div class="gridSubDetails  detailData fontAverage  height">5'11 </div>
+                           </div>
+                           <div class="detailContainer flexC">
+                              <div class="gridSubDetails  detailLabel fontSmall">Weight</div>
+                              <div class="gridSubDetails  detailData fontAverage  weight">55 Kgs</div>
+                           </div>
+                           <div class="detailContainer flexC">
+                              <div class="gridSubDetails  detailLabel fontSmall">Blood Group</div>
+                              <div class="gridSubDetails  detailData fontAverage  bloodGroup">Don't Know</div>
+                           </div>
+                           
+                           
+                        </div>
+                        <div class="subDetails flexR mobileGrid">
+                           <div class="detailContainer flexC">
+                              <div class="gridSubDetails  detailLabel fontSmall">Body Type</div>
+                              <div class="gridSubDetails  detailData fontAverage  bodyType">Slim</div>
+                           </div>
+                           <div class="detailContainer flexC">
+                              <div class="gridSubDetails  detailLabel fontSmall">Complexion</div>
+                              <div class="gridSubDetails  detailData fontAverage  weight">Wheatish</div>
+                           </div>
+                          
+                           
+                        </div>
+                     </div>
+                     <div class="aboutGridSub food flexC">
+                        <div class="gridSubTitle bold  fontAverage">Food &amp; Drink Habits</div>
+                        <div class="subDetails flexR">
+                           <div class="detailContainer flexC">
+                              <div class="gridSubDetails  detailLabel fontSmall">Drinks</div>
+                              <div class="gridSubDetails  detailData fontAverage  drinks">No</div>
+                           </div>
+                           <div class="detailContainer flexC">
+                              <div class="gridSubDetails  detailLabel fontSmall">Smokes</div>
+                              <div class="gridSubDetails  detailData fontAverage  smokes">No</div>
+                           </div>
+                           <div class="detailContainer flexC">
+                              <div class="gridSubDetails  detailLabel fontSmall">Diet Type</div>
+                              <div class="gridSubDetails  detailData fontAverage  dietType">Pure Vegetarian</div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="aboutGridSub education">
+                        <div class="gridSubTitle bold  fontAverage">Education &amp; Profession</div>
+                        <div class="education_flex" style="display:flex; flex-wrap: wrap; justify-content:space-between;">
+                        <div class="education_sec">
+                             <div class="gridSubDetails  detailLabel fontSmall" style="margin-top:15px;">Education</div>
+                              <div class="gridSubDetails  detailData fontAverage  smokes" style="margin-top:15px;"></div>
+                        </div>
+                        <div class="education_sec">
+                             <div class="gridSubDetails  detailLabel fontSmall" style="margin-top:15px;">Maximum Education</div>
+                              <div class="gridSubDetails  detailData fontAverage  smokes" style="margin-top:15px;"></div>
+                        </div>
+                        <div class="education_sec">
+                             <div class="gridSubDetails  detailLabel fontSmall" style="margin-top:15px;">Currently Persuing</div>
+                              <div class="gridSubDetails  detailData fontAverage  smokes" style="margin-top:15px;"></div>
+                        </div>
+                        <div class="education_sec">
+                             <div class="gridSubDetails  detailLabel fontSmall" style="margin-top:15px;">Institute</div>
+                              <div class="gridSubDetails  detailData fontAverage  smokes" style="margin-top:15px;">-</div>
+                        </div>
+                        <div class="education_sec">
+                             <div class="gridSubDetails  detailLabel fontSmall" style="margin-top:15px;">Profession</div>
+                              <div class="gridSubDetails  detailData fontAverage  smokes" style="margin-top:15px;">JOB</div>
+                        </div>
+                        <div class="education_sec">
+                             <div class="gridSubDetails  detailLabel fontSmall" style="margin-top:15px;">City Of Proffession</div>
+                              <div class="gridSubDetails  detailData fontAverage  smokes" style="margin-top:15px;">NAVI MUMBAI, MAHARSTRA</div>
+                        </div>
+                        <div class="education_sec">
+                             <div class="gridSubDetails  detailLabel fontSmall" style="margin-top:15px;">Organization</div>
+                              <div class="gridSubDetails  detailData fontAverage  smokes" style="margin-top:15px;">BIG DATA SOLUTIONS IN FLYTXT BV</div>
+                        </div>
+                        <div class="education_sec">
+                             <div class="gridSubDetails  detailLabel fontSmall" style="margin-top:15px;">Post</div>
+                              <div class="gridSubDetails  detailData fontAverage  smokes" style="margin-top:15px;">WORKING AS A SENIOR ENGINEER AT PVT. CO.</div>
+                        </div>
+                        <div class="education_sec">
+                             <div class="gridSubDetails  detailLabel fontSmall" style="margin-top:15px;">Annual Income</div>
+                              <div class="gridSubDetails  detailData fontAverage  smokes" style="margin-top:15px;">Don't want to specify</div>
+                        </div>
+                        </div>
+                       </div>
+                     </div>
+
+                  </div>
+                  <div class="familyDetails flexC">
+                     <div class="familyFlex flexC">
+                        <div class="aboutGridSub  flexR">
+                           <div class="flexC start">
+                              <div class="gridSubTitle bold  fontAverage fullWidth">Family Details</div>
+                              <div class="subDetails flexR">
+                                 <div class="detailContainer flexC">
+                                    <div class="gridSubDetails  detailLabel fontSmall">About My Family</div>
+                                    <div class="gridSubDetails  detailData fontAverage  aboutFamily"></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="flexC familySub ">
+                              <div class="subDetails flexR">
+                                 <div class="detailContainer flexC">
+                                    <div class="gridSubDetails  detailLabel fontSmall">Mother tongue</div>
+                                    <div class="gridSubDetails  detailData fontAverage  motherTongue">Gujarati</div>
+                                 </div>
+                                 <div class="detailContainer flexC">
+                                    <div class="gridSubDetails  detailLabel fontSmall">Religion</div>
+                                    <div class="gridSubDetails  detailData fontAverage  religion">Hindu</div>
+                                 </div>
+                                 <div class="detailContainer flexC">
+                                    <div class="gridSubDetails  detailLabel fontSmall">Caste</div>
+                                    <div class="gridSubDetails  detailData fontAverage  caste">PATEL</div>
+                                 </div>
+                              </div>
+                              <div class="subDetails flexR">
+                                 <div class="detailContainer flexC">
+                                    <div class="gridSubDetails  detailLabel fontSmall">Sub Caste</div>
+                                    <div class="gridSubDetails  detailData fontAverage  category">Ladol Kadva Patel</div>
+                                 </div>
+                                 <div class="detailContainer flexC">
+                                    <div class="gridSubDetails  detailLabel fontSmall">Rashi</div>
+                                    <div class="gridSubDetails  detailData fontAverage  subCaste"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="parentsDetailsSub aboutGridSub flexC">
+                           <div class="gridSubTitle  bold  fontAverage">Parents details</div>
+                              <div class="education_flex" style="display:flex; flex-wrap: wrap; justify-content:space-between;">
+                        <div class="education_sec">
+                             <div class="gridSubDetails  detailLabel fontSmall" style="margin-top:15px;">Father Name</div>
+                              <div class="gridSubDetails  detailData fontAverage  smokes" style="margin-top:15px;">DR. VATSAL PATEL</div>
+                        </div>
+                        <div class="education_sec">
+                             <div class="gridSubDetails  detailLabel fontSmall" style="margin-top:15px;">Mother Name</div>
+                              <div class="gridSubDetails  detailData fontAverage  smokes" style="margin-top:15px;">DR. BINTA PATEL</div>
+                        </div>
+                        <div class="education_sec">
+                             <div class="gridSubDetails  detailLabel fontSmall" style="margin-top:15px;">Father's Occupation</div>
+                              <div class="gridSubDetails  detailData fontAverage  smokes" style="margin-top:15px;">ENT SURGEON</div>
+                        </div>
+                        <div class="education_sec">
+                             <div class="gridSubDetails  detailLabel fontSmall" style="margin-top:15px;">Mother's Occupation</div>
+                              <div class="gridSubDetails  detailData fontAverage  smokes" style="margin-top:15px;">AYURVED CONSULTANT</div>
+                        </div>
+                        
+                        </div>
+                           </div>
+                        </div>
+                        <div class="siblingsDetailsSub aboutGridSub bottomPadding10">
+                           <div class="subDetails flexR siblingSub">
+                              <div class="detailContainer flexC">
+                                 <div class="gridSubDetails  detailLabel fontSmall">Total Brothers</div>
+                                 <div class="gridSubDetails  detailData totalBrothers  motherTongue">0</div>
+                              </div>
+                              <div class="detailContainer flexC">
+                                 <div class="gridSubDetails  detailLabel fontSmall">Total Sisters</div>
+                                 <div class="gridSubDetails  detailData totalSisters  religion">0</div>
+                              </div>
+                              <div class="detailContainer flexC">
+                                 <div class="gridSubDetails  detailLabel fontSmall">Married Brothers</div>
+                                 <div class="gridSubDetails  detailData marriedBrothers">0</div>
+                              </div>
+                              <div class="detailContainer flexC">
+                                 <div class="gridSubDetails  detailLabel fontSmall">Married Sisters</div>
+                                 <div class="gridSubDetails  detailData marriedSisters  category">0</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="partnerPreferences">
+                     <div class="aboutsection aboutGrid grid">
+                        <div class="aboutGridSub aboutme flexC">
+                           <div class="gridSubTitle bold  fontAverage">Partner Preferences</div>
+                           <div class="education_flex" style="display:flex; flex-wrap: wrap; justify-content:space-between;">
+                        <div class="education_sec">
+                             <div class="gridSubDetails  detailLabel fontSmall" style="margin-top:15px;"> Age</div>
+                              <div class="gridSubDetails  detailData fontAverage  smokes" style="margin-top:15px;">22 To 26</div>
+                        </div>
+                        <div class="education_sec">
+                             <div class="gridSubDetails  detailLabel fontSmall" style="margin-top:15px;">Height</div>
+                              <div class="gridSubDetails  detailData fontAverage  smokes" style="margin-top:15px;">5 Ft. 7 Inch - 5 Ft. 11 Inch -  </div>
+                        </div>
+                        <div class="education_sec">
+                             <div class="gridSubDetails  detailLabel fontSmall" style="margin-top:15px;">Weight</div>
+                              <div class="gridSubDetails  detailData fontAverage  smokes" style="margin-top:15px;">35 Kg  to 55 Kg </div>
+                        </div>
+                        <div class="education_sec">
+                             <div class="gridSubDetails  detailLabel fontSmall" style="margin-top:15px;">Marital Status</div>
+                              <div class="gridSubDetails  detailData fontAverage  smokes" style="margin-top:15px;">
+                                 Never Married                                 </div>
+                        </div>
+                        <div class="education_sec">
+                             <div class="gridSubDetails  detailLabel fontSmall" style="margin-top:15px;">Education</div>
+                              <div class="gridSubDetails  detailData fontAverage  smokes" style="margin-top:15px;">
+                                                                                                    <span style="font-size:10px;" title="MS (Engg.)
+M Arch
+MCA
+PGDCA
+ME
+M Tech
+MSc IT / Computer Science
+">view detail...</span>
+                                 
+                               </div>
+                        </div>
+
+                         <div class="education_sec">
+                             <div class="gridSubDetails  detailLabel fontSmall" style="margin-top:15px;">Occupation</div>
+                              <div class="gridSubDetails  detailData fontAverage  smokes" style="margin-top:15px;">
+                                 -                                 </div>
+                        </div>
+                        <div class="education_sec">
+                             <div class="gridSubDetails  detailLabel fontSmall" style="margin-top:15px;">Diet</div>
+                              <div class="gridSubDetails  detailData fontAverage  smokes" style="margin-top:15px;">
+                                 Pure Vegetarian                                
+                               </div>
+                        </div>
+
+                        <div class="education_sec">
+                             <div class="gridSubDetails  detailLabel fontSmall" style="margin-top:15px;">Religion</div>
+                              <div class="gridSubDetails  detailData fontAverage  smokes" style="margin-top:15px;">
+                                                                   <span style="font-size:10px;" title="Hindu
+">view detail...</span>
+                                 </div>
+                        </div>
+                        <div class="education_sec">
+                             <div class="gridSubDetails  detailLabel fontSmall" style="margin-top:15px;">Mother Tongue</div>
+                              <div class="gridSubDetails  detailData fontAverage  smokes" style="margin-top:15px;">
+                                 Gujarati                                
+                               </div>
+                        </div>
+                        <div class="education_sec">
+                             <div class="gridSubDetails  detailLabel fontSmall" style="margin-top:15px;">Country</div>
+                              <div class="gridSubDetails  detailData fontAverage  smokes" style="margin-top:15px;">
+                                                                  <span style="font-size:10px;" title="ANY
+">view detail...</span>
+                                
+                               </div>
+                        </div>
+
+                        <div class="education_sec">
+                             <div class="gridSubDetails  detailLabel fontSmall" style="margin-top:15px;">State</div>
+                              <div class="gridSubDetails  detailData fontAverage  smokes" style="margin-top:15px;">
+                                                                   <span style="font-size:10px;" title="ANY
+">view detail...</span>
+                                 </div>
+                        </div>
+                        <div class="education_sec">
+                             <div class="gridSubDetails  detailLabel fontSmall" style="margin-top:15px;">City</div>
+                              <div class="gridSubDetails  detailData fontAverage  smokes" style="margin-top:15px;">
+                                                                   <span style="font-size:10px;" title="OTHER
+">view detail...</span>
+                                
+                               </div>
+                        </div>
+
+                        
+                        </div>
+
+
+                           <div class="subDetails flexC fullWidth bottomPadding10">
+                              <div class="detailContainer flexC fullWidth">
+                                 <div class="gridSubDetails  detailLabel fontSmall">Expectations from partner</div>
+                                 <div class="gridSubDetails  detailData fontAverage  fullWidth">-</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="otherDetails flexC start">
+                    <div class="parentsDetailsSub aboutGridSub flexC">
+                           <div class="gridSubTitle  bold  fontAverage">Other</div>
+                              <div class="education_flex" style="display:flex; flex-wrap: wrap; justify-content:space-between;">
+                        <div class="education_sec">
+                             <div class="gridSubDetails  detailLabel fontSmall" style="margin-top:15px;">Hobbies</div>
+                              <div class="gridSubDetails  detailData fontAverage  smokes" style="margin-top:15px;">-</div>
+                        </div>
+                        <div class="education_sec">
+                             <div class="gridSubDetails  detailLabel fontSmall" style="margin-top:15px;">Movies</div>
+                              <div class="gridSubDetails  detailData fontAverage  smokes" style="margin-top:15px;">Any</div>
+                        </div>
+                        <div class="education_sec">
+                             <div class="gridSubDetails  detailLabel fontSmall" style="margin-top:15px;">Songs</div>
+                              <div class="gridSubDetails  detailData fontAverage  smokes" style="margin-top:15px;">Any</div>
+                        </div>
+                        <div class="education_sec">
+                             <div class="gridSubDetails  detailLabel fontSmall" style="margin-top:15px;">Intrests </div>
+                              <div class="gridSubDetails  detailData fontAverage  smokes" style="margin-top:15px;">-</div>
+                        </div>
+                        <div class="education_sec">
+                             <div class="gridSubDetails  detailLabel fontSmall" style="margin-top:15px;">Sports </div>
+                              <div class="gridSubDetails  detailData fontAverage  smokes" style="margin-top:15px;">Any</div>
+                        </div>
+                        <div class="education_sec">
+                             <div class="gridSubDetails  detailLabel fontSmall" style="margin-top:15px;">Reading </div>
+                              <div class="gridSubDetails  detailData fontAverage  smokes" style="margin-top:15px;">Any</div>
+                        </div>
+                        <div class="education_sec">
+                             <div class="gridSubDetails  detailLabel fontSmall" style="margin-top:15px;">Holiday Places </div>
+                              <div class="gridSubDetails  detailData fontAverage  smokes" style="margin-top:15px;">-</div>
+                        </div>
+                        
+                        </div>
+                           </div>
+                  </div>
+                  <div class="contactDetails flexR start">
+                     <div class="aboutGridSub aboutme flexC">
+                        <div class="gridSubTitle bold  fontAverage flexC">Contact</div>
+                        <div class="flexR gap2">
+                           <div class="subDetails flexC">
+                              <div class="detailContainer flexC">
+                                 <div class="gridSubDetails  detailLabel fontSmall">Name</div>
+                                 <div class="gridSubDetails  detailData fontAverage  contactNumber">Mr. KARNA PATEL</div>
+                              </div>
+                              <div class="detailContainer flexC">
+                                 <div class="gridSubDetails  detailLabel fontSmall">Father Mobile</div>
+                                 <div class="gridSubDetails  detailData fontAverage  pinCode">9426002912</div>
+                              </div>
+                               <div class="detailContainer flexC">
+                                 <div class="gridSubDetails  detailLabel fontSmall">Father Email</div>
+                                 <div class="gridSubDetails  detailData fontAverage  contactNumber">vatsalpatel5505@gmail.com</div>
+                              </div>
+                              <div class="detailContainer flexC">
+                                 <div class="gridSubDetails  detailLabel fontSmall">Mother Mobile</div>
+                                 <div class="gridSubDetails  detailData fontAverage  pinCode">8758683617</div>
+                              </div>
+                              <div class="detailContainer flexC">
+                                 <div class="gridSubDetails  detailLabel fontSmall">Address</div>
+                                 <div class="gridSubDetails  detailData fontAverage  pinCode">07, SUVARNAVILLA BUNGALOWS, OPP AAYNA COMPLEX, 100FT ZYDUS CADILLA ROAD,THALTEJ
+<br></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="aboutGridSub aboutme flexC bottomPadding10">
+                        <div class="subDetails flexC">
+                           <div class="gridSubTitle bold  fontAverage flexC"></div>
+                           <div class="detailContainer flexC">
+                              <div class="gridSubDetails  detailLabel fontSmall">Mother Email </div>
+                              <div class="gridSubDetails  detailData fontAverage  whatsappNumber">drbintapatel@gmail.com</div>
+                           </div>
+                           <div class="detailContainer flexC">
+                              <div class="gridSubDetails  detailLabel fontSmall">Alternate Mobile</div>
+                              <div class="gridSubDetails  detailData fontAverage  email"></div>
+                           </div>
+                           <div class="detailContainer flexC">
+                              <div class="gridSubDetails  detailLabel fontSmall">Alternate Email</div>
+                              <div class="gridSubDetails  detailData fontAverage  whatsappNumber">-</div>
+                           </div>
+                           <div class="detailContainer flexC">
+                              <div class="gridSubDetails  detailLabel fontSmall">Country</div>
+                              <div class="gridSubDetails  detailData fontAverage  email">INDIA</div>
+                           </div>
+                           <div class="detailContainer flexC">
+                              <div class="gridSubDetails  detailLabel fontSmall">State</div>
+                              <div class="gridSubDetails  detailData fontAverage  email">GUJARAT</div>
+                           </div>
+                           <div class="detailContainer flexC">
+                              <div class="gridSubDetails  detailLabel fontSmall">City</div>
+                              <div class="gridSubDetails  detailData fontAverage  email">AHMEDABAD</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         
+      
+      <!--Footer-->
+      
+          <div class="footer flexC ">
+
+    <div class="footerLinksContainer" style="height: auto;">
+        <div class="row" style="display: flex; justify-content: space-around;">
+            <div class="footer_sb">
+                <div class="footer-logo" style="margin-bottom: 23px;margin-top: 30%;">
+                  <img src="./viewprofile_files/logo.svg" loading="lazy" alt="" class="logo">
+                </div>
+                <div class="social_icon">
+                    <div class="socialMedia" style="text-align: center;">
+            <img src="./viewprofile_files/facebook.svg" class="socialIcon">
+            <img src="./viewprofile_files/instagram.svg" class="socialIcon">
+            <img src="./viewprofile_files/twitter.svg" class="socialIcon">
+        </div>
+                </div>
+
+            </div>
+            <div class="footer_sb">
+                <div class="footer_sb_link">
+                    <h3>Help &amp; Support</h3>
+                    <ul>
+                        <li> <a href="http://localhost:8080/shehnai/Viewprofile/177#">About Us</a></li>
+                        <li> <a href="http://localhost:8080/shehnai/Viewprofile/177#">Contact Us</a></li>
+                        <li> <a href="http://localhost:8080/shehnai/Viewprofile/177#">FAQ</a></li>
+                    </ul>
+                </div>
+       <!--           <div class="footerLinks gap2">
+            <div class="footerHeader fontMedium">Help & Support</div>
+            <div class="linksSub flexC gap2">
+                <div class=""><a class="fontSmall" href="about">About Us</a></div>
+                <div class=""><a class="fontSmall" href="contact">Contact Us</a></div>
+                <div class=""><a class="fontSmall" href="pricing.html">FAQ</a></div>
+            </div>
+        </div> -->
+            </div>
+            <div class="footer_sb">
+                <div class="footer_sb_link">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li> <a href="http://localhost:8080/shehnai/Viewprofile/177#">Privacy Policy</a></li>
+                        <li> <a href="http://localhost:8080/shehnai/Viewprofile/177#">Terms &amp; Condition</a></li>
+                        <li> <a href="http://localhost:8080/shehnai/Viewprofile/177#">Services</a></li>
+                    </ul>
+                </div>
+                <!--  <div class="footerLinks  gap2">
+            <div class="footerHeader fontMedium">Quick Links</div>
+            <div class="linksSub flexC gap2">
+                <div class=""><a class="fontSmall" href="privacypolicy">Privacy Policy</a></div>
+                <div class=""><a class="fontSmall" href="termscondition">Terms & Condition</a></div>
+                <div class=""><a class="fontSmall" href="#">Services</a></div>
+            </div>
+        </div> -->
+            </div>
+            <div class="footer_sb">
+                 <div class="footer_sb_link">
+                    <h3>My Matrimony</h3>
+                    <ul>
+                        <li> <a href="http://localhost:8080/shehnai/Viewprofile/177#">Bride</a></li>
+                        <li> <a href="http://localhost:8080/shehnai/Viewprofile/177#">Groom</a></li>
+                        <li> <a href="http://localhost:8080/shehnai/Viewprofile/177#">Feedback</a></li>
+                    </ul>
+                </div>
+               <!--  <div class="footerLinks  gap2">
+            <div class="footerHeader fontMedium">My Matrimony</div>
+            <div class="linksSub flexC gap2">
+                <div class=""><a class="fontSmall" href="Bride">Bride</a></div>
+                <div class=""><a class="fontSmall" href="Groom">Groom</a></div>
+                <div class=""><a class="fontSmall" href="#">Feedback</a></div>
+            </div>
+        </div> -->
+            </div>
+            <div class="footer_sb">
+                  <div class="footer_sb_link">
+                    <h3>Media</h3>
+                    <ul>
+                        <li> <a href="http://localhost:8080/shehnai/Viewprofile/177#">Advertise</a></li>
+                        <li> <a href="http://localhost:8080/shehnai/Viewprofile/177#">Videos</a></li>
+                        <li> <a href="http://localhost:8080/shehnai/Viewprofile/177#">Testimonials</a></li>
+                    </ul>
+                </div>
+                 <!-- <div class="footerLinks  gap2">
+            <div class="footerHeader fontMedium">Media</div>
+            <div class="linksSub flexC gap2">
+                <div class=""><a class="fontSmall" href="advertiseProfile.html">Advertise</a></div>
+                <div class=""><a class="fontSmall" href="#">Videos</a></div>
+                <div class=""><a class="fontSmall" href="reviews.html">Testimonials</a></div>
+            </div>
+        </div> -->
+            </div>
+        </div>
+       <div class="footer-link_info" style="background: #fff; color: #000; font-weight:600;">
+           <p class="copyright" style="text-align: center; display: inline-block; transform:translateX(-50%);margin-left: 50%;padding: 20px 1px 0px 1px; border-top: 3px solid #db1226; margin-top: 0px;">Copyright © 2023 <a href="http://localhost:8080/shehnai/Viewprofile/index.php"> Shehnai matrimonials </a>| Design &amp; Developed by <a href="http://enlacecode.com/" target="_blank">Enlacecode Technology Pvt Ltd.</a></p>
+       </div>
+
+
+
+    </div>
+<!--     <div class="footerContainer">
+        <div class="socialMedia">
+            <img src="http://192.168.1.12:8080/shehnai/public/assets/document/facebook.svg" class="socialIcon">
+            <img src="http://192.168.1.12:8080/shehnai/public/assets/document/instagram.svg" class="socialIcon">
+            <img src="http://192.168.1.12:8080/shehnai/public/assets/document/twitter.svg" class="socialIcon">
+        </div>
+        <a  href="index">
+            <div class="navBarLogo">
+                <img src="http://192.168.1.12:8080/shehnai/public/assets/document/logo.svg" loading="lazy" alt="" class="logo"/>
+            </div>
+        </a>
+        <div class="signup">
+            Sign Up
+        </div>
+
+    </div> -->
+</div>
+<style>
+   .linksSub *{
+    color: rgba(255,255,255,0.6);
+    cursor: pointer;
+    transition: ease-in 300ms;
+   }
+   .linksSub *:hover{
+    color: var(--primary);
+    text-decoration: none;
+   }
+    .footerLinks,.linksSub{
+        align-items: flex-start !important;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        border-top:1px solid #db1226;
+
+    }
+    .footerLinks{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1%;
+        /* width: 99vw; */
+        color:white !important;
+
+        column-gap: 2.8vw;
+
+    }
+    .footerLinksContainer{
+        background:rgb(19, 0, 0);
+        width: 100vw;
+        height: 15vw;
+        align-items: flex-start ;
+        /* justify-content: space-around; */
+        gap: 5vw;
+    }
+    .footerContainer{
+        display: flex;
+        width: 99vw;
+        background:white;
+        gap: 15vw;
+        padding:1%;
+        align-items: center;
+        justify-content: center;
+    }
+    .signup{
+        background-color: var(--primary);
+        color: white;
+        border-radius: var(--radius);
+        padding: 1.5% ;
+        padding-right: 1.5% ;
+        padding-top:0.5%;
+        padding-bottom:0.5%;
+   }
+   .socialMedia{
+    width: 10vw;
+   }
+   .socialIcon{
+    padding: 2%;
+    cursor: pointer;
+   }
+   .socialIcon:hover{
+     opacity:0.4;
+   }
+   @media screen and (max-width: 550px) {
+    .footerLinksContainer{
+        flex-direction: column;
+        height: max-content;
+        column-gap: 1vw !important;
+    }
+    .footer{
+        height: max-content;
+    }
+    .footerLinks{
+        font-size: 3vw;
+        justify-content: space-around;
+        margin: 5%;
+        /* width: 100%; */
+
+    }
+    .footerContainer{
+        display: flex;
+        flex-direction: column;
+        width: 99vw;
+        background:white;
+        gap:2vw ;
+        padding:1.5%;
+        align-items: center;
+
+    }
+    .socialMedia{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 2vw;
+    }
+    .signup{
+
+        background-color: var(--primary);
+        color: white;
+        border-radius: 2vw;
+        padding: 2.5% ;
+        padding-right: 2.5% ;
+        padding-top:1.5%;
+        padding-bottom:1.5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 80%;
+        text-align: center;
+   }
+   }
+</style>
+      
+         
+</body></html>

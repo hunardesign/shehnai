@@ -1,94 +1,670 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <link rel="icon" type="image/png" sizes="32*32" href="assets/favicon-32x32.png">
+<!-- saved from url=(0014)about:internet -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="icon" type="image/png" sizes="32*32" href="http://192.168.1.12:8080/shehnai/public/assets/document/favicon-32x32.png">
         
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="HandheldFriendly" content="true">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta name="title" content="Shehnai Matrimonials - Home | High Profile Candidate">
-        <meta name="description" content="Shehnai initially was a small-scale home-based social activity service, to help the prospective candidates of friends and family find a suitable match.">
-        <meta name="Keywords" content="Shehnai Matrimonials,Shehnai,Matrimonials,matrimonial,matrimony,matrimonials,indian matrimonials,marriage,marriage sites,matchmaking,shaadi,shehnai,couple goals,boys,Doctors,High Profile,Doctors Marraige,high profile candidate,engineers,architrct matrimony,doctors matrimony,marraige bureau,Shehnai Matrimonials india,Shehnai Matrimonials gujarat ahmedabad,Shehnai Matrimonials in ahmedabad,indian bride,NRI matrimonials,nri,nri marraige bureau,highly qualified, highly qulified candidate ">
-        <meta name="robots" content="index, follow">
-        <meta name="language" content="English">
-        
-    <link rel="stylesheet" href="search.css">
-    <link rel="stylesheet" href="style.css" >
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <script src="script.js"></script>
 
-    <style>
-     .reviewContainer{
-        margin-top: 5%;
-     }
-     .searchButton{
-        padding: 0.2% 1% ;
-        max-width: 8vw;
-        
-    }
-    @media screen and (max-width: 550px) {
-        .reviewContainer{
-        margin-top: 21%;
-     }
-        .searchButton{
-            max-width: 85vw;
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="title" content="Shehnai Matrimonials - Home | High Profile Candidate">
+<meta name="description" content="Shehnai initially was a small-scale home-based social activity service, to help the prospective candidates of friends and family find a suitable match.">
+<meta name="Keywords" content="Shehnai Matrimonials,Shehnai,Matrimonials,matrimonial,matrimony,matrimonials,indian matrimonials,marriage,marriage sites,matchmaking,shaadi,shehnai,couple goals,boys,Doctors,High Profile,Doctors Marraige,high profile candidate,engineers,architrct matrimony,doctors matrimony,marraige bureau,Shehnai Matrimonials india,Shehnai Matrimonials gujarat ahmedabad,Shehnai Matrimonials in ahmedabad,indian bride,NRI matrimonials,nri,nri marraige bureau,highly qualified, highly qulified candidate ">
+<meta name="robots" content="index, follow">
+<meta name="language" content="English">      <link rel="stylesheet" href="./reviews_files/style.css">
+      <link rel="stylesheet" href="./reviews_files/search.css">
+     <!--  <link rel="stylesheet" href="http://192.168.1.12:8080/shehnai/public/assets/css/bootstrap.css"> -->
+      <link rel="stylesheet" href="./reviews_files/jquery-ui.css">
+
+      <script src="./reviews_files/script.js.download"></script>
+
+
+      <style>
+         .reviewContainer{
+         margin-top: 5%;
+         }
+         .searchButton{
+         padding: 0.2% 1% ;
+         max-width: 8vw;
+         }
+         @media screen and (max-width: 550px) {
+         .reviewContainer{
+         margin-top: 21%;
+         }
+         .searchButton{
+         max-width: 85vw;
+         }
+         }
+         .contactFormContainer{
+         display: flex;
+         flex-direction: column;
+         padding: 2%;
+         width: 30vw;
+         gap: 1vw;
+         background-color:#fff;
+         border-radius:20px;
+         }
+         .contactForm{
+         display: flex;
+         flex-direction: column;
+         gap: 1vw;
+         width: 100%;
+         align-items: stretch;
+         }
+         .contactDetailCard{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         padding: 1%;
+         gap: 0.5vw;
+         }
+         .contactTitle{
+         text-align: center;
+         }
+         input[type="email" i],input[type="text" i],input[type="number" i],input[type="tel" i],input[type="password" i] {
+         text-align: left;
+         /* width: 78vw; */
+         }
+      </style>
+      <title>Shehnai Matrimonials - Home | Shehnai Matrimonials | High Profile Candidate | 20+ years of Exclusive Experience In Matchmaking For Highly Qualified Candidates !</title>
+      <script>
+         $(document).ready(function(){
+             $(".dropdown").hover(
+                 function() {
+                     $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+                     $(this).toggleClass('open');
+                 },
+                 function() {
+                     $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+                     $(this).toggleClass('open');
+                 }
+             );
+            $('#review-form').hide();
+         });
+
+         function showform()
+         {
+            $('#review-form').slideDown();
+         }
+
+         function getValidation()
+         {
+
+            if(document.getElementById('Reviewpersonname').value == "")
+            {
+               document.getElementById('errormsg').innerHTML = "<span style='color: red;'>kindly Enter Name.</span>";
+               $("#errormsg").fadeOut("slow");
+               $("#errormsg").fadeIn();
+               Reviewpersonname.focus();
+               return false;
+            }
+            if(document.getElementById('Reviewpersonemail').value == "")
+            {
+               document.getElementById('errormsg').innerHTML = "<span style='color: red;'>kindly Enter Your Email.</span>";
+               $("#errormsg").fadeOut("slow");
+               $("#errormsg").fadeIn();
+               Reviewpersonemail.focus();
+               return false;
+            }
+            if(document.getElementById('Reviewpersonemail').value != "")
+            {
+               var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+               if (!reg.test(Reviewpersonemail.value) == false)
+               {
+
+               }
+               else
+               {
+               document.getElementById('errormsg').innerHTML = "<span style='color: red;'>Invalid Email-ID.</span>";
+               $("#errormsg").fadeOut("slow");
+               $("#errormsg").fadeIn();
+               Reviewpersonemail.focus();
+               return false;
+               }
+            }
+            if(document.getElementById('review').value == "")
+            {
+               document.getElementById('errormsg').innerHTML = "<span style='color: red;'>kindly Enter Review.</span>";
+               $("#errormsg").fadeOut("slow");
+               $("#errormsg").fadeIn();
+               review.focus();
+               return false;
+            }
+
+         }
+      </script>
+   </head>
+   <body>
+      <div class="navBarContainer" id="navbar">
+    <a href="http://localhost:8080/shehnai/index">
+        <div class="navBarLogo">
+            <img src="./reviews_files/logo.svg" loading="lazy" alt="" class="logo">
+        </div>
+    </a>
+    <div class="navbuttons">
+
+        <!-- <div class="home links"><a href="/">Home</a></div> -->
+            <div class="about links"><a href="http://localhost:8080/shehnai/about">About</a></div>
+            <div class="memberLink links"><a href="http://localhost:8080/shehnai/Membershipdetails">Membership Plans</a></div>
+            <!-- <div class="pricing links"><a href="Advertise">Advertise</a></div> -->
+            <div class="memberLink links"><a href="http://localhost:8080/shehnai/SupremeMembers">Supreme Members</a></div>
+            <div class="pricing links"><a href="http://localhost:8080/shehnai/Reviews">Reviews</a></div>
+            <div class="contact links"><a href="http://localhost:8080/shehnai/contact">Contact</a></div>
+            <div class="login links"><a href="http://localhost:8080/shehnai/Login">Login</a></div>
+            <div class="register links"><a href="http://localhost:8080/shehnai/Register">Register</a></div>
+            <div class="register links"><a href="http://localhost:8080/shehnai/SearchProfile">Search</a></div>
+
+    </div>
+
+        <div class="menu"><a href="javascript:void(0);" class="icon" onclick="hideMenu()"><img src="./reviews_files/menu.svg" class="menuIcon"></a></div>
+</div>
+<style>
+
+    .navBarContainer {
+        z-index: 2;
+        animation: slideDown 600ms ease-in-out;
+        padding: 15px 7%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        position: fixed;
+        height: max-content;
+        left: 0px;
+        top: 0px;
+        background: rgba(255,255,255,0.9);
+        backdrop-filter: blur(1vw);
+   }
+
+    .navbuttons{
+        display: flex;
+        gap: 1vw;
+        font-size: 0.8vw;
+        font-weight: 600;
+        color: black;
+        display: flex;
+        color: rgba(0, 0, 0, 0.4);
+        padding: 0% 1%;
+   }
+   .links{
+    display: flex;
+    padding: 0.5%;
+    width: 5vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   }
+   .displayLink{
+    width: 6.7vw;
+   }
+   .memberLink{
+    width: 9.7vw;
+   }
+   .navBarLogo{
+        height: auto;
+   }
+   .logo{
+        width: 10vw;
+        padding: 0% 10%;
+   }
+   .login{
+        width: 7vw;
+        color: white;
+        background-color: var(--primary);
+        border-radius: var(--radius);
+   }
+   .editButton,.register{
+         width: 7vw;
+        color: var(--primary);
+        border: 2px solid var(--primary);
+        border-radius: var(--radius);
+        cursor: pointer;
+        height: 2vw;
+   }
+
+   .navbuttons a{transition: 300ms ease-in;}
+
+   .navbuttons a:hover{
+
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+   }
+
+   @media screen and (max-width: 1600px) { /*small display*/
+        .navbuttons{
+            font-size: 1vw;
+            /* margin-right: 25%; */
+        }
+        .logo{
+            width: 10vw;
+        }
+        .searchButton,.editButton,.register{
+            min-height: 2.5vw;
+        }
+        .displayLink{
+            width: 8vw;
+        }
+        .links{
+            font-size: 0.85vw;
         }
     }
+    @media screen and (max-width: 991px) { /*tablets*/
+        .navbuttons{
+            font-size: 1.4vw;
+            margin-right: 36%;
+        }
+        .logo{
+            width: 14vw;
+        }
+    }
+    @media screen and (max-width: 550px) { /*mobile*/
+    .navbuttons{
+        /* background-color: rgba(255, 255, 255, 0.4); */
 
-    </style>
-        <title>Shehnai Matrimonials - Home | Shehnai Matrimonials | High Profile Candidate | 20+ years of Exclusive Experience In Matchmaking For Highly Qualified Candidates !</title>
+        padding-bottom: 2%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        font-size: 4.2vw;
+        flex-direction: column;
+        gap: 2vw;
+    }
+    .logo{
+        width: 35vw;
+    }
 
-    </head>
+    .navBarContainer{
 
-    <body>
+        position: fixed;
+        margin-top: 5% !important;
 
+        flex-direction: column;
+        height: max-content;
+        align-items: flex-start;
+        border-radius: 2vw;
+    }
+    .login{
 
-            
-        <div class="navbar"></div>
+        border-radius: 8px;
+    }
+    .menu{
+        display: block !important;
+        position: absolute;
+        right: 5vw;
+        top:6vw;
 
-        <div class="reviewContainer">
-            
-            <div class="testimonials flexC">
-                <div class="featureHeader flexC">
-                    <div class="featureTitle fontLarge darkTitle">Your thoughts matter to us</div>
-                    <div class="featureSub dark">Find inspiration for your Special Day, Yours could be the next Success Story.</div>
-                    <div class="searchButton flexC">Add your review</div>
-                </div>
-                <div class="testimonialContainer flexR">
-                    <div class="couplePhotoLargeContainer flexR">
-                        <img src="assets/c7.webp" class="couplePhoto"/>
-                    </div>
-                    <div class="testimonialContentContainer flexC">
-                        <div class="CoupleNames fontMedium">Dr Lorem ipsum & Lorem ipsum</div>
-                        <div class="weddingDate fontSmall">DEC 2018</div>
-                        <div class="weddingTestimonial flexC">
-                            <span class="quoteOpen fontMedium"><img src="assets/q.svg"></span>
-                            <div class="testimonialText fontSmall">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet vestibulum dui. Donec condimentum lobortis urna, ut ultrices erat euismod at. Donec ullamcorper eros non sapien fermentum, id congue lacus.</div>
-                            <span class="quoteClose fontMedium"><img src="assets/q.svg"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonialSelector flexR">
-                    <div class="coupleContainer c1 flexR" onclick="setC1()"><img src="assets/c1.webp" class="coupleSelectImage"></div>
-                    <div class="coupleContainer c2 flexR" onclick="setC2()"><img src="assets/c2.webp" class="coupleSelectImage"></div>
-                    <div class="coupleContainer c3 flexR" onclick="setC3()"><img src="assets/c3.webp" class="coupleSelectImage"></div>
-                    <div class="coupleContainer c4 flexR" onclick="setC4()"><img src="assets/c4.webp" class="coupleSelectImage"></div>
-                    <div class="coupleContainer c5 flexR" onclick="setC5()"><img src="assets/c5.webp" class="coupleSelectImage"></div>
-                    <div class="coupleContainer c6 flexR" onclick="setC6()"><img src="assets/c6.webp" class="coupleSelectImage"></div>
-                    <div class="coupleContainer c7 flexR" onclick="setC7()" id="activeTestimonial"><img src="assets/c7.webp" class="coupleSelectImage"></div>
-                </div>
-    
+    }
+    .links{
+        width: 75%;
+        font-size: 4.5vw;
+    }
+    .register{
+        border: none;
+    }
+    .footerLinksContainer{
+            align-items: start;
+    }
+}
+</style>
+<script>
+    const mediaQuery = window.matchMedia('(min-width: 768px)')
+
+    if(!mediaQuery.matches){
+        $('.links').hide();
+    }
+
+     function hideMenu() {
+        if($('.links').css('display') == 'none'){
+            $('.links').show('slow');
+        } else {
+            $('.links').hide('slow');
+        }
+
+    }
+</script>      <div class="reviewContainer">
+         <div class="testimonials flexC">
+            <div class="featureHeader flexC">
+               <div class="featureTitle fontLarge darkTitle">Your thoughts matter to us</div>
+               <div class="featureSub dark">Find inspiration for your Special Day, Yours could be the next Success Story.</div>
+               <div class="contactTitle formTitle fontMedium">Always ready to help you</div>
             </div>
-    
+         </div>
+      </div>
+      
+      <div class="container">
+         <div class="row mt-4 mb-3">
+                        <div class="col-xl-6 col-md-6 col-sm-12 mb-5">
+               <div class="testimonialContainer ">
+                  <div class="CoupleNames fontMedium">
+                     <center>Shika Mody</center>
+                  </div>
+                  <!-- <div class="weddingDate fontSmall">DEC 2018</div> -->
+                  <div class="weddingTestimonial flexC">
+                     <span class="quoteOpen fontMedium"><img src="./reviews_files/q.svg"></span>
+                     <div class="testimonialText ">Hello, Shruti ben!
+With the  blessings of almighty and best wishes of family and friends we are glad to inform you that we have found a perfect match for our daughter Shikha.
+We wish to express our thanks and deepest gratitude. You are doing such a noble cause for society. It has been our privilege for being associated with you.</div>
+                     <span class="quoteClose fontMedium"><img src="./reviews_files/q.svg"></span>
+                  </div>
+               </div>
+            </div>
+                        <div class="col-xl-6 col-md-6 col-sm-12 mb-5">
+               <div class="testimonialContainer ">
+                  <div class="CoupleNames fontMedium">
+                     <center>Dr Aditi Tripathi</center>
+                  </div>
+                  <!-- <div class="weddingDate fontSmall">DEC 2018</div> -->
+                  <div class="weddingTestimonial flexC">
+                     <span class="quoteOpen fontMedium"><img src="./reviews_files/q.svg"></span>
+                     <div class="testimonialText ">Thanks for all your interest,affection and sincerity for aditis matrimony.  With your blessings she is wedded to ved somani a ca at vadodara . U have been a great motivator to us during those tense days. Pl feel free to contact me for any help which I can offer ðŸ™</div>
+                     <span class="quoteClose fontMedium"><img src="./reviews_files/q.svg"></span>
+                  </div>
+               </div>
+            </div>
+                        <div class="col-xl-6 col-md-6 col-sm-12 mb-5">
+               <div class="testimonialContainer ">
+                  <div class="CoupleNames fontMedium">
+                     <center>Dr Yatri Pandya</center>
+                  </div>
+                  <!-- <div class="weddingDate fontSmall">DEC 2018</div> -->
+                  <div class="weddingTestimonial flexC">
+                     <span class="quoteOpen fontMedium"><img src="./reviews_files/q.svg"></span>
+                     <div class="testimonialText ">I m very grateful for the shehnai platform which helped me find my soulmate!!
+
+Itâ€™s all destiny they say but Shruti mam is like the guide to the road till you find your destiny!
+
+I will always be grateful to her and the shehnai team !
+Thank you very much !!</div>
+                     <span class="quoteClose fontMedium"><img src="./reviews_files/q.svg"></span>
+                  </div>
+               </div>
+            </div>
+                        <div class="col-xl-6 col-md-6 col-sm-12 mb-5">
+               <div class="testimonialContainer ">
+                  <div class="CoupleNames fontMedium">
+                     <center>Mansi Nayak</center>
+                  </div>
+                  <!-- <div class="weddingDate fontSmall">DEC 2018</div> -->
+                  <div class="weddingTestimonial flexC">
+                     <span class="quoteOpen fontMedium"><img src="./reviews_files/q.svg"></span>
+                     <div class="testimonialText ">Hello, thank you for sending profile. 
+
+I would like to share that, my daughter recently found her chosen partner. 
+
+Thank you for all the kind support and cooperation from Shehnai Team. Keep doing the good work.
+ Thanks ðŸ™ðŸ™</div>
+                     <span class="quoteClose fontMedium"><img src="./reviews_files/q.svg"></span>
+                  </div>
+               </div>
+            </div>
+                        <div class="col-xl-6 col-md-6 col-sm-12 mb-5">
+               <div class="testimonialContainer ">
+                  <div class="CoupleNames fontMedium">
+                     <center>Setu Patel</center>
+                  </div>
+                  <!-- <div class="weddingDate fontSmall">DEC 2018</div> -->
+                  <div class="weddingTestimonial flexC">
+                     <span class="quoteOpen fontMedium"><img src="./reviews_files/q.svg"></span>
+                     <div class="testimonialText ">I uploaded the profile of my unmarried younger sister to the SHEHNAI.IN in 2009,initially as a unpaid member.
+
+I was having a tough time convincing my parents for uploading the profile on the Internet.My parents believed only on traditional sources like the referrals from some relatives or friends regarding the marriage proposals.
+
+That time,when I was about to upload the profile ,was not much used to the Internet myself.I chose this site just like that.Later I did the same for two more othe</div>
+                     <span class="quoteClose fontMedium"><img src="./reviews_files/q.svg"></span>
+                  </div>
+               </div>
+            </div>
+                     </div>
+      </div>
+      <center>
+         <input type="button" value="ADD YOUR REVIEW" style="height:60px;width:200px;border-radius:20px;background-color:#d63338;color:#FFF;border:0px;" onclick="showform()">
+         <div class="contactFormContainer">
+            <div id="review-form">
+               <form action="http://localhost:8080/shehnai/addreview" method="post" class="contactForm" onsubmit="return getValidation()">
+                  <input type="text" class="formElement" name="Reviewpersonname" id="Reviewpersonname" placeholder="Name" maxlength="50">
+                  <input type="text" class="formElement" name="Reviewpersonemail" id="Reviewpersonemail" maxlength="50" placeholder="Email-Id">
+                  <textarea type="text" class="formElement" name="review" id="review" maxlength="500" placeholder="Enter Review"></textarea><br>
+                  <h6 id="errormsg"></h6>
+                  <center><input type="submit" value="Send Message" class="searchButton"></center><br>
+
+               </form>
+            </div>
+         </div>
+      </center>
+      
+      
+      <br>
+      <!--Footer-->
+      <div class="footer flexC ">
+
+    <div class="footerLinksContainer" style="height: auto;">
+        <div class="row" style="display: flex; justify-content: space-around;">
+            <div class="footer_sb">
+                <div class="footer-logo" style="margin-bottom: 23px;margin-top: 30%;">
+                  <img src="./reviews_files/logo.svg" loading="lazy" alt="" class="logo">
+                </div>
+                <div class="social_icon">
+                    <div class="socialMedia" style="text-align: center;">
+            <img src="./reviews_files/facebook.svg" class="socialIcon">
+            <img src="./reviews_files/instagram.svg" class="socialIcon">
+            <img src="./reviews_files/twitter.svg" class="socialIcon">
         </div>
-        <!--Footer-->
-        <div class="footer"></div>
+                </div>
 
-    </body>
+            </div>
+            <div class="footer_sb">
+                <div class="footer_sb_link">
+                    <h3>Help &amp; Support</h3>
+                    <ul>
+                        <li> <a href="http://localhost:8080/shehnai/Reviews#">About Us</a></li>
+                        <li> <a href="http://localhost:8080/shehnai/Reviews#">Contact Us</a></li>
+                        <li> <a href="http://localhost:8080/shehnai/Reviews#">FAQ</a></li>
+                    </ul>
+                </div>
+       <!--           <div class="footerLinks gap2">
+            <div class="footerHeader fontMedium">Help & Support</div>
+            <div class="linksSub flexC gap2">
+                <div class=""><a class="fontSmall" href="about">About Us</a></div>
+                <div class=""><a class="fontSmall" href="contact">Contact Us</a></div>
+                <div class=""><a class="fontSmall" href="pricing.html">FAQ</a></div>
+            </div>
+        </div> -->
+            </div>
+            <div class="footer_sb">
+                <div class="footer_sb_link">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li> <a href="http://localhost:8080/shehnai/Reviews#">Privacy Policy</a></li>
+                        <li> <a href="http://localhost:8080/shehnai/Reviews#">Terms &amp; Condition</a></li>
+                        <li> <a href="http://localhost:8080/shehnai/Reviews#">Services</a></li>
+                    </ul>
+                </div>
+                <!--  <div class="footerLinks  gap2">
+            <div class="footerHeader fontMedium">Quick Links</div>
+            <div class="linksSub flexC gap2">
+                <div class=""><a class="fontSmall" href="privacypolicy">Privacy Policy</a></div>
+                <div class=""><a class="fontSmall" href="termscondition">Terms & Condition</a></div>
+                <div class=""><a class="fontSmall" href="#">Services</a></div>
+            </div>
+        </div> -->
+            </div>
+            <div class="footer_sb">
+                 <div class="footer_sb_link">
+                    <h3>My Matrimony</h3>
+                    <ul>
+                        <li> <a href="http://localhost:8080/shehnai/Reviews#">Bride</a></li>
+                        <li> <a href="http://localhost:8080/shehnai/Reviews#">Groom</a></li>
+                        <li> <a href="http://localhost:8080/shehnai/Reviews#">Feedback</a></li>
+                    </ul>
+                </div>
+               <!--  <div class="footerLinks  gap2">
+            <div class="footerHeader fontMedium">My Matrimony</div>
+            <div class="linksSub flexC gap2">
+                <div class=""><a class="fontSmall" href="Bride">Bride</a></div>
+                <div class=""><a class="fontSmall" href="Groom">Groom</a></div>
+                <div class=""><a class="fontSmall" href="#">Feedback</a></div>
+            </div>
+        </div> -->
+            </div>
+            <div class="footer_sb">
+                  <div class="footer_sb_link">
+                    <h3>Media</h3>
+                    <ul>
+                        <li> <a href="http://localhost:8080/shehnai/Reviews#">Advertise</a></li>
+                        <li> <a href="http://localhost:8080/shehnai/Reviews#">Videos</a></li>
+                        <li> <a href="http://localhost:8080/shehnai/Reviews#">Testimonials</a></li>
+                    </ul>
+                </div>
+                 <!-- <div class="footerLinks  gap2">
+            <div class="footerHeader fontMedium">Media</div>
+            <div class="linksSub flexC gap2">
+                <div class=""><a class="fontSmall" href="advertiseProfile.html">Advertise</a></div>
+                <div class=""><a class="fontSmall" href="#">Videos</a></div>
+                <div class=""><a class="fontSmall" href="reviews.html">Testimonials</a></div>
+            </div>
+        </div> -->
+            </div>
+        </div>
+       <div class="footer-link_info" style="background: #fff; color: #000; font-weight:600;">
+           <p class="copyright" style="text-align: center; display: inline-block; transform:translateX(-50%);margin-left: 50%;padding: 20px 1px 0px 1px; border-top: 3px solid #db1226; margin-top: 0px;">Copyright © 2023 <a href="http://localhost:8080/shehnai/index.php"> Shehnai matrimonials </a>| Design &amp; Developed by <a href="http://enlacecode.com/" target="_blank">Enlacecode Technology Pvt Ltd.</a></p>
+       </div>
 
-</html>
+
+
+    </div>
+<!--     <div class="footerContainer">
+        <div class="socialMedia">
+            <img src="http://192.168.1.12:8080/shehnai/public/assets/document/facebook.svg" class="socialIcon">
+            <img src="http://192.168.1.12:8080/shehnai/public/assets/document/instagram.svg" class="socialIcon">
+            <img src="http://192.168.1.12:8080/shehnai/public/assets/document/twitter.svg" class="socialIcon">
+        </div>
+        <a  href="index">
+            <div class="navBarLogo">
+                <img src="http://192.168.1.12:8080/shehnai/public/assets/document/logo.svg" loading="lazy" alt="" class="logo"/>
+            </div>
+        </a>
+        <div class="signup">
+            Sign Up
+        </div>
+
+    </div> -->
+</div>
+<style>
+   .linksSub *{
+    color: rgba(255,255,255,0.6);
+    cursor: pointer;
+    transition: ease-in 300ms;
+   }
+   .linksSub *:hover{
+    color: var(--primary);
+    text-decoration: none;
+   }
+    .footerLinks,.linksSub{
+        align-items: flex-start !important;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        border-top:1px solid #db1226;
+
+    }
+    .footerLinks{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1%;
+        /* width: 99vw; */
+        color:white !important;
+
+        column-gap: 2.8vw;
+
+    }
+    .footerLinksContainer{
+        background:rgb(19, 0, 0);
+        width: 100vw;
+        height: 15vw;
+        align-items: flex-start ;
+        /* justify-content: space-around; */
+        gap: 5vw;
+    }
+    .footerContainer{
+        display: flex;
+        width: 99vw;
+        background:white;
+        gap: 15vw;
+        padding:1%;
+        align-items: center;
+        justify-content: center;
+    }
+    .signup{
+        background-color: var(--primary);
+        color: white;
+        border-radius: var(--radius);
+        padding: 1.5% ;
+        padding-right: 1.5% ;
+        padding-top:0.5%;
+        padding-bottom:0.5%;
+   }
+   .socialMedia{
+    width: 10vw;
+   }
+   .socialIcon{
+    padding: 2%;
+    cursor: pointer;
+   }
+   .socialIcon:hover{
+     opacity:0.4;
+   }
+   @media screen and (max-width: 550px) {
+    .footerLinksContainer{
+        flex-direction: column;
+        height: max-content;
+        column-gap: 1vw !important;
+    }
+    .footer{
+        height: max-content;
+    }
+    .footerLinks{
+        font-size: 3vw;
+        justify-content: space-around;
+        margin: 5%;
+        /* width: 100%; */
+
+    }
+    .footerContainer{
+        display: flex;
+        flex-direction: column;
+        width: 99vw;
+        background:white;
+        gap:2vw ;
+        padding:1.5%;
+        align-items: center;
+
+    }
+    .socialMedia{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 2vw;
+    }
+    .signup{
+
+        background-color: var(--primary);
+        color: white;
+        border-radius: 2vw;
+        padding: 2.5% ;
+        padding-right: 2.5% ;
+        padding-top:1.5%;
+        padding-bottom:1.5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 80%;
+        text-align: center;
+   }
+   }
+</style>
+   
+</body></html>
