@@ -19,6 +19,8 @@
         <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
         <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <script src="script.js"></script>
     
         <style>
@@ -64,9 +66,10 @@
                 
                 <div class="profile">
                     <div class="profiletabs">
-                        <div class="activity disableTab" onclick="Activity()">Activity</div>
-                        <div class="myprofile activeTab" onclick="MyProfile()">My Profile</div>
+                        <div class="activity disableTab" onclick="mobileActivity()">Activity</div>
+                        <div class="myprofile activeTab" onclick="mobileMyProfile()" id="activeTab">My Profile</div>
                     </div>
+                    
                     <div class="profileSub flexC">                        
                         <div class="profilePhotoContainer">
                         </div>
@@ -98,7 +101,15 @@
                                     <div class="detailData fontAverage  caste">Patel</div>
                                 </div>
                             </div>
+                            <div class="detailContainer flexC">
+                                <div class="detailLabel fontSmall">Location</div>
+                                <div class="detailData fontAverage  location">Rajkot , Gujarat</div>
+                            </div>
                             
+                            <div class="detailContainer flexC">    
+                                <div class="detailLabel fontSmall">Education</div>
+                                <div class="detailData fontAverage  education">Diploma in Dermatology</div>
+                            </div>
                               
                             <div class="detailContainer flexC">
                                 <div class="detailLabel fontSmall">About</div>
@@ -174,3 +185,10 @@
 
    
 </html>
+<style>
+    .profile,.profileSub{
+        height: max-content;
+        overflow: scroll;
+        position: relative;
+    }
+</style>

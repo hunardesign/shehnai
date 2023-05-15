@@ -692,7 +692,7 @@ textarea {
 }
 .specialContainer{
     display: grid;
-    grid-template-columns: auto auto ;
+    /* grid-template-columns: auto auto ; */
     padding: 2% 7%;
     gap: 2vw;
     place-content: center;
@@ -934,6 +934,7 @@ overflow: clip;
 .profileNavItem{
     cursor: pointer;
     width: 10vw;
+    text-align: center;
 }
 #activeProfileNav{
     background: white;
@@ -982,8 +983,8 @@ overflow: clip;
     text-align: justify;
 }
 .subDetails {
-    height: 100%;
-    justify-content: flex-start;
+    /* height: 100%; */
+    justify-content: space-between;
     align-items: flex-start;
     max-width: 25vw;
 }
@@ -1223,7 +1224,23 @@ option:checked, option:hover {
     }
 }
 @media screen and (max-width: 550px) { /*mobile*/
-   
+    .profiletabs div,.editButton{
+        font-size: 4vw;
+    }
+    .activitySub,.profileSub{
+        height: max-content;
+    }
+    .editButton{
+        text-align: center !important;
+        height: max-content !important;
+        width: max-content !important;
+    }
+    
+
+    .closeIcon{
+        height: 6vw;
+        width: 6vw;
+    }
     .profileLargeImage{
         align-items: flex-end;
         justify-content: center;

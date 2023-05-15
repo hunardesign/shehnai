@@ -61,6 +61,35 @@ $.get("navBarLogin.html", function(data){
   document.querySelector(".myprofile").setAttribute("id","activeTab")
   
  }
+
+ function mobileActivity(){
+  
+  let none2 = document.querySelector('.profileSub');
+  none2.style.display = "none";
+  
+  let show = document.querySelector(".activitySub");
+  show.style.display = "flex";
+  
+  
+  document.querySelector("#activeTab").setAttribute("id","disableTab")
+  document.querySelector(".activity").setAttribute("id","activeTab")
+  
+ }
+
+ function mobileMyProfile(){
+  let none1 = document.querySelector('.activitySub');
+  none1.style.display = "none";
+
+  
+  let show = document.querySelector(".profileSub");
+  show.style.display = "flex";
+  
+  
+  
+  document.querySelector("#activeTab").setAttribute("id","disableTab")
+  document.querySelector(".myprofile").setAttribute("id","activeTab")
+  
+ }
  
  function viewAbout(){
   document.querySelector('#activeProfileNav').setAttribute('id','');
@@ -119,7 +148,7 @@ $.get("navBarLogin.html", function(data){
   document.querySelector('.partnerPreferences').style.display='none'
   document.querySelector('.otherDetails').style.display='none'
   document.querySelector('.contactDetails').style.display='flex'
-
+console.log('ss')
  }
 
  function setC1(){

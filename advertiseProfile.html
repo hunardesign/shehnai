@@ -14,17 +14,22 @@
         <meta name="Keywords" content="Shehnai Matrimonials,Shehnai,Matrimonials,matrimonial,matrimony,matrimonials,indian matrimonials,marriage,marriage sites,matchmaking,shaadi,shehnai,couple goals,boys,Doctors,High Profile,Doctors Marraige,high profile candidate,engineers,architrct matrimony,doctors matrimony,marraige bureau,Shehnai Matrimonials india,Shehnai Matrimonials gujarat ahmedabad,Shehnai Matrimonials in ahmedabad,indian bride,NRI matrimonials,nri,nri marraige bureau,highly qualified, highly qulified candidate ">
         <meta name="robots" content="index, follow">
         <meta name="language" content="English">
+        <link rel="stylesheet" href="forBootstrap.css" >
+
         <link rel="stylesheet" href="search.css">
     <link rel="stylesheet" href="style.css" >
+    
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
         
     <style>
       .searchButton{
         padding: 0.2% 1% ;
-        max-width: 8vw;
+        max-width: 10vw;
         
     }
     .specialDetails{
@@ -62,7 +67,7 @@
                 <div class="searchButton flexC">Add your profile</div>
             </div>
             <div class="specialContainer">
-                <div class="specialMember flexR">
+                <div class="specialMember flexC">
                     <img src="assets/special1.webp" class="specialImage">
                     <div class="actions flexR">
                         <div class="actionContainer flexC fontSmall"><img src="assets/like.svg" class="likeIcon actionIcon" onclick="likeToggle(this)" data-userID="SH001">Like</div>
@@ -111,7 +116,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="specialMember flexR"><img src="assets/special2.webp" class="specialImage"> 
+                <div class="specialMember flexC"><img src="assets/special2.webp" class="specialImage"> 
                     <div class="actions flexR">
                         <div class="actionContainer flexC fontSmall"><img src="assets/like.svg" class="likeIcon actionIcon" onclick="likeToggle(this)" data-userID="SH001">Like</div>
                                 <div class="actionContainer flexC fontSmall"><img src="assets/save.svg" class="saveIcon actionIcon" onclick="saveToggle(this)">Save</div>
@@ -159,7 +164,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="specialMember flexR"><img src="assets/special3.webp" class="specialImage"> 
+                <div class="specialMember flexC"><img src="assets/special3.webp" class="specialImage"> 
                     <div class="actions flexR">
                         <div class="actionContainer flexC fontSmall"><img src="assets/like.svg" class="likeIcon actionIcon" onclick="likeToggle(this)" data-userID="SH001">Like</div>
                                 <div class="actionContainer flexC fontSmall"><img src="assets/save.svg" class="saveIcon actionIcon" onclick="saveToggle(this)">Save</div>
@@ -207,7 +212,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="specialMember flexR"><img src="assets/special1.webp" class="specialImage"> 
+                <div class="specialMember flexC"><img src="assets/special1.webp" class="specialImage"> 
                     <div class="actions flexR">
                         <div class="actionContainer flexC fontSmall"><img src="assets/like.svg" class="likeIcon actionIcon" onclick="likeToggle(this)" data-userID="SH001">Like</div>
                                 <div class="actionContainer flexC fontSmall"><img src="assets/save.svg" class="saveIcon actionIcon" onclick="saveToggle(this)">Save</div>
@@ -255,7 +260,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="specialMember flexR"><img src="assets/special2.webp" class="specialImage"> 
+                <div class="specialMember flexC"><img src="assets/special2.webp" class="specialImage"> 
                     <div class="actions flexR">
                         <div class="actionContainer flexC fontSmall"><img src="assets/like.svg" class="likeIcon actionIcon" onclick="likeToggle(this)" data-userID="SH001">Like</div>
                                 <div class="actionContainer flexC fontSmall"><img src="assets/save.svg" class="saveIcon actionIcon" onclick="saveToggle(this)">Save</div>
@@ -303,7 +308,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="specialMember flexR"><img src="assets/special3.webp" class="specialImage"> 
+                <div class="specialMember flexC"><img src="assets/special3.webp" class="specialImage"> 
                     <div class="actions flexR">
                         <div class="actionContainer flexC fontSmall"><img src="assets/like.svg" class="likeIcon actionIcon" onclick="likeToggle(this)" data-userID="SH001">Like</div>
                                 <div class="actionContainer flexC fontSmall"><img src="assets/save.svg" class="saveIcon actionIcon" onclick="saveToggle(this)">Save</div>
@@ -361,3 +366,8 @@
 
     
 </html>
+<style>
+ .specialDetails,.specialMember{
+        height: max-content !important;
+    }
+</style>

@@ -1,0 +1,75 @@
+a {
+    color: inherit !important;
+}
+a:hover{
+    color: black !important;
+}
+@media screen and (min-width: 1200px) {
+    .feedMember, .feedMember .specialImage{
+
+        width: 20vw ;
+    }
+    .detailData{
+        max-width: 18vw;   
+    }
+    .searchButton{
+        max-width: 10vw;
+    }
+}
+
+.specialMember,.specialDetails{
+    height: max-content;
+}
+.specialImage{
+}
+.specialData{
+    padding: 1vw 0vw;
+}
+.detailContainer{
+    gap: 0.5vw;
+}
+
+.specialContainer{
+    grid-template-columns: auto auto auto auto;
+}
+
+.aboutSection{
+    margin-top:6%;
+}
+.searchItem{
+    height: max-content;
+}
+.feed{
+    margin-top: 0vw;
+    grid-template-columns: auto auto auto; 
+    gap: 1vw;
+}
+.feedDetails,.feedData,.feedMember{
+    height: max-content;
+}
+
+.feedMember{
+    height: 100%;
+}
+.feedData .specialButtons{
+    width: 90%;
+}
+
+.feedDetails{
+    width: 100%;
+}
+.feedData{
+    padding: 0.5vw;
+}
+
+@media screen and (max-width: 550px) {
+    .navBarContainer{
+        z-index: 3;
+        /* height: 15vw !important; */
+        width: 100vw !important;
+    }
+    .feed{
+        margin-top: 0vw;
+        grid-template-columns: auto; 
+    }
+}

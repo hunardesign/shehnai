@@ -19,7 +19,10 @@
         <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
         <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <script src="script.js"></script>
+       
         <style>
         
            
@@ -173,7 +176,9 @@
                 
             }
             @media screen and (max-width: 550px) {
-              
+              .searchButton{
+                max-width: none;
+              }
                 .hideSearch{
                      display: flex;
                      width: 100%;
@@ -197,10 +202,11 @@
 
                     }
                     .feed{
-                        top: 135vw;
+                        top: 15vw;
                         width: 100%;
                         margin: 10% 0%  ;
                         height: max-content;
+                        grid-template-columns: auto;
                     }
                     .subDetails {
                         flex-direction: column;
@@ -213,7 +219,7 @@
 
                     }
                     .specialImage{
-                        width: 100vw;
+                        width: 100vw !important;
                         height: 100vw;
                     }
                     .showSearch{
@@ -261,11 +267,12 @@
                     .height{
                         flex-direction: column;
                     }
-                    .navBarContainer{
-                        z-index: 3;
-                    }
+                   
+                    
                 }
         </style>
+         <link rel="stylesheet" href="forBootstrap.css" >
+
         <title>Shehnai Matrimonials - Home | Shehnai Matrimonials | High Profile Candidate | 20+ years of Exclusive Experience In Matchmaking For Highly Qualified Candidates !</title>
 
     </head>
@@ -479,7 +486,7 @@
                 </div>
 
                 
-                    <div class="searchbar">
+                    <!--<div class="searchbar">
                         <div class="flexR fontMedium gap2 showSearch" onclick="showSearch()">Show Search </div>
                         <div class="flexC">
                             
@@ -691,10 +698,10 @@
                             </form>
                         </div>
                         
-                    </div>
-                    <div class="feed flexC ">
+                    </div>-->
+                    <div class="feed grid ">
                         
-                        <div class="feedMember flexR data-userID="SH001">
+                        <div class="feedMember flexC data-userID="SH001">
                             <div class="feedMemberGallery feedMember1 flexR specialImage">
                                 <div class="profilePhotoMiniContainer flexR gap">
                                     <div class="profilePhotoMini feedMini1"  data-userID="SH001" data-photoID="SH001p1" onclick="setLarge(this)"></div>
@@ -753,12 +760,15 @@
                                         <div class="detailLabel fontSmall">Education</div>
                                         <div class="detailData fontAverage  education">Diploma in Dermatology</div>
                                     </div>
-        
+                                    <div class="detailContainer flexC">    
+                                        <div class="detailLabel fontSmall">Education</div>
+                                        <div class="detailData fontAverage  education">Diploma in Dermatology</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="feedMember flexR">
+                        <div class="feedMember flexC">
                             <div class="feedMemberGallery feedMember1 flexR specialImage">
                                 <div class="profilePhotoMiniContainer flexR gap">
                                     <div class="profilePhotoMini feedMini1"  data-userID="SH001" data-photoID="SH001p1" onclick="setLarge(this)"></div>
@@ -822,7 +832,7 @@
                             </div>
                         </div>
 
-                        <div class="feedMember flexR">
+                        <div class="feedMember flexC">
                             <div class="feedMemberGallery feedMember1 flexR specialImage">
                                 <div class="profilePhotoMiniContainer flexR gap">
                                     <div class="profilePhotoMini feedMini1"  data-userID="SH001" data-photoID="SH001p1" onclick="setLarge(this)"></div>
@@ -885,7 +895,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="feedMember flexR">
+                        <div class="feedMember flexC">
                             <div class="feedMemberGallery feedMember1 flexR specialImage">
                                 <div class="profilePhotoMiniContainer flexR gap">
                                     <div class="profilePhotoMini feedMini1"  data-userID="SH001" data-photoID="SH001p1" onclick="setLarge(this)"></div>
@@ -958,9 +968,7 @@
         <!-- <div class="footer"></div> -->
 
     </body>
-  
-   
-        
+    
 </html>
 <!--  <div class="searchItem">
             
